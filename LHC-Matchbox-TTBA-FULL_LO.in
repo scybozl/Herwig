@@ -204,7 +204,7 @@ set /Herwig/Analysis/Plot:EventNumber 1
 insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
 
 insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
-set /Herwig/Analysis/HepMCFile:PrintEvent 15000
+set /Herwig/Analysis/HepMCFile:PrintEvent 25000
 set /Herwig/Analysis/HepMCFile:Format GenEvent
 set /Herwig/Analysis/HepMCFile:Units GeV_mm
 
@@ -221,6 +221,12 @@ set /Herwig/Analysis/HepMCFile:Units GeV_mm
 ##################################################
 
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
+
+create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
+insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
+
+read Matchbox/IncreaseVerbosity.in
+set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 
 cd /Herwig/Generators
 saverun LHC-Matchbox-TTBA-FULL_LO EventGenerator
