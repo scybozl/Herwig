@@ -1,0 +1,47 @@
+# BEGIN PLOT
+DrawOnly=/REF/ATLAS_2015_I1345452/d09-x01-y02 /home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2015_I1345452/d09-x01-y02
+Title=muon channel
+RatioPlotReference=/REF/ATLAS_2015_I1345452/d09-x01-y02
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.8
+RatioPlotYLabel=Expected/Data
+LegendXPos=0.6
+XLabel=$p_\text{T} (\hat{t}_\text{l}\hat{t}_\text{h})$ [GeV]
+YLabelSep=8.0
+YLabel=$\dfrac{\text{d}\sigma^\text{fid}}{\text{d}p_\text{T}(\hat{t}_\text{l}\hat{t}_\text{h})}$ [$\dfrac{\text{pb}}{\text{GeV}}$]
+Legend=1
+RatioPlotYMin=0.6
+LeftMargin=1.9
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2015_I1345452/d09-x01-y02
+ConnectBins=0
+ErrorBars=1
+Path=/REF/ATLAS_2015_I1345452/d09-x01-y02
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.500000e+01	7.400000e-02	7.836317e-03	7.836317e-03
+2.500000e+01	5.000000e+01	7.300000e-02	7.381307e-03	7.381307e-03
+5.000000e+01	8.500000e+01	2.800000e-02	3.742271e-03	3.742271e-03
+8.500000e+01	1.250000e+02	7.600000e-03	1.386578e-03	1.386578e-03
+1.250000e+02	5.000000e+02	2.900000e-04	7.055766e-05	7.055766e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2015_I1345452/d09-x01-y02
+LineColor={[HTML]{EE3311}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2015_I1345452/d09-x01-y02
+ScaledBy=0.0067281243729911183
+Title=LHC-Matchbox-TTBA-FULL_LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	2.500000e+01	2.960375e-02	2.822606e-03	2.822606e-03
+2.500000e+01	5.000000e+01	2.825812e-02	2.757710e-03	2.757710e-03
+5.000000e+01	8.500000e+01	1.499411e-02	1.697748e-03	1.697748e-03
+8.500000e+01	1.250000e+02	2.859452e-03	6.935192e-04	6.935192e-04
+1.250000e+02	5.000000e+02	1.614750e-04	5.382499e-05	5.382499e-05
+# END HISTO1D
+

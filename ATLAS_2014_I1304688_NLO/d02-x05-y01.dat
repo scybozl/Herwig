@@ -1,0 +1,46 @@
+# BEGIN PLOT
+DrawOnly=/REF/ATLAS_2014_I1304688/d02-x05-y01 /home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2014_I1304688/d02-x05-y01
+YMax=0.35
+Title=t$\bar{\mathrm t}$ cross-section vs. $5^\mathrm{th}$ jet $\mathrm{p}_\mathrm{T}$
+RatioPlotReference=/REF/ATLAS_2014_I1304688/d02-x05-y01
+RatioPlot=1
+LogX=1
+LogY=1
+RatioPlotYMax=1.9
+RatioPlotYLabel=Expected/Data
+LegendXPos=0.39
+XLabel=$5^\mathrm{th}$ jet $\mathrm{p}_\mathrm{T}$ [GeV]
+YLabel=$\mathrm{d}\sigma/\mathrm{dp}_{\mathrm T}$ [pb/GeV]
+YMin=0.00025
+Legend=1
+RatioPlotYMin=0.1
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2014_I1304688/d02-x05-y01
+ConnectBins=0
+ErrorBars=1
+Path=/REF/ATLAS_2014_I1304688/d02-x05-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.500000e+01	1.508520e-01	1.404900e-02	1.404900e-02
+3.500000e+01	5.000000e+01	5.382600e-02	7.036000e-03	7.036000e-03
+5.000000e+01	7.000000e+01	1.220700e-02	1.853000e-03	1.853000e-03
+7.000000e+01	1.950000e+02	4.000000e-04	7.200000e-05	7.200000e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2014_I1304688/d02-x05-y01
+LineColor={[HTML]{EE3311}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2014_I1304688/d02-x05-y01
+ScaledBy=0.0097723724272233727
+Title=LHC-Matchbox-TTBA-FULL_LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.500000e+01	1.377905e-01	1.542054e-02	1.542054e-02
+3.500000e+01	5.000000e+01	4.299844e-02	7.428145e-03	7.428145e-03
+5.000000e+01	7.000000e+01	7.329280e-03	2.972151e-03	2.972151e-03
+7.000000e+01	1.950000e+02	3.127159e-04	1.914986e-04	1.914986e-04
+# END HISTO1D
+

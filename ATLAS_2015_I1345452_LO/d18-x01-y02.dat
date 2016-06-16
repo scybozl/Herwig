@@ -1,0 +1,49 @@
+# BEGIN PLOT
+DrawOnly=/REF/ATLAS_2015_I1345452/d18-x01-y02 /home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2015_I1345452/d18-x01-y02
+Title=combined lepton channels
+RatioPlotReference=/REF/ATLAS_2015_I1345452/d18-x01-y02
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.4
+RatioPlotYLabel=Expected/Data
+LegendXPos=0.6
+XLabel=$|y (\hat{t}_\text{h})|$
+YLabelSep=8.0
+YLabel=$\dfrac{\text{d}\sigma^\text{fid}}{\text{d}|y(\hat{t}_\text{l})|}$ [pb]
+Legend=1
+RatioPlotYMin=0.6
+LeftMargin=1.9
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2015_I1345452/d18-x01-y02
+ConnectBins=0
+ErrorBars=1
+Path=/REF/ATLAS_2015_I1345452/d18-x01-y02
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	4.000000e-01	5.100000e+00	4.437293e-01	4.437293e-01
+4.000000e-01	8.000000e-01	3.600000e+00	3.047906e-01	3.047906e-01
+8.000000e-01	1.100000e+00	2.300000e+00	2.057697e-01	2.057697e-01
+1.100000e+00	1.400000e+00	1.600000e+00	1.637168e-01	1.637168e-01
+1.400000e+00	1.800000e+00	8.000000e-01	8.380167e-02	8.380167e-02
+1.800000e+00	2.500000e+00	1.200000e-01	2.032327e-02	2.032327e-02
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2015_I1345452/d18-x01-y02
+LineColor={[HTML]{EE3311}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/LHC-Matchbox-TTBA-FULL_LO.yoda/ATLAS_2015_I1345452/d18-x01-y02
+ScaledBy=0.0033640621864955591
+Title=LHC-Matchbox-TTBA-FULL_LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+0.000000e+00	4.000000e-01	2.237101e+00	1.371655e-01	1.371655e-01
+4.000000e-01	8.000000e-01	1.522238e+00	1.131471e-01	1.131471e-01
+8.000000e-01	1.100000e+00	9.419373e-01	1.027738e-01	1.027738e-01
+1.100000e+00	1.400000e+00	6.615990e-01	8.613284e-02	8.613284e-02
+1.400000e+00	1.800000e+00	3.784570e-01	5.641704e-02	5.641704e-02
+1.800000e+00	2.500000e+00	5.766964e-02	1.664779e-02	1.664779e-02
+# END HISTO1D
+

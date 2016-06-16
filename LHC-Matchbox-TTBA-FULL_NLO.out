@@ -1,0 +1,90 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+==============================================================================
+Statistics for event handler 'EventHandler':
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total (from   weighted events): including vetoed events           0.161(6)e+00
+==============================================================================
+Total (from unweighted events):             5000         5001     0.160(6)e+00
+==============================================================================
+Per matrix element breakdown:
+MEGenericProcesses[d,dbar->tbar,t].Bo         54           54       4.8(7)e-03
+MEGenericProcesses[dbar,d->tbar,t].Bo         52           52       4.6(6)e-03
+MEGenericProcesses[ubar,u->tbar,t].Bo         92           92       8.2(9)e-03
+MEGenericProcesses[u,ubar->tbar,t].Bo         85           85       7.6(8)e-03
+MEGenericProcesses[c,cbar->tbar,t].Bo          4            4       0.4(2)e-03
+MEGenericProcesses[cbar,c->tbar,t].Bo          6            6       0.5(2)e-03
+MEGenericProcesses[sbar,s->tbar,t].Bo          7            7       0.6(2)e-03
+MEGenericProcesses[s,sbar->tbar,t].Bo          5            5       0.4(2)e-03
+MEGenericProcesses[b,bbar->tbar,t].Bo          0            0                0
+MEGenericProcesses[bbar,b->tbar,t].Bo          2            2       0.2(1)e-03
+MEGenericProcesses[g,g->tbar,t].BornV       1500         1501     0.134(3)e+00
+MEGenericProcesses[d,dbar->tbar,t,g].         22           22                0
+MEGenericProcesses[d,dbar->tbar,t,g].         51           51       0.3(3)e-03
+MEGenericProcesses[d,g->tbar,d,t].Sub         35           35       2.4(5)e-03
+MEGenericProcesses[d,g->tbar,d,t].Sub         60           60      -3.0(7)e-03
+MEGenericProcesses[dbar,d->tbar,t,g].         16           16                0
+MEGenericProcesses[dbar,d->tbar,t,g].         48           48       0.9(6)e-03
+MEGenericProcesses[dbar,g->tbar,dbar,          8            8       0.7(3)e-03
+MEGenericProcesses[dbar,g->tbar,dbar,         13           13      -0.6(3)e-03
+MEGenericProcesses[ubar,u->tbar,t,g].         25           25      -0.8(4)e-03
+MEGenericProcesses[ubar,u->tbar,t,g].        109          109       3.1(9)e-03
+MEGenericProcesses[ubar,g->tbar,ubar,          4            4       0.4(2)e-03
+MEGenericProcesses[ubar,g->tbar,ubar,         18           18      -1.2(4)e-03
+MEGenericProcesses[u,ubar->tbar,t,g].         27           27       1.2(5)e-03
+MEGenericProcesses[u,ubar->tbar,t,g].        102          102       0.9(9)e-03
+MEGenericProcesses[u,g->tbar,u,t].Sub         67           67       5.3(7)e-03
+MEGenericProcesses[u,g->tbar,u,t].Sub        119          119        -7(1)e-03
+MEGenericProcesses[c,cbar->tbar,t,g].          0            0                0
+MEGenericProcesses[c,cbar->tbar,t,g].          1            1       90(90)e-06
+MEGenericProcesses[c,g->tbar,c,t].Sub          3            3       0.3(2)e-03
+MEGenericProcesses[c,g->tbar,c,t].Sub          2            2      -0.2(1)e-03
+MEGenericProcesses[cbar,c->tbar,t,g].          0            0                0
+MEGenericProcesses[cbar,c->tbar,t,g].          1            1       90(90)e-06
+MEGenericProcesses[cbar,g->tbar,cbar,          2            2       0.2(1)e-03
+MEGenericProcesses[cbar,g->tbar,cbar,          5            5      -0.4(2)e-03
+MEGenericProcesses[sbar,s->tbar,t,g].          1            1      -90(90)e-06
+MEGenericProcesses[sbar,s->tbar,t,g].          4            4                0
+MEGenericProcesses[sbar,g->tbar,sbar,          1            1       90(90)e-06
+MEGenericProcesses[sbar,g->tbar,sbar,          5            5      -0.4(2)e-03
+MEGenericProcesses[s,sbar->tbar,t,g].          0            0                0
+MEGenericProcesses[s,sbar->tbar,t,g].          0            0                0
+MEGenericProcesses[s,g->tbar,s,t].Sub          3            3       90(90)e-06
+MEGenericProcesses[s,g->tbar,s,t].Sub          7            7      -0.3(2)e-03
+MEGenericProcesses[b,bbar->tbar,t,g].          0            0                0
+MEGenericProcesses[b,bbar->tbar,t,g].          0            0                0
+MEGenericProcesses[b,g->tbar,b,t].Sub          0            0                0
+MEGenericProcesses[b,g->tbar,b,t].Sub          6            6      -0.4(2)e-03
+MEGenericProcesses[bbar,b->tbar,t,g].          0            0                0
+MEGenericProcesses[bbar,b->tbar,t,g].          0            0                0
+MEGenericProcesses[bbar,g->tbar,bbar,          3            3       0.3(2)e-03
+MEGenericProcesses[bbar,g->tbar,bbar,          1            1       90(90)e-06
+MEGenericProcesses[g,d->tbar,d,t].Sub         31           31       2.4(5)e-03
+MEGenericProcesses[g,d->tbar,d,t].Sub         53           53      -3.5(6)e-03
+MEGenericProcesses[g,dbar->tbar,dbar,         10           10       0.4(3)e-03
+MEGenericProcesses[g,dbar->tbar,dbar,         10           10      -0.5(3)e-03
+MEGenericProcesses[g,ubar->tbar,ubar,          4            4       0.4(2)e-03
+MEGenericProcesses[g,ubar->tbar,ubar,          8            8      -0.7(3)e-03
+MEGenericProcesses[g,u->tbar,u,t].Sub         71           71       4.7(8)e-03
+MEGenericProcesses[g,u->tbar,u,t].Sub        143          143        -8(1)e-03
+MEGenericProcesses[g,c->tbar,c,t].Sub          0            0                0
+MEGenericProcesses[g,c->tbar,c,t].Sub          0            0                0
+MEGenericProcesses[g,cbar->tbar,cbar,          1            1       90(90)e-06
+MEGenericProcesses[g,cbar->tbar,cbar,          4            4                0
+MEGenericProcesses[g,sbar->tbar,sbar,          3            3       90(90)e-06
+MEGenericProcesses[g,sbar->tbar,sbar,          6            6      -0.4(2)e-03
+MEGenericProcesses[g,s->tbar,s,t].Sub          6            6       0.5(2)e-03
+MEGenericProcesses[g,s->tbar,s,t].Sub          4            4      -0.2(2)e-03
+MEGenericProcesses[g,b->tbar,b,t].Sub          1            1      -90(90)e-06
+MEGenericProcesses[g,b->tbar,b,t].Sub          1            1       90(90)e-06
+MEGenericProcesses[g,bbar->tbar,bbar,          2            2       0.2(1)e-03
+MEGenericProcesses[g,bbar->tbar,bbar,          2            2                0
+MEGenericProcesses[g,g->tbar,t,g].Sub        469          469        13(2)e-03
+MEGenericProcesses[g,g->tbar,t,g].Sub       1595         1595       -11(4)e-03
+==============================================================================

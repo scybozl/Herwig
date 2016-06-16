@@ -1,0 +1,31 @@
+# Object files
+*.o
+*.lo
+*.slo
+*.obj
+
+# Dynamic libraries
+*.so
+
+# Executables
+*.exe
+
+# (Especially for Herwig) Anything that is unnecessary for compiling
+*.run
+*.dot
+*.tex
+*.hepmc
+*.diagrams
+
+# Temporary files
+*~
+
+# Herwig directories
+bin/
+Herwig-scratch/
+include/
+lib/
+opt/
+share/
+src/
+TESTS/
