@@ -87,7 +87,9 @@ namespace Rivet {
     /// Perform the per-event analysis
     void analyze(const Event& event) {
 
-      const double weight = event.weight();
+      double weight = event.weight();
+      const double normWW = 1.0/3.9465;
+      weight *= normWW;
 
       /// Get the various sets of final state particles
       const Particles& elecFS = applyProjection<IdentifiedFinalState>(event, "ELEC_FS").particlesByPt();
