@@ -120,7 +120,7 @@ namespace Rivet {
       foreach (const Jet* j, central_jets) {
         bool isbJet = false;
         foreach (const GenParticle* b, B_hadrons) {
-          if (deltaR(j->momentum(), FourMomentum(b->momentum())) < 0.5) isbJet = true;
+          if (deltaR(j->momentum(), FourMomentum(b->momentum())) < 3.5) isbJet = true;
         }
         if (isbJet) b_jets.push_back(j);
       }
@@ -141,7 +141,7 @@ namespace Rivet {
         //if (charge(elecFS[0]) >= 0 && charge(muonFS[0]) <= 0) {
           // Calculate HT: scalar sum of the pTs of the leptons and all good jets
           double HT = 0;
-	  if(elecFS.size() == 1 && muonFS.size() == 1) {
+	  if(elecFS.size() >= 1 && muonFS.size() >= 1) {
           HT += elecFS[0].pT();
           HT += muonFS[0].pT();
 	  }
@@ -187,7 +187,7 @@ namespace Rivet {
           else if (ihist == 5 && jet_n[ithres] >= 5) _histogram(ihist, ithres)->fill(central_jets[4]->pT(), weight); // 5th jet pT
         }
       }
-*/\
+*/
 
 	_histPt1->fill(b_jets[0]->pT(), weight);
 	_histEta1->fill(b_jets[0]->eta(), weight);
