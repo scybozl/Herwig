@@ -124,9 +124,9 @@ namespace Rivet {
 
       bool passed_emu = false;
       // Finally, the same again with the emu channel
-      if (elecFS.size() >= 1 && muonFS.size() >= 1) {
+      //if (elecFS.size() >= 1 && muonFS.size() >= 1) {
         // With the desired charge signs
-        if (charge(elecFS[0]) >= 0 && charge(muonFS[0]) <= 0) {
+        //if (charge(elecFS[0]) >= 0 && charge(muonFS[0]) <= 0) {
           // Calculate HT: scalar sum of the pTs of the leptons and all good jets
           double HT = 0;
           if(elecFS.size() >= 1 && muonFS.size() >= 1) {
@@ -144,8 +144,8 @@ namespace Rivet {
 		}
             }
 	}
-	}
-	}
+	//}
+	//}
 
       if (passed_emu == true) {
 

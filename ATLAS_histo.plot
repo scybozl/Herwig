@@ -12,7 +12,7 @@ LogY=1
 
 # BEGIN PLOT /ATLAS_histo/Phiemu
 XLabel=Azimuthal angle between the two leptons $\phi_{\mathrm{e}^+\mu^-}$
-YLabel=$\mathrm{d}\sigma/\mathrm{dp}_{\mathrm{T}}$ [pb]
+YLabel=$\mathrm{d}\sigma/\mathrm{d}\phi$ [pb]
 LogY=0
 # END PLOT
 
