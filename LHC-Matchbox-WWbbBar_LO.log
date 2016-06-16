@@ -18822,20 +18822,1428 @@ Too many tries to generate phi in forward evolution
 Too many tries to generate phi in forward evolution
 PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.16351) for g to b
 PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.68362) for g to bbar
-final integrated cross section is ( 0.205501 +/- 0.00290499 ) nb
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00837) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03624) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00318) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.33025) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.60578) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.56158) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03357) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07255) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.58723) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07113) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.29711) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.30106) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.98367) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.06091) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.75732) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01118) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.60894) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.25953) for g to bbar
+** An event exception of type ThePEG::Exception occurred while generating event number 5235: 
+Failed to generate the shower after 100 attempts in ShowerHandler::cascade()
+The event will be discarded.
+******************************************************************************
+Event number 5235 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[b,bbar->W-,bbar,b,W+]
+--- incoming:
+  3         b       5 [1] (6,10)   {+1}
+                                -0.000     0.000   822.625   822.625     0.000
+  4      bbar      -5 [2] (7)   {-1}
+                                 0.000     0.000   -12.783    12.783     0.000
+--- intermediates:
+  5         b       5 [6] (7)   {+1}
+                                 0.021    -0.002   821.775   821.775    -0.677
+  6         g      21 [3] (5,9)   {+1,-2}
+                                 0.001     0.001   822.543   822.543    -0.197
+  7        Z0      23 [4,5]    
+                                 0.021    -0.002   808.992   834.558   204.985
+--- outgoing:
+  8        W-     -24     
+                               -62.924    -6.375   429.984   441.985    80.399
+  9      bbar      -5 [6]   10> {-2}
+                                -0.019     0.004     0.768     0.768     0.000
+ 10         b       5 [3]   >9 {+2}
+                                -0.001    -0.001     0.082     0.082     0.000
+ 11        W+      24     
+                                62.945     6.373   379.008   392.574    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         b       5 [1] (6,10)   {+1}
+                                -0.000     0.000   822.625   822.625     0.000
+  4      bbar      -5 [2] (7)   {-1}
+                                 0.000     0.000   -12.783    12.783     0.000
+  5         b       5 [6] (7)   {+1}
+                                 0.021    -0.002   821.775   821.775    -0.677
+  6         g      21 [3] (5,9)   {+1,-2}
+                                 0.001     0.001   822.543   822.543    -0.197
+  7        Z0      23 [4,5]    
+                                 0.021    -0.002   808.992   834.558   204.985
+--- final:
+  8        W-     -24     
+                               -62.924    -6.375   429.984   441.985    80.399
+  9      bbar      -5 [6]   10> {-2}
+                                -0.019     0.004     0.768     0.768     0.000
+ 10         b       5 [3]   >9 {+2}
+                                -0.001    -0.001     0.082     0.082     0.000
+ 11        W+      24     
+                                62.945     6.373   379.008   392.574    80.399
+ 12    Rem:p+      82 [1]   13> {-1}
+                                 0.000     0.000  2677.375  2677.375     0.821
+ 13    Rem:p+      82 [2]   >12 {+1}
+                                -0.000     0.000 -3487.217  3487.217     0.937
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.97632) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.58535) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.10217) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.75849) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.77596) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01533) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07373) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.1904) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.73816) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.88222) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.00816) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.66574) for g to b
+** An event exception of type ThePEG::Exception occurred while generating event number 6052: 
+Failed to generate the shower after 100 attempts in ShowerHandler::cascade()
+The event will be discarded.
+******************************************************************************
+Event number 6052 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[sbar,s->W-,bbar,b,W+]
+--- incoming:
+  3      sbar      -3 [1] (5,6)   {-1}
+                                 0.000     0.000    78.977    78.977     0.000
+  4         s       3 [2] (7)   {+2}
+                                 0.000     0.000  -166.332   166.332     0.000
+--- intermediates:
+  5      sbar      -3 [3] (7)   {-2}
+                                 0.068    -0.009    78.034    78.031    -0.648
+  6         g      21 [3] (9,10)   {+2,-1}
+                                -0.068     0.009     0.943     0.946     0.018
+  7        Z0      23 [4,5]    
+                                 0.068    -0.009   -88.298   244.363   227.852
+--- outgoing:
+  8        W-     -24     
+                                -6.033   -49.506  -112.214   146.776    80.399
+  9      bbar      -5 [6]   12> {-1}
+                                -0.005    -0.001     0.157     0.157     0.000
+ 10         b       5 [6]   >13 {+2}
+                                -0.063     0.010     0.786     0.789     0.000
+ 11        W+      24     
+                                 6.102    49.497    23.916    97.587    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      sbar      -3 [1] (5,6)   {-1}
+                                 0.000     0.000    78.977    78.977     0.000
+  4         s       3 [2] (7)   {+2}
+                                 0.000     0.000  -166.332   166.332     0.000
+  5      sbar      -3 [3] (7)   {-2}
+                                 0.068    -0.009    78.034    78.031    -0.648
+  6         g      21 [3] (9,10)   {+2,-1}
+                                -0.068     0.009     0.943     0.946     0.018
+  7        Z0      23 [4,5]    
+                                 0.068    -0.009   -88.298   244.363   227.852
+--- final:
+  8        W-     -24     
+                                -6.033   -49.506  -112.214   146.776    80.399
+  9      bbar      -5 [6]   12> {-1}
+                                -0.005    -0.001     0.157     0.157     0.000
+ 10         b       5 [6]   >13 {+2}
+                                -0.063     0.010     0.786     0.789     0.000
+ 11        W+      24     
+                                 6.102    49.497    23.916    97.587    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3421.023  3421.023     0.928
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -3333.668  3333.668     0.916
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07695) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.66015) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12357) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14847) for g to bbar
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 7178: 
+Failed to generate the shower after 100 attempts in ShowerHandler::cascade()
+The event will be discarded.
+******************************************************************************
+Event number 7178 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[u,ubar->W-,bbar,b,W+]
+--- incoming:
+  3         u       2 [1] (6,7)   {+1}
+                                -0.000     0.000   229.069   229.069     0.000
+  4      ubar      -2 [2] (8)   {-2}
+                                 0.000     0.000   -30.928    30.928     0.000
+--- intermediates:
+  5         d       1 [6] (8)   {+2}
+                                 1.979   -14.861   132.355    99.365   -88.708
+  6         u       2 [3] (5,11)   {+2}
+                                -0.075     0.027   217.255   217.255    -0.495
+  7         g      21 [3] (9,10)   {+1,-2}
+                                 0.075    -0.027    11.814    11.815     0.081
+--- outgoing:
+  8        W-     -24 [4,5]    
+                                 1.979   -14.861   101.428   130.293    80.399
+  9      bbar      -5 [7]   13> {-2}
+                                 0.001    -0.038     4.920     4.920     0.000
+ 10         b       5 [7]   >12 {+1}
+                                 0.074     0.010     6.894     6.895     0.000
+ 11        W+      24 [6]    
+                                -2.054    14.888    84.900   117.889    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         u       2 [1] (6,7)   {+1}
+                                -0.000     0.000   229.069   229.069     0.000
+  4      ubar      -2 [2] (8)   {-2}
+                                 0.000     0.000   -30.928    30.928     0.000
+  5         d       1 [6] (8)   {+2}
+                                 1.979   -14.861   132.355    99.365   -88.708
+  6         u       2 [3] (5,11)   {+2}
+                                -0.075     0.027   217.255   217.255    -0.495
+  7         g      21 [3] (9,10)   {+1,-2}
+                                 0.075    -0.027    11.814    11.815     0.081
+--- final:
+  8        W-     -24 [4,5]    
+                                 1.979   -14.861   101.428   130.293    80.399
+  9      bbar      -5 [7]   13> {-2}
+                                 0.001    -0.038     4.920     4.920     0.000
+ 10         b       5 [7]   >12 {+1}
+                                 0.074     0.010     6.894     6.895     0.000
+ 11        W+      24 [6]    
+                                -2.054    14.888    84.900   117.889    80.399
+ 12    Rem:p+      82 [1]   10> {-1}
+                                 0.000     0.000  3270.930  3270.931     0.907
+ 13    Rem:p+      82 [2]   >9 {+2}
+                                -0.000     0.000 -3469.072  3469.072     0.934
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 7379: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 7379 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[g,g->W-,bbar,b,W+]
+--- incoming:
+  3         g      21     
+                                 0.000     0.000   128.112   128.112     0.000
+  4         g      21     
+                                 0.000    -0.000  -487.410   487.410     0.000
+--- intermediates:
+  5         t       6     
+                               -27.870    55.386  -389.972   429.328   168.524
+  6      tbar      -6     
+                                27.870   -55.386    30.674   186.194   172.867
+  7         g      21     
+                                 0.000    -0.000  -359.297   615.522   499.773
+--- outgoing:
+  8        W-     -24     
+                               -28.067   -22.068   -34.105    94.350    80.399
+  9      bbar      -5     
+                                55.937   -33.318    64.779    91.844     0.000
+ 10         b       5     
+                               -58.362    41.130  -280.238   289.191     0.000
+ 11        W+      24     
+                                30.493    14.256  -109.734   140.137    80.399
+------------------------------------------------------------------------------
+Step 1
+--- final:
+ 12    Rem:p+      82 [1]   13> {+1,-2}
+                                 0.000     0.000  3371.887  3371.888     0.921
+ 13    Rem:p+      82 [2]   >12 {+2,-3}
+                                -0.000     0.000 -3012.590  3012.590     0.870
+------------------------------------------------------------------------------
+     Sum of momenta:         -5.97e-14         0       359  6.38e+03  6.37e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03129) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.68461) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21386) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.93151) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.34026) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.76272) for g to b
+** An event exception of type ThePEG::Exception occurred while generating event number 8497: 
+Failed to generate the shower after 100 attempts in ShowerHandler::cascade()
+The event will be discarded.
+******************************************************************************
+Event number 8497 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (6,8)   {-1}
+                                -0.000     0.000     9.232     9.232     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -763.532   763.532     0.000
+--- intermediates:
+  5      ubar      -2 [6] (7)   {-1}
+                                 0.010     0.008   758.768  -758.768    -0.425
+  6      dbar      -1 [3] (5,11)   {-1}
+                                -4.687    -0.335   279.528  -272.808   -61.105
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.010     0.008    -4.763     4.764     0.031
+--- outgoing:
+  8        W-     -24 [3]    
+                                 4.687     0.335  -270.296   282.039    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.005    -0.005    -0.349     0.349     0.000
+ 10         b       5 [7]   >13 {+2}
+                                 0.015     0.013    -4.414     4.414     0.000
+ 11        W+      24 [6]    
+                                -4.697    -0.344  -479.240   485.960    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (6,8)   {-1}
+                                -0.000     0.000     9.232     9.232     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -763.532   763.532     0.000
+  5      ubar      -2 [6] (7)   {-1}
+                                 0.010     0.008   758.768  -758.768    -0.425
+  6      dbar      -1 [3] (5,11)   {-1}
+                                -4.687    -0.335   279.528  -272.808   -61.105
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.010     0.008    -4.763     4.764     0.031
+--- final:
+  8        W-     -24 [3]    
+                                 4.687     0.335  -270.296   282.039    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.005    -0.005    -0.349     0.349     0.000
+ 10         b       5 [7]   >13 {+2}
+                                 0.015     0.013    -4.414     4.414     0.000
+ 11        W+      24 [6]    
+                                -4.697    -0.344  -479.240   485.960    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3490.768  3490.768     0.937
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -2736.468  2736.468     0.830
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12831) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.44162) for g to b
+** An event exception of type ThePEG::Exception occurred while generating event number 8851: 
+Failed to generate the shower after 100 attempts in ShowerHandler::cascade()
+The event will be discarded.
+******************************************************************************
+Event number 8851 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (6,8)   {-1}
+                                 0.000     0.000    12.985    12.985     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000     0.000  -546.301   546.301     0.000
+--- intermediates:
+  5      ubar      -2 [6] (7)   {-1}
+                                -0.142    -0.078   538.174  -538.172    -1.521
+  6      dbar      -1 [3] (5,11)   {-1}
+                                21.821     0.048   297.497  -283.472   -92.866
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                -0.142    -0.078    -8.127     8.129     0.091
+--- outgoing:
+  8        W-     -24 [3]    
+                               -21.821    -0.048  -284.512   296.458    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.065    -0.087    -4.660     4.661     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.077     0.009    -3.467     3.468     0.000
+ 11        W+      24 [6]    
+                                21.963     0.126  -240.677   254.699    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (6,8)   {-1}
+                                 0.000     0.000    12.985    12.985     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000     0.000  -546.301   546.301     0.000
+  5      ubar      -2 [6] (7)   {-1}
+                                -0.142    -0.078   538.174  -538.172    -1.521
+  6      dbar      -1 [3] (5,11)   {-1}
+                                21.821     0.048   297.497  -283.472   -92.866
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                -0.142    -0.078    -8.127     8.129     0.091
+--- final:
+  8        W-     -24 [3]    
+                               -21.821    -0.048  -284.512   296.458    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.065    -0.087    -4.660     4.661     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.077     0.009    -3.467     3.468     0.000
+ 11        W+      24 [6]    
+                                21.963     0.126  -240.677   254.699    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3487.015  3487.015     0.937
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -2953.699  2953.699     0.862
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+** An event exception of type ThePEG::Exception occurred while generating event number 8926: 
+Failed to generate the shower after 100 attempts in ShowerHandler::cascade()
+The event will be discarded.
+No more warnings of this kind will be reported.
+******************************************************************************
+Event number 8926 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[d,dbar->W-,bbar,b,W+]
+--- incoming:
+  3         d       1 [1] (6,7)   {+1}
+                                 0.000     0.000   239.505   239.505     0.000
+  4      dbar      -1 [2] (11)   {-2}
+                                 0.000     0.000   -30.312    30.312     0.000
+--- intermediates:
+  5         u       2 [6] (11)   {+2}
+                               -12.603    14.451   130.794    99.796   -86.691
+  6         d       1 [3] (5,8)   {+2}
+                                 0.016     0.104   225.471   225.466    -1.525
+  7         g      21 [3] (9,10)   {+1,-2}
+                                -0.016    -0.104    14.034    14.039     0.365
+--- outgoing:
+  8        W-     -24 [6]    
+                                12.619   -14.347    94.678   125.670    80.399
+  9      bbar      -5 [7]   13> {-2}
+                                -0.016    -0.238     7.532     7.536     0.000
+ 10         b       5 [7]   >12 {+1}
+                                 0.000     0.133     6.502     6.503     0.000
+ 11        W+      24 [4,5]    
+                               -12.603    14.451   100.481   130.108    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         d       1 [1] (6,7)   {+1}
+                                 0.000     0.000   239.505   239.505     0.000
+  4      dbar      -1 [2] (11)   {-2}
+                                 0.000     0.000   -30.312    30.312     0.000
+  5         u       2 [6] (11)   {+2}
+                               -12.603    14.451   130.794    99.796   -86.691
+  6         d       1 [3] (5,8)   {+2}
+                                 0.016     0.104   225.471   225.466    -1.525
+  7         g      21 [3] (9,10)   {+1,-2}
+                                -0.016    -0.104    14.034    14.039     0.365
+--- final:
+  8        W-     -24 [6]    
+                                12.619   -14.347    94.678   125.670    80.399
+  9      bbar      -5 [7]   13> {-2}
+                                -0.016    -0.238     7.532     7.536     0.000
+ 10         b       5 [7]   >12 {+1}
+                                 0.000     0.133     6.502     6.503     0.000
+ 11        W+      24 [4,5]    
+                               -12.603    14.451   100.481   130.108    80.399
+ 12    Rem:p+      82 [1]   10> {-1}
+                                 0.000     0.000  3260.495  3260.495     0.906
+ 13    Rem:p+      82 [2]   >9 {+2}
+                                -0.000     0.000 -3469.688  3469.688     0.934
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.97656) for g to b
+******************************************************************************
+Event number 9358 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[g,g->W-,bbar,b,W+]
+--- incoming:
+  3         g      21 [1] (5,7)   {+1,-2}
+                                 0.000    -0.000    81.223    81.223     0.000
+  4         g      21 [2] (10)   {+3,-1}
+                                 0.000    -0.000  -192.595   192.595     0.000
+--- intermediates:
+  5         b       5 [3] (10)   {+1}
+                                 0.004    -0.020   191.681  -191.681    -0.293
+  6      tbar      -6 [7]    {-2}
+                                 5.071     5.409   -74.665   184.586   168.648
+  7      bbar      -5 [3] (6,11)   {-2}
+                                -0.004     0.020  -110.458   272.903   249.550
+--- outgoing:
+  8        W-     -24     
+                                -6.529     3.533    24.773    84.456    80.399
+  9      bbar      -5    12> {-2}
+                                11.600     1.876   -99.438   100.130     0.000
+ 10         b       5 [4,5]   >13 {+3}
+                                 0.004    -0.020    -0.914     0.914     0.000
+ 11        W+      24 [7]    
+                                -5.075    -5.389   -35.793    88.317    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         g      21 [1] (5,7)   {+1,-2}
+                                 0.000    -0.000    81.223    81.223     0.000
+  4         g      21 [2] (10)   {+3,-1}
+                                 0.000    -0.000  -192.595   192.595     0.000
+  5         b       5 [3] (10)   {+1}
+                                 0.004    -0.020   191.681  -191.681    -0.293
+  6      tbar      -6 [7]    {-2}
+                                 5.071     5.409   -74.665   184.586   168.648
+  7      bbar      -5 [3] (6,11)   {-2}
+                                -0.004     0.020  -110.458   272.903   249.550
+--- final:
+  8        W-     -24     
+                                -6.529     3.533    24.773    84.456    80.399
+  9      bbar      -5    12> {-2}
+                                11.600     1.876   -99.438   100.130     0.000
+ 10         b       5 [4,5]   >13 {+3}
+                                 0.004    -0.020    -0.914     0.914     0.000
+ 11        W+      24 [7]    
+                                -5.075    -5.389   -35.793    88.317    80.399
+ 12    Rem:p+      82 [1]   13>>9 {+2,-1}
+                                 0.000     0.000  3418.777  3418.777     0.927
+ 13    Rem:p+      82 [2]   10>>12 {+1,-3}
+                                -0.000     0.000 -3307.405  3307.405     0.912
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.51635) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.17715) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.23026) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.5313) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.16343) for g to b
+Too many tries to generate phi in forward evolution
+******************************************************************************
+Event number 10515 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[d,dbar->W-,bbar,b,W+]
+--- incoming:
+  3         d       1 [1] (5,6)   {+1}
+                                -0.000     0.000   859.924   859.924     0.000
+  4      dbar      -1 [2] (7)   {-2}
+                                 0.000    -0.000    -9.067     9.067     0.000
+--- intermediates:
+  5         d       1 [3] (7)   {+2}
+                                 0.026    -0.038   858.728   858.727    -1.617
+  6         g      21 [3] (9,10)   {+1,-2}
+                                -0.026     0.038     1.196     1.198     0.039
+  7        Z0      23 [4,5]    
+                                 0.026    -0.038   849.661   867.794   176.475
+--- outgoing:
+  8        W-     -24     
+                                 6.699    12.621   260.451   272.952    80.399
+  9      bbar      -5 [6]   13> {-2}
+                                 0.006     0.001     0.033     0.033     0.000
+ 10         b       5 [6]   >12 {+1}
+                                -0.032     0.037     1.164     1.165     0.000
+ 11        W+      24     
+                                -6.673   -12.659   589.210   594.842    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         d       1 [1] (5,6)   {+1}
+                                -0.000     0.000   859.924   859.924     0.000
+  4      dbar      -1 [2] (7)   {-2}
+                                 0.000    -0.000    -9.067     9.067     0.000
+  5         d       1 [3] (7)   {+2}
+                                 0.026    -0.038   858.728   858.727    -1.617
+  6         g      21 [3] (9,10)   {+1,-2}
+                                -0.026     0.038     1.196     1.198     0.039
+  7        Z0      23 [4,5]    
+                                 0.026    -0.038   849.661   867.794   176.475
+--- final:
+  8        W-     -24     
+                                 6.699    12.621   260.451   272.952    80.399
+  9      bbar      -5 [6]   13> {-2}
+                                 0.006     0.001     0.033     0.033     0.000
+ 10         b       5 [6]   >12 {+1}
+                                -0.032     0.037     1.164     1.165     0.000
+ 11        W+      24     
+                                -6.673   -12.659   589.210   594.842    80.399
+ 12    Rem:p+      82 [1]   10> {-1}
+                                 0.000     0.000  2640.075  2640.076     0.815
+ 13    Rem:p+      82 [2]   >9 {+2}
+                                -0.000     0.000 -3490.932  3490.933     0.937
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.81399) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.33632) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.24105) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.44177) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.04491) for g to bbar
+******************************************************************************
+Event number 11053 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000    58.214    58.214     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000     0.000  -126.386   126.386     0.000
+--- intermediates:
+  5      ubar      -2 [3] (7)   {-1}
+                                -0.012    -0.116   123.827  -123.824    -0.853
+  6        Z0      23 [3]    
+                                 0.012     0.116   -65.613   182.038   169.803
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                -0.012    -0.116    -2.558     2.561     0.033
+--- outgoing:
+  8        W-     -24     
+                               -11.792   -10.638    -9.057    82.452    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.006    -0.080    -1.852     1.853     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.017    -0.036    -0.707     0.708     0.000
+ 11        W+      24     
+                                11.804    10.755   -56.556    99.587    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000    58.214    58.214     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000     0.000  -126.386   126.386     0.000
+  5      ubar      -2 [3] (7)   {-1}
+                                -0.012    -0.116   123.827  -123.824    -0.853
+  6        Z0      23 [3]    
+                                 0.012     0.116   -65.613   182.038   169.803
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                -0.012    -0.116    -2.558     2.561     0.033
+--- final:
+  8        W-     -24     
+                               -11.792   -10.638    -9.057    82.452    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.006    -0.080    -1.852     1.853     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.017    -0.036    -0.707     0.708     0.000
+ 11        W+      24     
+                                11.804    10.755   -56.556    99.587    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3441.786  3441.786     0.930
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -3373.614  3373.614     0.921
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+******************************************************************************
+Event number 11058 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000    17.160    17.160     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -485.225   485.225     0.000
+--- intermediates:
+  5      ubar      -2 [3] (7)   {-1}
+                                -0.138     0.293   466.723  -466.720    -1.835
+  6        Z0      23 [3]    
+                                 0.138    -0.293  -449.564   483.879   178.974
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                -0.138     0.293   -18.502    18.506     0.157
+--- outgoing:
+  8        W-     -24     
+                                20.650   -33.474  -233.327   249.905    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.056     0.249   -15.384    15.386     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.082     0.043    -3.118     3.119     0.000
+ 11        W+      24     
+                               -20.512    33.181  -216.237   233.974    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000    17.160    17.160     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -485.225   485.225     0.000
+  5      ubar      -2 [3] (7)   {-1}
+                                -0.138     0.293   466.723  -466.720    -1.835
+  6        Z0      23 [3]    
+                                 0.138    -0.293  -449.564   483.879   178.974
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                -0.138     0.293   -18.502    18.506     0.157
+--- final:
+  8        W-     -24     
+                                20.650   -33.474  -233.327   249.905    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.056     0.249   -15.384    15.386     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.082     0.043    -3.118     3.119     0.000
+ 11        W+      24     
+                               -20.512    33.181  -216.237   233.974    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3482.840  3482.840     0.936
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -3014.774  3014.775     0.871
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.69034) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.6203) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.58556) for g to bbar
+******************************************************************************
+Event number 11429 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[u,ubar->W-,bbar,b,W+]
+--- incoming:
+  3         u       2 [1] (5,6)   {+1}
+                                 0.000    -0.000   968.885   968.885     0.000
+  4      ubar      -2 [2] (7)   {-2}
+                                 0.000     0.000   -21.128    21.128     0.000
+--- intermediates:
+  5         u       2 [3] (7)   {+2}
+                                -0.019     0.025   958.852   958.849    -2.532
+  6         g      21 [3] (9,10)   {+1,-2}
+                                 0.019    -0.025    10.033    10.036     0.257
+  7        Z0      23 [4,5]    
+                                -0.019     0.025   937.724   979.976   284.654
+--- outgoing:
+  8        W-     -24     
+                               -47.813    43.457   131.214   166.901    80.399
+  9      bbar      -5 [6]   13> {-2}
+                                 0.001    -0.133     3.675     3.677     0.000
+ 10         b       5 [6]   >12 {+1}
+                                 0.019     0.108     6.358     6.359     0.000
+ 11        W+      24     
+                                47.794   -43.432   806.510   813.076    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         u       2 [1] (5,6)   {+1}
+                                 0.000    -0.000   968.885   968.885     0.000
+  4      ubar      -2 [2] (7)   {-2}
+                                 0.000     0.000   -21.128    21.128     0.000
+  5         u       2 [3] (7)   {+2}
+                                -0.019     0.025   958.852   958.849    -2.532
+  6         g      21 [3] (9,10)   {+1,-2}
+                                 0.019    -0.025    10.033    10.036     0.257
+  7        Z0      23 [4,5]    
+                                -0.019     0.025   937.724   979.976   284.654
+--- final:
+  8        W-     -24     
+                               -47.813    43.457   131.214   166.901    80.399
+  9      bbar      -5 [6]   13> {-2}
+                                 0.001    -0.133     3.675     3.677     0.000
+ 10         b       5 [6]   >12 {+1}
+                                 0.019     0.108     6.358     6.359     0.000
+ 11        W+      24     
+                                47.794   -43.432   806.510   813.076    80.399
+ 12    Rem:p+      82 [1]   10> {-1}
+                                 0.000     0.000  2531.115  2531.115     0.798
+ 13    Rem:p+      82 [2]   >9 {+2}
+                                -0.000     0.000 -3478.872  3478.872     0.935
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.98152) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.10996) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.11711) for g to b
+******************************************************************************
+Event number 11646 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000    -0.000    22.799    22.799     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -729.674   729.674     0.000
+--- intermediates:
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.055    -0.006   729.252  -729.245    -3.178
+  6        Z0      23 [3]    
+                                -0.055     0.006  -706.454   752.044   257.863
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.055    -0.006    -0.422     0.429     0.053
+--- outgoing:
+  8        W-     -24     
+                                62.139    63.613  -491.484   505.894    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.058     0.007    -0.390     0.395     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.003    -0.013    -0.032     0.034     0.000
+ 11        W+      24     
+                               -62.194   -63.607  -214.970   246.150    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000    -0.000    22.799    22.799     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -729.674   729.674     0.000
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.055    -0.006   729.252  -729.245    -3.178
+  6        Z0      23 [3]    
+                                -0.055     0.006  -706.454   752.044   257.863
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.055    -0.006    -0.422     0.429     0.053
+--- final:
+  8        W-     -24     
+                                62.139    63.613  -491.484   505.894    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.058     0.007    -0.390     0.395     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.003    -0.013    -0.032     0.034     0.000
+ 11        W+      24     
+                               -62.194   -63.607  -214.970   246.150    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3477.201  3477.201     0.935
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -2770.326  2770.326     0.835
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.92633) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.27148) for g to b
+******************************************************************************
+Event number 11886 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[g,g->W-,bbar,b,W+]
+--- incoming:
+  3         g      21 [1] (6,10)   {+1,-2}
+                                -0.000     0.000   326.537   326.537     0.000
+  4         g      21 [2] (9)   {+2,-3}
+                                 0.000     0.000   -31.024    31.024     0.000
+--- intermediates:
+  5      bbar      -5 [6] (9)   {-2}
+                                -0.076    -0.045    29.788   -29.785    -0.441
+  6      bbar      -5 [3] (5,7)   {-2}
+                                 0.056    -0.014   321.540   321.540    -0.469
+  7        Z0      23 [6]    
+                                 0.132     0.031   291.752   351.325   195.729
+--- outgoing:
+  8        W-     -24     
+                               -25.032     4.134    56.705   101.603    80.399
+  9      bbar      -5 [4,5]   13> {-3}
+                                -0.076    -0.045    -1.236     1.239     0.000
+ 10         b       5 [3]   >12 {+1}
+                                -0.056     0.014     4.996     4.997     0.000
+ 11        W+      24     
+                                25.164    -4.103   235.047   249.722    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         g      21 [1] (6,10)   {+1,-2}
+                                -0.000     0.000   326.537   326.537     0.000
+  4         g      21 [2] (9)   {+2,-3}
+                                 0.000     0.000   -31.024    31.024     0.000
+  5      bbar      -5 [6] (9)   {-2}
+                                -0.076    -0.045    29.788   -29.785    -0.441
+  6      bbar      -5 [3] (5,7)   {-2}
+                                 0.056    -0.014   321.540   321.540    -0.469
+  7        Z0      23 [6]    
+                                 0.132     0.031   291.752   351.325   195.729
+--- final:
+  8        W-     -24     
+                               -25.032     4.134    56.705   101.603    80.399
+  9      bbar      -5 [4,5]   13> {-3}
+                                -0.076    -0.045    -1.236     1.239     0.000
+ 10         b       5 [3]   >12 {+1}
+                                -0.056     0.014     4.996     4.997     0.000
+ 11        W+      24     
+                                25.164    -4.103   235.047   249.722    80.399
+ 12    Rem:p+      82 [1]   10>>13 {+2,-1}
+                                 0.000     0.000  3173.463  3173.463     0.893
+ 13    Rem:p+      82 [2]   12>>9 {+3,-2}
+                                -0.000     0.000 -3468.976  3468.976     0.934
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.33235) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.29205) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.22895) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.04374) for g to bbar
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 3.18675 2.18675 5 5 21  2.60128
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.55317) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.82906) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.87563) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.10914) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.09901) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.17877) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.09438) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.73024) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.15064) for g to b
+******************************************************************************
+Event number 14163 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000     9.704     9.704     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -826.521   826.521     0.000
+--- intermediates:
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.027    -0.004   754.239  -754.239    -0.104
+  6        Z0      23 [3]    
+                                -0.027     0.004  -744.536   763.943   171.101
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.027    -0.004   -72.281    72.281     0.016
+--- outgoing:
+  8        W-     -24     
+                                21.334   -13.464  -306.353   317.730    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.024     0.001   -65.619    65.619     0.000
+ 10         b       5 [7]   >13 {+2}
+                                 0.003    -0.005    -6.662     6.662     0.000
+ 11        W+      24     
+                               -21.361    13.468  -438.183   446.213    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000     9.704     9.704     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -826.521   826.521     0.000
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.027    -0.004   754.239  -754.239    -0.104
+  6        Z0      23 [3]    
+                                -0.027     0.004  -744.536   763.943   171.101
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.027    -0.004   -72.281    72.281     0.016
+--- final:
+  8        W-     -24     
+                                21.334   -13.464  -306.353   317.730    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.024     0.001   -65.619    65.619     0.000
+ 10         b       5 [7]   >13 {+2}
+                                 0.003    -0.005    -6.662     6.662     0.000
+ 11        W+      24     
+                               -21.361    13.468  -438.183   446.213    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3490.296  3490.296     0.937
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -2673.479  2673.479     0.820
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.31654) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.36192) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.95015) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.5211) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.82946) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.5926) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.09522) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.62778) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07435) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.20411) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.02306) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21076) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14224) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.29037) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.38244) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.48022) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.1317) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.30514) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.09417) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.13548) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.41951) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.0762) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.06316) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03639) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.63556) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.23459) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.10784) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.33569) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.36421) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.66264) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.15778) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.13191) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07107) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.89657) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.26875) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.08188) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.4159) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.26535) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.5762) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.56112) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.15193) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.6884) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.27089) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.58239) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.22316) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.83092) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01665) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.15016) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.76394) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.67468) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.24342) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.2983) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.11711) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.72978) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.06557) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.49272) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.90202) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21285) for g to b
+******************************************************************************
+Event number 20078 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[g,g->W-,bbar,b,W+]
+--- incoming:
+  3         g      21 [1] (5,6)   {+1,-2}
+                                -0.000    -0.000   715.448   715.448     0.000
+  4         g      21 [2] (7)   {+2,-3}
+                                 0.000     0.000   -55.731    55.731     0.000
+--- intermediates:
+  5      tbar      -6 [3] (7)   {-2}
+                               121.233   -19.274   595.137   523.907  -307.862
+  6         t       6 [3]    {+1}
+                              -121.233    19.274   120.311   191.541    84.525
+  7      tbar      -6 [4,5]    {-3}
+                               121.233   -19.274   539.406   579.638   173.066
+--- outgoing:
+  8        W-     -24     
+                                27.639    46.937   265.653   282.847    80.399
+  9      bbar      -5    13> {-3}
+                                93.594   -66.211   273.753   296.791     0.000
+ 10         b       5    >12 {+1}
+                                -2.296    -2.236     0.349     3.223     0.000
+ 11        W+      24     
+                              -118.938    21.509   119.962   188.318    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         g      21 [1] (5,6)   {+1,-2}
+                                -0.000    -0.000   715.448   715.448     0.000
+  4         g      21 [2] (7)   {+2,-3}
+                                 0.000     0.000   -55.731    55.731     0.000
+  5      tbar      -6 [3] (7)   {-2}
+                               121.233   -19.274   595.137   523.907  -307.862
+  6         t       6 [3]    {+1}
+                              -121.233    19.274   120.311   191.541    84.525
+  7      tbar      -6 [4,5]    {-3}
+                               121.233   -19.274   539.406   579.638   173.066
+--- final:
+  8        W-     -24     
+                                27.639    46.937   265.653   282.847    80.399
+  9      bbar      -5    13> {-3}
+                                93.594   -66.211   273.753   296.791     0.000
+ 10         b       5    >12 {+1}
+                                -2.296    -2.236     0.349     3.223     0.000
+ 11        W+      24     
+                              -118.938    21.509   119.962   188.318    80.399
+ 12    Rem:p+      82 [1]   10>>13 {+2,-1}
+                                 0.000     0.000  2784.552  2784.552     0.837
+ 13    Rem:p+      82 [2]   12>>9 {+3,-2}
+                                -0.000     0.000 -3444.269  3444.269     0.931
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.2044) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00946) for g to bbar
+******************************************************************************
+Event number 20448 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000    18.328    18.328     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000     0.000  -737.764   737.764     0.000
+--- intermediates:
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.139    -0.060   704.859  -704.857    -1.746
+  6     gamma      22 [3]    
+                                -0.139     0.060  -686.531   723.185   227.313
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.139    -0.060   -32.905    32.907     0.344
+--- outgoing:
+  8        W-     -24     
+                                22.221    31.859  -566.946   573.935    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.182    -0.174   -20.278    20.279     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.043     0.114   -12.627    12.628     0.000
+ 11        W+      24     
+                               -22.360   -31.798  -119.585   149.250    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000    18.328    18.328     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000     0.000  -737.764   737.764     0.000
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.139    -0.060   704.859  -704.857    -1.746
+  6     gamma      22 [3]    
+                                -0.139     0.060  -686.531   723.185   227.313
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.139    -0.060   -32.905    32.907     0.344
+--- final:
+  8        W-     -24     
+                                22.221    31.859  -566.946   573.935    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                 0.182    -0.174   -20.278    20.279     0.000
+ 10         b       5 [7]   >13 {+2}
+                                -0.043     0.114   -12.627    12.628     0.000
+ 11        W+      24     
+                               -22.360   -31.798  -119.585   149.250    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3481.672  3481.672     0.936
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -2762.236  2762.236     0.834
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21298) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14332) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12523) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.2818) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03587) for g to bbar
+Too many tries to generate phi in forward evolution
+******************************************************************************
+Event number 21313 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[g,g->W-,bbar,b,W+]
+--- incoming:
+  3         g      21 [1] (7)   {+1,-2}
+                                 0.000    -0.000   225.993   225.993     0.000
+  4         g      21 [2] (7)   {+3,-1}
+                                 0.000     0.000  -149.310   149.310     0.000
+--- intermediates:
+  5         t       6 [7]    {+3}
+                              -105.991   -49.911   -19.212   146.153    85.244
+  6      tbar      -6 [7]    {-2}
+                               105.991    49.911    95.895   229.149   172.013
+  7         g      21 [3,4] (5,6)   {+3,-2}
+                                -0.000    -0.000    76.683   375.303   367.385
+--- outgoing:
+  8        W-     -24     
+                                -4.274    -3.917    62.457   101.973    80.399
+  9      bbar      -5    12> {-2}
+                               110.265    53.827    33.438   127.177     0.000
+ 10         b       5    >13 {+3}
+                                -0.202     2.085    -0.964     2.306     0.000
+ 11        W+      24     
+                              -105.790   -51.996   -18.249   143.847    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         g      21 [1] (7)   {+1,-2}
+                                 0.000    -0.000   225.993   225.993     0.000
+  4         g      21 [2] (7)   {+3,-1}
+                                 0.000     0.000  -149.310   149.310     0.000
+  5         t       6 [7]    {+3}
+                              -105.991   -49.911   -19.212   146.153    85.244
+  6      tbar      -6 [7]    {-2}
+                               105.991    49.911    95.895   229.149   172.013
+  7         g      21 [3,4] (5,6)   {+3,-2}
+                                -0.000    -0.000    76.683   375.303   367.385
+--- final:
+  8        W-     -24     
+                                -4.274    -3.917    62.457   101.973    80.399
+  9      bbar      -5    12> {-2}
+                               110.265    53.827    33.438   127.177     0.000
+ 10         b       5    >13 {+3}
+                                -0.202     2.085    -0.964     2.306     0.000
+ 11        W+      24     
+                              -105.790   -51.996   -18.249   143.847    80.399
+ 12    Rem:p+      82 [1]   13>>9 {+2,-1}
+                                 0.000     0.000  3274.007  3274.007     0.907
+ 13    Rem:p+      82 [2]   10>>12 {+1,-3}
+                                -0.000     0.000 -3350.690  3350.690     0.918
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.29047) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.6278) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14957) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.49566) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.34514) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.17465) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01532) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.37231) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.63903) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.19116) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.539) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.96953) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.38074) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00217) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.58281) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.22272) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.59607) for g to b
+******************************************************************************
+Event number 23240 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[u,ubar->W-,bbar,b,W+]
+--- incoming:
+  3         u       2 [1] (5,6)   {+1}
+                                -0.000     0.000  1049.502  1049.502     0.000
+  4      ubar      -2 [2] (7)   {-2}
+                                 0.000     0.000    -8.923     8.923     0.000
+--- intermediates:
+  5         u       2 [3] (7)   {+2}
+                                -0.237    -0.435  1041.916  1041.898    -6.116
+  6         g      21 [3] (9,10)   {+1,-2}
+                                 0.237     0.435     7.586     7.604     0.159
+  7        Z0      23 [4,5]    
+                                -0.237    -0.435  1032.993  1050.821   192.744
+--- outgoing:
+  8        W-     -24     
+                               -22.232   -35.467   336.904   348.885    80.399
+  9      bbar      -5 [6]   13> {-2}
+                                 0.244     0.384     7.205     7.219     0.000
+ 10         b       5 [6]   >12 {+1}
+                                -0.007     0.051     0.381     0.385     0.000
+ 11        W+      24     
+                                21.994    35.032   696.089   701.936    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         u       2 [1] (5,6)   {+1}
+                                -0.000     0.000  1049.502  1049.502     0.000
+  4      ubar      -2 [2] (7)   {-2}
+                                 0.000     0.000    -8.923     8.923     0.000
+  5         u       2 [3] (7)   {+2}
+                                -0.237    -0.435  1041.916  1041.898    -6.116
+  6         g      21 [3] (9,10)   {+1,-2}
+                                 0.237     0.435     7.586     7.604     0.159
+  7        Z0      23 [4,5]    
+                                -0.237    -0.435  1032.993  1050.821   192.744
+--- final:
+  8        W-     -24     
+                               -22.232   -35.467   336.904   348.885    80.399
+  9      bbar      -5 [6]   13> {-2}
+                                 0.244     0.384     7.205     7.219     0.000
+ 10         b       5 [6]   >12 {+1}
+                                -0.007     0.051     0.381     0.385     0.000
+ 11        W+      24     
+                                21.994    35.032   696.089   701.936    80.399
+ 12    Rem:p+      82 [1]   10> {-1}
+                                 0.000     0.000  2450.498  2450.498     0.785
+ 13    Rem:p+      82 [2]   >9 {+2}
+                                -0.000     0.000 -3491.077  3491.077     0.937
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.85241) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.28419) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12893) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00409) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.45541) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.49369) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.91319) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.72997) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.0006) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14358) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.30591) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.3683) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.13214) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.56723) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.58552) for g to b
+******************************************************************************
+Event number 24862 (id: LHC-Matchbox-WWbbBar_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,12)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,13)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEGenericProcesses[ubar,u->W-,bbar,b,W+]
+--- incoming:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000     7.931     7.931     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -945.988   945.988     0.000
+--- intermediates:
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.023    -2.849   842.912  -842.869    -8.991
+  6        Z0      23 [3]    
+                                -0.023     2.849  -834.981   850.800   163.276
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.023    -2.849  -103.076   103.119     0.881
+--- outgoing:
+  8        W-     -24     
+                                -6.138    -3.877  -356.463   365.489    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.130    -2.823   -97.044    97.086     0.000
+ 10         b       5 [7]   >13 {+2}
+                                 0.153    -0.026    -6.032     6.034     0.000
+ 11        W+      24     
+                                 6.115     6.726  -478.518   485.310    80.399
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3      ubar      -2 [1] (5,6)   {-1}
+                                 0.000     0.000     7.931     7.931     0.000
+  4         u       2 [2] (7)   {+2}
+                                 0.000    -0.000  -945.988   945.988     0.000
+  5      ubar      -2 [3] (7)   {-1}
+                                 0.023    -2.849   842.912  -842.869    -8.991
+  6        Z0      23 [3]    
+                                -0.023     2.849  -834.981   850.800   163.276
+  7         g      21 [4,5] (9,10)   {+2,-1}
+                                 0.023    -2.849  -103.076   103.119     0.881
+--- final:
+  8        W-     -24     
+                                -6.138    -3.877  -356.463   365.489    80.399
+  9      bbar      -5 [7]   12> {-1}
+                                -0.130    -2.823   -97.044    97.086     0.000
+ 10         b       5 [7]   >13 {+2}
+                                 0.153    -0.026    -6.032     6.034     0.000
+ 11        W+      24     
+                                 6.115     6.726  -478.518   485.310    80.399
+ 12    Rem:p+      82 [1]   >9 {+1}
+                                 0.000     0.000  3492.069  3492.069     0.937
+ 13    Rem:p+      82 [2]   10> {-2}
+                                -0.000     0.000 -2554.012  2554.012     0.802
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.48541) for g to b
+final integrated cross section is ( 0.20555 +/- 0.00129926 ) nb
 
 
 
-Note: In this run 69 of the 5003 accepted events
+Note: In this run 349 of the 25023 accepted events
 were found with a weight W larger than the expected Wmax.
 This corresponds to a cross section difference between:
-   UnitWeights:       0.205501nb
-   AlmostUnweighted:  0.208721nb
+   UnitWeights:       0.20555nb
+   AlmostUnweighted:  0.210129nb
  use 'set Sampler:AlmostUnweighted On' to switch to non-unit weights.
 
 The maximum weight determined in the read/integrate step has been enhanced by 
    set /Herwig/Samplers/Sampler:MaxEnhancement 1.1.
-If the rate of excessions (1.37917%) or the change of the cross section is large,
+If the rate of excessions (1.39472%) or the change of the cross section is large,
 you can try to:
 
 Enhance the number of points used in the read/integrate step
@@ -18849,7 +20257,7 @@ don't hesitate to contact herwig@projects.hepforge.org.
 
 
 The following exception classes were reported in this run:
-ThePEG::Exception eventerror (3 times)
+ThePEG::Exception eventerror (23 times)
 
 Miscellaneous output from modules to the standard output:
 
@@ -18857,10 +20265,10 @@ Statistics for the UE process:
                                        generated    number of    Cross-section
                                           events     attempts             (nb)
 ==============================================================================
-Total:                                    134553       134553      5.55611e+07
+Total:                                    272023       272023      5.55963e+07
 ==============================================================================
 Per matrix element breakdown:
-MEQCD2to2Fast                             134553       134553      5.55611e+07
+MEQCD2to2Fast                             272023       272023      5.55963e+07
 ==============================================================================
 
 ==============================================================================
