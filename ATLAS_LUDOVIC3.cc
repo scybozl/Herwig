@@ -108,7 +108,7 @@ namespace Rivet {
       foreach (const Jet* j, central_jets) {
         bool isbJet = false;
         foreach (const GenParticle* b, B_hadrons) {
-          if (deltaR(j->momentum(), FourMomentum(b->momentum())) < 0.4) isbJet = true;
+          if (deltaR(j->momentum(), FourMomentum(b->momentum())) < 0.35) isbJet = true;
         }
         if (isbJet) b_jets.push_back(j);
       }
