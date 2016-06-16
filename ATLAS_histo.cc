@@ -148,13 +148,14 @@ namespace Rivet {
           foreach (const Jet* j, central_jets)
             HT += fabs(j->pT());
           // Keep events with HT > 130 GeV
-          //if (HT > 130.0*GeV) {
+          if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
             if (b_jets.size() > 1) {
 		 if (MET >= 20.0*GeV) {
               		passed_emu = true;
 		}
             }
+	}
 	//}
 	//}
 
