@@ -222,11 +222,11 @@ set /Herwig/Analysis/HepMCFile:Units GeV_mm
 
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
 
-create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
-insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
-
 read Matchbox/IncreaseVerbosity.in
 set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
+
+create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
+insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
 
 cd /Herwig/Generators
 saverun LHC-Matchbox-TTBA-FULL_LO EventGenerator
