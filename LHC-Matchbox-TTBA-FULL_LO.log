@@ -18852,10 +18852,862 @@ Too many tries to generate phi in forward evolution
 Too many tries to generate phi in forward evolution
 Too many tries to generate phi in forward evolution
 Too many tries to generate phi in forward evolution
-final integrated cross section is ( 0.14731 +/- 0.00194324 ) nb
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+Forward soft weight problem 2.56241 1.56241 5 5 21  0.105766
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.671356
+kappa = 0.504542
+xa = 1.34632
+root^2= -0.0203763Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.25268) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.27309) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.310067
+kappa = 0.50267
+xa = 1.37855
+root^2= -0.0463252Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.78186) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.76593) for g to b
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.365503
+kappa = 0.303481
+xa = 1.48416
+root^2= -0.0178178Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.698711
+kappa = 0.316848
+xa = 1.49375
+root^2= -0.0128984Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.06604) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03009) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.22734) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 3.13534) for g to bbar
+Too many tries to generate phi
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.659727
+kappa = 0.443717
+xa = 1.39848
+root^2= -0.0389951PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.89995) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.55106) for g to bbar
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.926946
+kappa = 0.119267
+xa = 1.8361
+root^2= -0.00782782PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.68344) for g to b
+Resetting max weight for decay t ->   b  e+  nu_e  17.9309  18.9334  172000
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.492483
+kappa = 0.484795
+xa = 1.3163
+root^2= -0.0196204Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.17638) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.26689) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 20126: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 20126 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000    -0.000   441.324   441.324     0.000
+  4         g      21     
+                                 0.000     0.000  -275.104   275.104     0.000
+--- intermediates:
+  5         g      21     
+                                 0.000     0.000   166.220   716.428   696.879
+--- outgoing:
+  6      tbar      -6     
+                               144.728  -117.935  -162.272   301.282   172.000
+  7         t       6     
+                              -144.728   117.935   328.492   415.145   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   9> {+1,-2}
+                                 0.000     0.000  3058.676  3058.676     0.877
+  9    Rem:p+      82 [2]   >8 {+2,-3}
+                                -0.000     0.000 -3224.896  3224.896     0.901
+------------------------------------------------------------------------------
+     Sum of momenta:         -3.37e-14         0      -166  6.28e+03  6.28e+03
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.771703
+kappa = 0.372652
+xa = 1.52571
+root^2= -0.0400455Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.16776) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.13026) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21811) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.83865) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.18595) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.37974) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.18537) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  e-  nu_ebar  18.9334  24.7247  172000
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.715261
+kappa = 0.311753
+xa = 1.50608
+root^2= -0.0123989Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.2718) for g to b
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 25328: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 25328 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                -0.000     0.000   473.955   473.955     0.000
+  4         g      21     
+                                 0.000     0.000   -68.827    68.827     0.000
+--- intermediates:
+  5      tbar      -6     
+                                42.924    33.705   259.920   194.003  -181.384
+--- outgoing:
+  6      tbar      -6     
+                                42.924    33.705   191.093   262.829   172.000
+  7         t       6     
+                               -42.924   -33.705   214.035   279.953   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   >9 {+1,-2}
+                                 0.000     0.000  3026.045  3026.045     0.872
+  9    Rem:p+      82 [2]   8> {+3,-1}
+                                -0.000     0.000 -3431.173  3431.173     0.929
+------------------------------------------------------------------------------
+     Sum of momenta:         -8.43e-15         0      -405  6.46e+03  6.44e+03
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.51168) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.59978) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00962) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 27299: 
+TopMECorrection::deadRegionxgxa:
+upper xg bound is less than the lower xg bound.
+
+_xg         = 0.0108843
+2.*sqrt(_g) = 0.0110465
+_a  = 0.942165  ma = 166.952
+_c  = 0.000596268  mc = 4.2
+_g  = 3.05064e-05  mg = 0.95
+The event will be discarded.
+******************************************************************************
+Event number 27299 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (3,8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (4,9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21 [1] (5)   {+1,-2}
+                                -0.000     0.000   234.387   234.387     0.000
+  4         g      21 [2] (5)   {+3,-1}
+                                 0.000    -0.000  -140.053   140.053     0.000
+--- intermediates:
+  5         g      21 [3,4] (6,7)   {+3,-2}
+                                 0.000     0.000    94.334   374.439   362.361
+--- outgoing:
+  6      tbar      -6 [5]   8> {-2}
+                                38.761     0.982     4.075   176.363   172.000
+  7         t       6 [5]   >9 {+3}
+                               -38.761    -0.982    90.259   198.076   172.000
+------------------------------------------------------------------------------
+Step 1
+--- intermediates:
+  3         g      21 [1] (5)   {+1,-2}
+                                -0.000     0.000   234.387   234.387     0.000
+  4         g      21 [2] (5)   {+3,-1}
+                                 0.000    -0.000  -140.053   140.053     0.000
+  5         g      21 [3,4] (6,7)   {+3,-2}
+                                 0.000     0.000    94.334   374.439   362.361
+--- final:
+  6      tbar      -6 [5]   8> {-2}
+                                38.761     0.982     4.075   176.363   172.000
+  7         t       6 [5]   >9 {+3}
+                               -38.761    -0.982    90.259   198.076   172.000
+  8    Rem:p+      82 [1]   9>>6 {+2,-1}
+                                 0.000     0.000  3265.613  3265.613     0.906
+  9    Rem:p+      82 [2]   7>>8 {+1,-3}
+                                -0.000     0.000 -3359.947  3359.947     0.919
+------------------------------------------------------------------------------
+     Sum of momenta:                 0         0         0     7e+03     7e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.08828) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21789) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.05443) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.98756) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.591012
+kappa = 0.377471
+xa = 1.40614
+root^2= -0.0146776Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.368977
+kappa = 0.0644006
+xa = 1.75697
+root^2= -0.00329852PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.48111) for g to b
+Resetting max weight for decay t ->   b  mu+  nu_mu  18.9654  19.7421  172000
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.39147) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.45899) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03754) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.28918) for g to b
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.539339
+kappa = 0.525148
+xa = 1.29981
+root^2= -0.0340195Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.46145) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.19423) for g to b
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.497621
+kappa = 0.268875
+xa = 1.49913
+root^2= -0.0203793Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 3.05013) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.182) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.694744
+kappa = 0.0830989
+xa = 1.82151
+root^2= -0.0410204Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.48477) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.25864) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14941) for g to bbar
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.401162
+kappa = 0.172845
+xa = 1.6012
+root^2= -0.00943684Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.669329
+kappa = 0.403981
+xa = 1.44726
+root^2= -0.0545173PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01069) for g to b
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 41448: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 41448 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000    -0.000   329.251   329.251     0.000
+  4         g      21     
+                                 0.000     0.000  -252.922   252.922     0.000
+--- intermediates:
+  5      tbar      -6     
+                                20.836  -204.611   398.744    52.280  -445.604
+--- outgoing:
+  6      tbar      -6     
+                                20.836  -204.611   145.822   305.201   172.000
+  7         t       6     
+                               -20.836   204.611   -69.493   276.971   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   >9 {+1,-2}
+                                 0.000     0.000  3170.749  3170.749     0.893
+  9    Rem:p+      82 [2]   8> {+3,-1}
+                                -0.000     0.000 -3247.078  3247.078     0.904
+------------------------------------------------------------------------------
+     Sum of momenta:          -3.1e-14         0     -76.3  6.42e+03  6.42e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.08709) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.25891) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.91386) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.592531
+kappa = 0.489086
+xa = 1.3427
+root^2= -0.0426714Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.02062) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.540471
+kappa = 0.357691
+xa = 1.51983
+root^2= -0.127172PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.51161) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 45596: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 45596 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000     0.000   148.642   148.642     0.000
+  4         g      21     
+                                 0.000     0.000  -456.297   456.297     0.000
+--- intermediates:
+  5         g      21     
+                                 0.000     0.000  -307.654   604.939   520.865
+--- outgoing:
+  6      tbar      -6     
+                              -150.502   -96.784  -245.447   349.065   172.000
+  7         t       6     
+                               150.502    96.784   -62.207   255.874   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   >9 {+1,-2}
+                                 0.000     0.000  3351.357  3351.358     0.918
+  9    Rem:p+      82 [2]   8> {+3,-1}
+                                -0.000     0.000 -3043.703  3043.703     0.875
+------------------------------------------------------------------------------
+     Sum of momenta:         -5.59e-14         0       308   6.4e+03  6.39e+03
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 1.39967 0.399671 5 5 21  2.18284
+** An event exception of type ThePEG::Exception occurred while generating event number 46189: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 46189 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000     0.000   127.931   127.931     0.000
+  4         g      21     
+                                 0.000    -0.000  -356.034   356.034     0.000
+--- intermediates:
+  5      tbar      -6     
+                               -67.563   -44.060   131.716   -62.081  -141.426
+--- outgoing:
+  6      tbar      -6     
+                               -67.563   -44.060  -224.317   293.953   172.000
+  7         t       6     
+                                67.563    44.060    -3.785   190.012   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   >9 {+1,-2}
+                                 0.000     0.000  3372.069  3372.069     0.921
+  9    Rem:p+      82 [2]   8> {+3,-1}
+                                -0.000     0.000 -3143.966  3143.966     0.889
+------------------------------------------------------------------------------
+     Sum of momenta:         -4.36e-14         0       228  6.52e+03  6.51e+03
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.66076) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.82675) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.2328) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.48655) for g to bbar
+Too many tries to generate phi
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.18875) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.38254) for g to b
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 50202: 
+Event handler 'EventHandler' found energy-momentum non-conservation by (-0.0122779,-0.0220486,-0.000941981;0.00143542) GeV after generating step number 4.
+
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.61759) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.08459) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.92167) for g to b
+** An event exception of type ThePEG::Exception occurred while generating event number 53739: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 53739 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000     0.000   296.688   296.688     0.000
+  4         g      21     
+                                 0.000     0.000  -139.044   139.044     0.000
+--- intermediates:
+  5         t       6     
+                               -87.016   -60.756   196.259    71.004  -211.516
+--- outgoing:
+  6      tbar      -6     
+                                87.016    60.756   100.429   225.683   172.000
+  7         t       6     
+                               -87.016   -60.756    57.215   210.049   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   9> {+1,-2}
+                                 0.000     0.000  3203.312  3203.312     0.898
+  9    Rem:p+      82 [2]   >8 {+2,-3}
+                                -0.000     0.000 -3360.956  3360.956     0.919
+------------------------------------------------------------------------------
+     Sum of momenta:          -1.7e-14         0      -158  6.56e+03  6.56e+03
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.22943) for g to bbar
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.735498
+kappa = 0.474526
+xa = 1.41121
+root^2= -0.0249651Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.860689
+kappa = 0.0628875
+xa = 1.82005
+root^2= -0.000163467PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.22762) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.66575) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14204) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.26326) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.66823) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  mu-  nu_mubar  19.7421  26.1591  172000
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.87522) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.27206) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.06704) for g to bbar
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.288779
+kappa = 0.159745
+xa = 1.75006
+root^2= -0.0711541Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.804715
+kappa = 0.157008
+xa = 1.7582
+root^2= -0.0426119Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.598472
+kappa = 0.0681811
+xa = 1.76649
+root^2= -0.0133942** An event exception of type ThePEG::Exception occurred while generating event number 63452: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+******************************************************************************
+Event number 63452 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000    -0.000   292.813   292.813     0.000
+  4         g      21     
+                                 0.000     0.000  -178.320   178.320     0.000
+--- intermediates:
+  5      tbar      -6     
+                              -105.925   -16.080   344.433    83.703  -350.866
+--- outgoing:
+  6      tbar      -6     
+                              -105.925   -16.080   166.113   262.023   172.000
+  7         t       6     
+                               105.925    16.080   -51.620   209.111   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   >9 {+1,-2}
+                                 0.000     0.000  3207.187  3207.187     0.898
+  9    Rem:p+      82 [2]   8> {+3,-1}
+                                -0.000     0.000 -3321.680  3321.680     0.914
+------------------------------------------------------------------------------
+     Sum of momenta:         -2.18e-14         0      -114  6.53e+03  6.53e+03
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 1.62951 0.629515 5 5 21  4.78874
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.89198) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.441083
+kappa = 0.306875
+xa = 1.56635
+root^2= -0.116951Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.91323) for g to b
+Forward soft weight problem 1.46578 0.465783 5 5 21  1.06443
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.51805) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.58035) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.85649) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.86031) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.04578) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.69896) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 71820: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+No more warnings of this kind will be reported.
+******************************************************************************
+Event number 71820 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000    -0.000   736.178   736.178     0.000
+  4         g      21     
+                                 0.000     0.000  -248.728   248.728     0.000
+--- intermediates:
+  5         t       6     
+                              -106.920  -219.822   140.046    69.312  -273.061
+--- outgoing:
+  6      tbar      -6     
+                               106.920   219.822   596.131   666.866   172.000
+  7         t       6     
+                              -106.920  -219.822  -108.682   318.040   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   9> {+1,-2}
+                                 0.000     0.000  2763.822  2763.822     0.834
+  9    Rem:p+      82 [2]   >8 {+2,-3}
+                                -0.000     0.000 -3251.272  3251.272     0.904
+------------------------------------------------------------------------------
+     Sum of momenta:         -3.05e-14         0      -487  6.02e+03     6e+03
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.21393) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.65555
+kappa = 0.0756231
+xa = 1.8121
+root^2= -0.0353828Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.570591
+kappa = 0.233039
+xa = 1.56591
+root^2= -0.042348Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.93075) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.06622) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.3056) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.99638) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.55489) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.913513
+kappa = 0.13309
+xa = 1.78958
+root^2= -0.000169379Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.370995
+kappa = 0.117462
+xa = 1.77269
+root^2= -0.060356Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.35526) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.04031) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.87041) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.38804) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.08183) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.37804) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.38738) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.33499) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.53205) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.20113) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.531769
+kappa = 0.355376
+xa = 1.41843
+root^2= -0.018104Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+******************************************************************************
+Event number 83640 (id: LHC-Matchbox-TTBA-FULL_LO) performed by EventHandler
+==============================================================================
+
+--- Colliding particles:
+  1        p+    2212  (8)   
+                                 0.000     0.000  3500.000  3500.000     0.938
+  2        p+    2212  (9)   
+                                 0.000     0.000 -3500.000  3500.000     0.938
+------------------------------------------------------------------------------
+Primary sub-process performed by MEAmplitudeggttbar[g,g->tbar,t]
+--- incoming:
+  3         g      21     
+                                 0.000     0.000   221.980   221.980     0.000
+  4         g      21     
+                                 0.000    -0.000  -368.718   368.718     0.000
+--- intermediates:
+  5         g      21     
+                                 0.000    -0.000  -146.738   590.698   572.182
+--- outgoing:
+  6      tbar      -6     
+                                -2.699   -54.712  -302.505   352.270   172.000
+  7         t       6     
+                                 2.699    54.712   155.767   238.428   172.000
+------------------------------------------------------------------------------
+Step 1
+--- final:
+  8    Rem:p+      82 [1]   9> {+1,-2}
+                                 0.000     0.000  3278.020  3278.020     0.908
+  9    Rem:p+      82 [2]   >8 {+2,-3}
+                                -0.000     0.000 -3131.282  3131.282     0.887
+------------------------------------------------------------------------------
+     Sum of momenta:         -4.52e-14         0       147  6.41e+03  6.41e+03
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.09377) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.51747) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.63743) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.33237) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.9333) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.71169) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.37724) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.78) for g to b
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.523679
+kappa = 0.126259
+xa = 1.72777
+root^2= -0.0542517Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.668881
+kappa = 0.258538
+xa = 1.5271
+root^2= -0.00779406Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01743) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.3637
+kappa = 0.541842
+xa = 1.29812
+root^2= -0.0113256Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00147) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.0594) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.64892) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.61812) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.61472) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.14566) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.53358) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.0655) for g to bbar
+MamboDecayer::decay - The Decay mode rho0->pi+ pi- pi+ pi-  cannot proceed as there is not enough phase space.
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.91546) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.1058) for g to b
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 61.1395 60.1395 5 5 21  1.8595
+Forward soft weight problem 3.46437 2.46437 5 5 21  3.8543
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.18431) for g to bbar
+final integrated cross section is ( 0.149611 +/- 0.00044081 ) nb
+
+
+
+Note: In this run 2 of the 100011 accepted events
+were found with a weight W larger than the expected Wmax.
+This corresponds to a cross section difference between:
+   UnitWeights:       0.149611nb
+   AlmostUnweighted:  0.149611nb
+ use 'set Sampler:AlmostUnweighted On' to switch to non-unit weights.
+
+The maximum weight determined in the read/integrate step has been enhanced by 
+   set /Herwig/Samplers/Sampler:MaxEnhancement 1.1.
+If the rate of excessions (0.00199978%) or the change of the cross section is large,
+you can try to:
+
+Enhance the number of points used in the read/integrate step
+   set /Herwig/Samplers/Sampler:BinSampler:InitialPoints ...
+
+and/or enhance the reference weight found in the read/integrate step
+   set /Herwig/Samplers/Sampler:MaxEnhancement 1.x
+
+If this does not help (and your process is well defined by cuts)
+don't hesitate to contact herwig@projects.hepforge.org.
+
 
 The following exception classes were reported in this run:
-ThePEG::Exception eventerror (1 times)
+ThePEG::EventHandler::ConsistencyException warning (1 times)
+ThePEG::Exception eventerror (11 times)
 
 Miscellaneous output from modules to the standard output:
 
@@ -18863,10 +19715,10 @@ Statistics for the UE process:
                                        generated    number of    Cross-section
                                           events     attempts             (nb)
 ==============================================================================
-Total:                                    133147       133147      5.56976e+07
+Total:                                    786652       786652      5.56633e+07
 ==============================================================================
 Per matrix element breakdown:
-MEQCD2to2Fast                             133147       133147      5.56976e+07
+MEQCD2to2Fast                             786652       786652      5.56633e+07
 ==============================================================================
 
 ==============================================================================

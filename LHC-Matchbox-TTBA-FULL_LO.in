@@ -204,7 +204,7 @@ set /Herwig/Analysis/Plot:EventNumber 1
 insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
 
 insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
-set /Herwig/Analysis/HepMCFile:PrintEvent 25000
+set /Herwig/Analysis/HepMCFile:PrintEvent 100000
 set /Herwig/Analysis/HepMCFile:Format GenEvent
 set /Herwig/Analysis/HepMCFile:Units GeV_mm
 

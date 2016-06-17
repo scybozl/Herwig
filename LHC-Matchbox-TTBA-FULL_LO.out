@@ -9,20 +9,20 @@ Statistics for event handler 'EventHandler':
                                        generated    number of    Cross-section
                                           events     attempts             (nb)
 ==============================================================================
-Total (from   weighted events): including vetoed events           0.147(2)e+00
+Total (from   weighted events): including vetoed events          0.1496(4)e+00
 ==============================================================================
-Total (from unweighted events):             5000         5001       6.9(1)e-03
+Total (from unweighted events):           100000       100011      6.99(2)e-03
 ==============================================================================
 Per matrix element breakdown:
-MEAmplitudeqqbarttbar[d,dbar->tbar,t]        182          182      0.25(2)e-03
-MEAmplitudeqqbarttbar[dbar,d->tbar,t]        187          187      0.26(2)e-03
-MEAmplitudeqqbarttbar[ubar,u->tbar,t]        320          320      0.44(2)e-03
-MEAmplitudeqqbarttbar[u,ubar->tbar,t]        328          328      0.45(2)e-03
-MEAmplitudeqqbarttbar[c,cbar->tbar,t]         10           10        14(4)e-06
-MEAmplitudeqqbarttbar[cbar,c->tbar,t]         10           10        14(4)e-06
-MEAmplitudeqqbarttbar[sbar,s->tbar,t]         21           21        29(6)e-06
-MEAmplitudeqqbarttbar[s,sbar->tbar,t]         19           19        26(6)e-06
-MEAmplitudeqqbarttbar[b,bbar->tbar,t]          3            3         4(2)e-06
-MEAmplitudeqqbarttbar[bbar,b->tbar,t]          4            4         6(3)e-06
-MEAmplitudeggttbar[g,g->tbar,t]             3916         3917      5.39(9)e-03
+MEAmplitudeqqbarttbar[d,dbar->tbar,t]       4008         4008     0.280(4)e-03
+MEAmplitudeqqbarttbar[dbar,d->tbar,t]       3991         3991     0.279(4)e-03
+MEAmplitudeqqbarttbar[ubar,u->tbar,t]       6707         6707     0.469(6)e-03
+MEAmplitudeqqbarttbar[u,ubar->tbar,t]       6643         6643     0.464(6)e-03
+MEAmplitudeqqbarttbar[c,cbar->tbar,t]        205          205        14(1)e-06
+MEAmplitudeqqbarttbar[cbar,c->tbar,t]        198          198        14(1)e-06
+MEAmplitudeqqbarttbar[sbar,s->tbar,t]        404          404        28(1)e-06
+MEAmplitudeqqbarttbar[s,sbar->tbar,t]        402          402        28(1)e-06
+MEAmplitudeqqbarttbar[b,bbar->tbar,t]         57           57       4.0(5)e-06
+MEAmplitudeqqbarttbar[bbar,b->tbar,t]         61           61       4.3(5)e-06
+MEAmplitudeggttbar[g,g->tbar,t]            77324        77335      5.40(2)e-03
 ==============================================================================
