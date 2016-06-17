@@ -6,7 +6,7 @@ LogY=1
 
 # BEGIN PLOT /ATLAS_histo/Eta1
 XLabel=$1^\mathrm{st}$ jet $\eta$
-YLabel=$\mathrm{d}\sigma/\mathrm{d\eta}$ [pb]
+YLabel=$\mathrm{d}\sigma/\mathrm{d}\eta$ [pb]
 LogY=1
 # END PLOT
 
