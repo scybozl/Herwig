@@ -130,8 +130,8 @@ namespace Rivet {
           // Calculate HT: scalar sum of the pTs of the leptons and all good jets
           double HT = 0;
           if(elecFS.size() >= 1 && muonFS.size() >= 1) {
-	  HT += elecFS[0].pT();
-          HT += muonFS[0].pT();
+	  HT += fabs(elecFS[0].pT());
+          HT += fabs(muonFS[0].pT());
 	  }
           foreach (const Jet* j, central_jets)
             HT += fabs(j->pT());
