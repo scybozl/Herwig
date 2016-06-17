@@ -81,6 +81,7 @@ namespace Rivet {
 	_histdeltaRl = bookHisto1D("deltaRl", 20, 0, 4);
 	_histPtMiss = bookHisto1D("PtMiss", 20, 0, 300);
 	_histHT = bookHisto1D("HT", 20, 0, 1200);
+	_histMlb = bookHisto1D("Mlb", 25, 0, 200);
     }
 
 
@@ -137,6 +138,7 @@ namespace Rivet {
       MET = p_MET.pT();
 
       bool passed_emu = false;
+      bool passed_Mlb = false;
       // Finally, the same again with the emu channel
       //if (elecFS.size() == 1 && muonFS.size() == 1) {
         // With the desired charge signs
@@ -155,6 +157,19 @@ namespace Rivet {
             if (b_jets.size() > 1) {
 		 if (MET >= 20.0*GeV) {
               		passed_emu = true;
+
+			// Additional requirements for the invariant mass event selection
+			if(elecFS.size() >= 1 && muonFS.size() >= 1) {
+
+			if(deltaR(b_jets[0]->momentum(), elecFS[0].momentum()) >= 0.4 && deltaR(b_jets[0]->momentum(), muonFS[0].momentum()) >= 0.4
+			&& deltaR(b_jets[1]->momentum(), elecFS[0].momentum()) >= 0.4 && deltaR(b_jets[1]->momentum(), muonFS[0].momentum()) >= 0.4) {
+				if(MET >= 60*GeV && (elecFS[0].momentum() + muonFS[0].momentum()).mass() >= 15*GeV) {
+					if(abs((elecFS[0].momentum() + muonFS[0].momentum()).mass() - 91*GeV) >= 10*GeV) {
+						passed_Mlb = true;
+					}
+				}
+			}
+			}
 		}
             }
 	}
@@ -202,6 +217,13 @@ namespace Rivet {
 	}
 	_histPtMiss->fill(MET, weight);
 	_histHT->fill(HT, weight);
+	if(passed_Mlb == true) {
+		if((elecFS[0].momentum() + b_jets[0]->momentum()).mass() + (muonFS[0].momentum() + b_jets[1]->momentum()).mass()
+		> (elecFS[0].momentum() + b_jets[1]->momentum()).mass() + (muonFS[0].momentum() + b_jets[0]->momentum()).mass()) {
+			_histMlb->fill((elecFS[0].momentum() + b_jets[1]->momentum()).mass(), weight);
+		}
+		else _histMlb->fill((elecFS[0].momentum() + b_jets[0]->momentum()).mass(), weight);
+	}
 
       }
     }
@@ -216,6 +238,7 @@ namespace Rivet {
 	normalize(_histdeltaRl);
 	normalize(_histPtMiss);
 	normalize(_histHT);
+	normalize(_histMlb);
       //const double norm = crossSection()/sumOfWeights();
       //typedef map<unsigned int, Histo1DPtr>::value_type IDtoHisto1DPtr; ///< @todo Remove when C++11 allowed
       //foreach (IDtoHisto1DPtr ihpair, _hMap) scale(ihpair.second, norm); ///< @todo Use normalize(ihpair.second, crossSection())
@@ -235,6 +258,7 @@ namespace Rivet {
 	Histo1DPtr _histdeltaRl;
 	Histo1DPtr _histPtMiss;
 	Histo1DPtr _histHT;
+	Histo1DPtr _histMlb;
 
 /*
     unsigned int _thresholdLimit(unsigned int histId) {
