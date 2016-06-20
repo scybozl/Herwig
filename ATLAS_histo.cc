@@ -74,12 +74,12 @@ namespace Rivet {
 */
 
 	// Create histograms
-	_histPt1 = bookHisto1D("Pt1", 20, 0, 300);
+	_histPt1 = bookHisto1D("Pt1", 25, 0, 400);
 	_histEta1 = bookHisto1D("Eta1", 20, -2.5, 2.5);
 	_histPhiemu = bookHisto1D("Phiemu", 20, 0, 2*PI);
-	_histdeltaRb = bookHisto1D("deltaRb", 20, 0, 4);
-	_histdeltaRl = bookHisto1D("deltaRl", 20, 0, 4);
-	_histPtMiss = bookHisto1D("PtMiss", 20, 0, 300);
+	_histdeltaRb = bookHisto1D("deltaRb", 20, 0, 5);
+	_histdeltaRl = bookHisto1D("deltaRl", 20, 0, 5);
+	_histPtMiss = bookHisto1D("PtMiss", 25, 0, 400);
 	_histHT = bookHisto1D("HT", 20, 0, 1200);
 	_histMlb = bookHisto1D("Mlb", 25, 0, 200);
     }
