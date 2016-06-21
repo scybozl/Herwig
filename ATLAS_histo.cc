@@ -220,9 +220,9 @@ namespace Rivet {
 	if(passed_Mlb == true) {
 		if((elecFS[0].momentum() + b_jets[0]->momentum()).mass() + (muonFS[0].momentum() + b_jets[1]->momentum()).mass()
 		> (elecFS[0].momentum() + b_jets[1]->momentum()).mass() + (muonFS[0].momentum() + b_jets[0]->momentum()).mass()) {
-			_histMlb->fill((elecFS[0].momentum() + b_jets[1]->momentum()).mass(), weight);
+			_histMlb->fill(((elecFS[0].momentum() + b_jets[1]->momentum()).mass() + (muonFS[0].momentum() + b_jets[0]->momentum()).mass())/2, weight);
 		}
-		else _histMlb->fill((elecFS[0].momentum() + b_jets[0]->momentum()).mass(), weight);
+		else _histMlb->fill(((elecFS[0].momentum() + b_jets[0]->momentum()).mass() + (muonFS[0].momentum() + b_jets[1]->momentum()).mass())/2, weight);
 	}
 
       }
