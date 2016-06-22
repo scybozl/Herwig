@@ -89,8 +89,8 @@ namespace Rivet {
     void analyze(const Event& event) {
 
       double weight = event.weight();
-      const double normWW = 1.0/3.9465;
-      weight *= normWW;
+//      const double normWW = 1.0/3.9465;
+//      weight *= normWW;
 
       /// Get the various sets of final state particles
       const Particles& elecFS = applyProjection<IdentifiedFinalState>(event, "ELEC_FS").particlesByPt();
@@ -209,7 +209,7 @@ namespace Rivet {
 
 	_histPt1->fill(b_jets[0]->pT(), weight);
 	_histEta1->fill(b_jets[0]->eta(), weight);
-	if(elecFS.size() == 1 && muonFS.size() == 1) {
+	if(elecFS.size() >= 1 && muonFS.size() >= 1) {
 		//_histPhiemu->fill(deltaPhi(elecFS[0], muonFS[0]), weight);
 		_histPhiemu->fill(mapAngle0To2Pi(elecFS[0].momentum().phi() - muonFS[0].momentum().phi()), weight);
 		_histdeltaRb->fill(deltaR(b_jets[0]->momentum(), b_jets[1]->momentum()), weight);
@@ -231,14 +231,24 @@ namespace Rivet {
 
     /// Normalise histograms etc., after the run
     void finalize() {
-	normalize(_histPt1);
-	normalize(_histEta1);
-	normalize(_histPhiemu);
-	normalize(_histdeltaRb);
-	normalize(_histdeltaRl);
-	normalize(_histPtMiss);
-	normalize(_histHT);
-	normalize(_histMlb);
+//	normalize(_histPt1);
+//	normalize(_histEta1);
+//	normalize(_histPhiemu);
+//	normalize(_histdeltaRb);
+//	normalize(_histdeltaRl);
+//	normalize(_histPtMiss);
+//	normalize(_histHT);
+//	normalize(_histMlb);
+
+	const double norm = crossSection()/sumOfWeights();
+	scale(_histPt1, norm);
+	scale(_histEta1, norm);
+	scale(_histPhiemu, norm);
+	scale(_histdeltaRb, norm);
+	scale(_histdeltaRl, norm);
+	scale(_histPtMiss, norm);
+	scale(_histHT, norm);
+	scale(_histMlb, norm);
       //const double norm = crossSection()/sumOfWeights();
       //typedef map<unsigned int, Histo1DPtr>::value_type IDtoHisto1DPtr; ///< @todo Remove when C++11 allowed
       //foreach (IDtoHisto1DPtr ihpair, _hMap) scale(ihpair.second, norm); ///< @todo Use normalize(ihpair.second, crossSection())

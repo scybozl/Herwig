@@ -130,7 +130,7 @@ read Matchbox/MadGraph-GoSam.in
 ##################################################
 
 cd /Herwig/MatrixElements/Matchbox
-set Factory:ScaleChoice Scales/HTScale
+set Factory:ScaleChoice Scales/HTPrimeScale
 
 ##################################################
 ## Matching and shower selection
@@ -166,7 +166,7 @@ read Matchbox/MuDown.in
 ## Shower scale uncertainties
 ##################################################
 
-# read Matchbox/MuQDown.in
+read Matchbox/MuQDown.in
 # read Matchbox/MuQUp.in
 
 ##################################################
