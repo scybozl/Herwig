@@ -28,23 +28,26 @@ set EventHandler:LuminosityFunction:Energy 7000*GeV
 ## Set the order of the couplings
 cd /Herwig/MatrixElements/Matchbox
 set Factory:OrderInAlphaS 2
-set Factory:OrderInAlphaEW 0
+set Factory:OrderInAlphaEW 4
 
 ## Select the process
 ## You may use identifiers such as p, pbar, j, l, mu+, h0 etc.
-do Factory:Process p p -> t tbar
-# set /Herwig/Particles/t:HardProcessWidth 0.*GeV
-# set /Herwig/Particles/tbar:HardProcessWidth 0.*GeV
+do Factory:Process p p -> e+ nu_e mu- nu_mubar b bbar
 
 ## Special settings required for on-shell production of unstable particles
 ## enable for on-shell top production
-read Matchbox/OnShellTopProduction.in
+# read Matchbox/OnShellTopProduction.in
 ## enable for on-shell W, Z or h production
 # read Matchbox/OnShellWProduction.in
 # read Matchbox/OnShellZProduction.in
 # read Matchbox/OnShellHProduction.in
 # Special settings for the VBF approximation
 # read Matchbox/VBFDiagramsOnly.in
+
+# set /Herwig/Decays/WDecayer:Initialize Yes
+
+# do /Herwig/Particles/W+:SelectDecayModes W+->nu_e,e+; W+->nu_mu,mu+;
+# do /Herwig/Particles/W-:SelectDecayModes W-->nu_ebar,e-; W-->nu_mubar,mu-;
 
 set /Herwig/Particles/t:NominalMass 172.0*GeV
 set /Herwig/Particles/t:WidthCut 1.4426*GeV
@@ -63,15 +66,8 @@ set /Herwig/Particles/W-:Width_generator:Initialize Yes
 set /Herwig/Particles/W-:Mass_generator:Initialize Yes
 set /Herwig/Decays/WDecayer:Initialize Yes
 
-do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b; t->nu_mu,mu+,b;
-do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_ebar,e-,bbar; tbar->nu_mubar,mu-,bbar;
-
 do /Herwig/Particles/mu-:SelectDecayModes
 do /Herwig/Particles/mu+:SelectDecayModes
-
-# do /Herwig/Particles/W+:SelectDecayModes W+->nu_e,e+;
-# do /Herwig/Particles/W-:SelectDecayModes W-->nu_mubar,mu-;
-
 
 ##################################################
 ## Matrix element library selection
@@ -97,13 +93,37 @@ read Matchbox/MadGraph-GoSam.in
 ## See the documentation for more options
 ##################################################
 
-# read Matchbox/DefaultPPJets.in
-
 # set /Herwig/Cuts/ChargedLeptonPairMassCut:MinMass 60*GeV
 # set /Herwig/Cuts/ChargedLeptonPairMassCut:MaxMass 120*GeV
 
 # set /Herwig/Cuts/JetFinder:Variant AntiKt
 # set /Herwig/Cuts/JetFinder:ConeRadius 0.5
+
+## cuts on additional jets
+
+# read Matchbox/DefaultPPJets.in
+
+# set /Herwig/Cuts/FirstJet:PtMin 30.*GeV
+# do /Herwig/Cuts/FirstJet:YRange -5.0 5.0
+
+# set /Herwig/Cuts/SecondJet:PtMin 30.*GeV
+# do /Herwig/Cuts/SecondJet:YRange -5.0 5.0
+
+set /Herwig/Cuts/LeptonCut:PtMin 20.*GeV
+set /Herwig/Cuts/LeptonCut:YRange -2.5 2.5
+set /Herwig/Cuts/MissingPtCut:PtMissMin 20.*GeV
+
+set /Herwig/Cuts/IdentifiedParticleCut:Matcher /Herwig/Matchers/StandardQCDParton
+set /Herwig/Cuts/IdentifiedParticleCut:PtMin 30.*GeV
+set /Herwig/Cuts/IdentifiedParticleCut:YRange -2.5 2.5
+
+
+# cd /Herwig/MatrixElements/Matchbox
+
+# do Factory:StartParticleGroup j
+# insert Factory:ParticleGroup 0 /Herwig/Particles/b
+# insert Factory:ParticleGroup 0 /Herwig/Particles/bbar
+# do Factory:EndParticleGroup
 
 # cd /Herwig/Cuts/
 
@@ -111,36 +131,6 @@ read Matchbox/MadGraph-GoSam.in
 # insert JetCuts:JetRegions 1 SecondJet
 # insert JetCuts:JetRegions 2 ThirdJet
 # insert JetCuts:JetRegions 3 FourthJet
-
-
-# set /Herwig/Cuts/FirstJet:PtMin 0.*GeV
-# do /Herwig/Cuts/FirstJet:YRange -5.0 5.0
-
-# set /Herwig/Cuts/SecondJet:PtMin 30.*GeV
-# do /Herwig/Cuts/SecondJet:YRange -5.0 5.0
-
-# set /Herwig/Cuts/LeptonCut:PtMin 20.*GeV
-# set /Herwig/Cuts/MissingPtCut:PtMissMin 20.*GeV
-
-
-cd /Herwig/MatrixElements/Matchbox
-
-do Factory:StartParticleGroup j
-insert Factory:ParticleGroup 0 /Herwig/Particles/b
-insert Factory:ParticleGroup 0 /Herwig/Particles/bbar
-insert Factory:ParticleGroup 0 /Herwig/Particles/u
-insert Factory:ParticleGroup 0 /Herwig/Particles/ubar
-insert Factory:ParticleGroup 0 /Herwig/Particles/d
-insert Factory:ParticleGroup 0 /Herwig/Particles/dbar
-insert Factory:ParticleGroup 0 /Herwig/Particles/s
-insert Factory:ParticleGroup 0 /Herwig/Particles/sbar
-insert Factory:ParticleGroup 0 /Herwig/Particles/c
-insert Factory:ParticleGroup 0 /Herwig/Particles/cbar
-insert Factory:ParticleGroup 0 /Herwig/Particles/t
-insert Factory:ParticleGroup 0 /Herwig/Particles/tbar
-insert Factory:ParticleGroup 0 /Herwig/Particles/g
-do Factory:EndParticleGroup
-
 ##################################################
 ## Scale choice
 ## See the documentation for more options
@@ -160,7 +150,7 @@ set Factory:ScaleChoice Scales/HTPrimeScale
 ## use for strict LO/NLO comparisons
 # read Matchbox/MCatLO-DefaultShower.in
 ## use for improved LO showering
-read Matchbox/LO-DefaultShower.in
+# read Matchbox/LO-DefaultShower.in
 
 # read Matchbox/MCatNLO-DipoleShower.in
 # read Matchbox/Powheg-DipoleShower.in
@@ -170,7 +160,7 @@ read Matchbox/LO-DefaultShower.in
 # read Matchbox/LO-DipoleShower.in
 
 # read Matchbox/NLO-NoShower.in
-# read Matchbox/LO-NoShower.in
+read Matchbox/LO-NoShower.in
 
 ##################################################
 ## Scale uncertainties
@@ -200,11 +190,12 @@ read Matchbox/MSTW2008.in
 ##################################################
 
 # cd /Herwig/Analysis
-# insert Rivet:Analyses 0 ATLAS_LUDOVIC
+# insert Rivet:Analyses 0 XXX_2015_ABC123
 # insert /Herwig/Generators/EventGenerator:AnalysisHandlers 0 Rivet
+# insert /Herwig/Generators/EventGenerator:AnalysisHandlers 0 HepMC
 
 # crude read step
-# set /Herwig/Samplers/CellGridSampler:InitialPoints 1000
+# set /Herwig/Samplers/CellGridSampler:InitialPoints 10000
 # set /Herwig/Samplers/CellGridSampler:ExplorationPoints 500
 # set /Herwig/Samplers/CellGridSampler:ExplorationSteps 1
 # set /Herwig/Samplers/CellGridSampler:RemapperPoints 500
@@ -222,25 +213,15 @@ set /Herwig/Analysis/HepMCFile:PrintEvent 100000
 set /Herwig/Analysis/HepMCFile:Format GenEvent
 set /Herwig/Analysis/HepMCFile:Units GeV_mm
 
-# create ThePEG::RivetAnalysis /Herwig/Analysis/RivetAnalysis RivetAnalysis.so
-# insert /Herwig/Generators/LHCGenerator:AnalysisHandlers 0 /Herwig/Analysis/RivetAnalysis
-# insert /Herwig/Analysis/RivetAnalysis:Analyses 0 ATLAS_2014_I1319490
-
-# cd /Herwig/EventHandlers
-# set EventHandler:HadronizationHandler  NULL
-
 
 ##################################################
 ## Save the generator
 ##################################################
 
-do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
-
 read Matchbox/IncreaseVerbosity.in
 set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 
-create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
-insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
+do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
 
 cd /Herwig/Generators
-saverun LHC-Matchbox-TTBA-FULL_LO_HThalf EventGenerator
+saverun LHC-Matchbox-emubbBar_LO_HThalf_cuts EventGenerator

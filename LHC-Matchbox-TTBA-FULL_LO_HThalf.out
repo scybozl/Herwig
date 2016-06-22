@@ -9,20 +9,20 @@ Statistics for event handler 'EventHandler':
                                        generated    number of    Cross-section
                                           events     attempts             (nb)
 ==============================================================================
-Total (from   weighted events): including vetoed events           0.107(3)e+00
+Total (from   weighted events): including vetoed events           0.151(1)e+00
 ==============================================================================
-Total (from unweighted events):             1000         1000       5.0(2)e-03
+Total (from unweighted events):            10000        10008      7.05(9)e-03
 ==============================================================================
 Per matrix element breakdown:
-MEGenericProcesses[d,dbar->tbar,t]            46           46      0.23(3)e-03
-MEGenericProcesses[dbar,d->tbar,t]            35           35      0.17(3)e-03
-MEGenericProcesses[ubar,u->tbar,t]            74           74      0.37(4)e-03
-MEGenericProcesses[u,ubar->tbar,t]            69           69      0.34(4)e-03
-MEGenericProcesses[c,cbar->tbar,t]             0            0                0
-MEGenericProcesses[cbar,c->tbar,t]             3            3        15(9)e-06
-MEGenericProcesses[sbar,s->tbar,t]             5            5       20(10)e-06
-MEGenericProcesses[s,sbar->tbar,t]             7            7       30(10)e-06
-MEGenericProcesses[b,bbar->tbar,t]             1            1         5(5)e-06
-MEGenericProcesses[bbar,b->tbar,t]             1            1         5(5)e-06
-MEGenericProcesses[g,g->tbar,t]              759          759       3.8(1)e-03
+MEGenericProcesses[d,dbar->tbar,t]           417          417      0.29(1)e-03
+MEGenericProcesses[dbar,d->tbar,t]           379          379      0.27(1)e-03
+MEGenericProcesses[ubar,u->tbar,t]           618          618      0.44(2)e-03
+MEGenericProcesses[u,ubar->tbar,t]           666          666      0.47(2)e-03
+MEGenericProcesses[c,cbar->tbar,t]            13           13         9(3)e-06
+MEGenericProcesses[cbar,c->tbar,t]            16           16        11(3)e-06
+MEGenericProcesses[sbar,s->tbar,t]            47           47        33(5)e-06
+MEGenericProcesses[s,sbar->tbar,t]            47           47        33(5)e-06
+MEGenericProcesses[b,bbar->tbar,t]             2            2         1(1)e-06
+MEGenericProcesses[bbar,b->tbar,t]             6            6         4(2)e-06
+MEGenericProcesses[g,g->tbar,t]             7789         7797      5.49(9)e-03
 ==============================================================================

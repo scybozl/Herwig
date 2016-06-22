@@ -66,6 +66,8 @@ set /Herwig/Particles/W-:Width_generator:Initialize Yes
 set /Herwig/Particles/W-:Mass_generator:Initialize Yes
 set /Herwig/Decays/WDecayer:Initialize Yes
 
+do /Herwig/Particles/mu-:SelectDecayModes
+do /Herwig/Particles/mu+:SelectDecayModes
 
 ##################################################
 ## Matrix element library selection

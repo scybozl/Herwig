@@ -64,6 +64,8 @@ set /Herwig/Particles/W-:Width_generator:Initialize Yes
 set /Herwig/Particles/W-:Mass_generator:Initialize Yes
 set /Herwig/Decays/WDecayer:Initialize Yes
 
+do /Herwig/Particles/mu-:SelectDecayModes
+do /Herwig/Particles/mu+:SelectDecayModes
 
 ##################################################
 ## Matrix element library selection
@@ -120,7 +122,7 @@ read Matchbox/MadGraph-GoSam.in
 ##################################################
 
 cd /Herwig/MatrixElements/Matchbox
-set Factory:ScaleChoice Scales/HTScale
+set Factory:ScaleChoice Scales/HTPrimeScale
 
 ##################################################
 ## Matching and shower selection
