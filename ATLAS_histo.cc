@@ -9,6 +9,7 @@
 #include "Rivet/Projections/DressedLeptons.hh"
 #include "Rivet/Projections/FastJets.hh"
 #include "Rivet/Math/Vector4.hh"
+#include "Rivet/Particle.hh"
 
 namespace Rivet {
 
@@ -93,8 +94,8 @@ namespace Rivet {
 //      weight *= normWW;
 
       /// Get the various sets of final state particles
-      const Particles& elecFS = applyProjection<IdentifiedFinalState>(event, "ELEC_FS").particlesByPt();
-      const Particles& muonFS = applyProjection<IdentifiedFinalState>(event, "MUON_FS").particlesByPt();
+      Particles elecFS = applyProjection<IdentifiedFinalState>(event, "ELEC_FS").particlesByPt(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
+      Particles muonFS = applyProjection<IdentifiedFinalState>(event, "MUON_FS").particlesByPt(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
       const Particles& neutrinoFS = applyProjection<IdentifiedFinalState>(event, "NEUTRINO_FS").particlesByPt();
 
       // Get all jets with pT > 30 GeV
@@ -139,6 +140,38 @@ namespace Rivet {
 
       bool passed_emu = false;
       bool passed_Mlb = false;
+
+      // Get the electrons and muons if there aren't any in the final state
+      //(event.genEvent())->print();
+      if (elecFS.empty() || muonFS.empty()) {
+         foreach (const GenParticle* p, Rivet::particles(event.genEvent())) {
+	   //cout << p->pdg_id() << " ";
+           if (p->pdg_id() != -11 && p->pdg_id() != 13) continue;
+           //const GenVertex* pv = p->production_vertex();
+           bool passed = true;
+           //if (pv) {
+           //  foreach (const GenParticle* pp, particles_in(pv)) {
+           //    if ( p->pdg_id() == pp->pdg_id() ) {
+           //      passed = false;
+           //      break;
+           //    }
+           //  }
+           //}
+      	if (passed && p->pdg_id() == -11 && Particle(*p).hasAncestor(24)) {
+	 if (!elecFS.empty()) {
+		if (Particle(*p).pT() > elecFS[0].pT()) elecFS[0] = Particle(*p);
+	 }
+	 else elecFS.push_back(Particle(*p));
+	}
+      	if (passed && p->pdg_id() == 13 && Particle(*p).hasAncestor(-24)) {
+	 if (!muonFS.empty()) {
+		if (Particle(*p).pT() > muonFS[0].pT()) muonFS[0] = Particle(*p);
+	 }
+	 else muonFS.push_back(Particle(*p));
+	}
+      }
+      }
+
       // Finally, the same again with the emu channel
       //if (elecFS.size() == 1 && muonFS.size() == 1) {
         // With the desired charge signs
