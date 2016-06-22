@@ -209,10 +209,10 @@ namespace Rivet {
 
 	_histPt1->fill(b_jets[0]->pT(), weight);
 	_histEta1->fill(b_jets[0]->eta(), weight);
+	_histdeltaRb->fill(deltaR(b_jets[0]->momentum(), b_jets[1]->momentum()), weight);
 	if(elecFS.size() >= 1 && muonFS.size() >= 1) {
 		//_histPhiemu->fill(deltaPhi(elecFS[0], muonFS[0]), weight);
 		_histPhiemu->fill(mapAngle0To2Pi(elecFS[0].momentum().phi() - muonFS[0].momentum().phi()), weight);
-		_histdeltaRb->fill(deltaR(b_jets[0]->momentum(), b_jets[1]->momentum()), weight);
 		_histdeltaRl->fill(deltaR(elecFS[0], muonFS[0]), weight);
 	}
 	_histPtMiss->fill(MET, weight);
