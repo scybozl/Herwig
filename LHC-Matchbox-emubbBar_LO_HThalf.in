@@ -51,23 +51,23 @@ do Factory:Process p p -> e+ nu_e mu- nu_mubar b bbar
 
 set /Herwig/Particles/t:NominalMass 172.0*GeV
 set /Herwig/Particles/t:WidthCut 1.4426*GeV
-set /Herwig/Particles/t:Width_generator:Initialize Yes
-set /Herwig/Particles/t:Mass_generator:Initialize Yes
-set /Herwig/Decays/Top:Initialize Yes
+# set /Herwig/Particles/t:Width_generator:Initialize Yes
+# set /Herwig/Particles/t:Mass_generator:Initialize Yes
+# set /Herwig/Decays/Top:Initialize Yes
 
-set /Herwig/Particles/W+:NominalMass 80.399*GeV
-set /Herwig/Particles/W+:WidthCut 2.09974*GeV
-set /Herwig/Particles/W+:Width_generator:Initialize Yes
-set /Herwig/Particles/W+:Mass_generator:Initialize Yes
+# set /Herwig/Particles/W+:NominalMass 80.399*GeV
+# set /Herwig/Particles/W+:WidthCut 2.09974*GeV
+# set /Herwig/Particles/W+:Width_generator:Initialize Yes
+# set /Herwig/Particles/W+:Mass_generator:Initialize Yes
 
-set /Herwig/Particles/W-:NominalMass 80.399*GeV
-set /Herwig/Particles/W-:WidthCut 2.09974*GeV
-set /Herwig/Particles/W-:Width_generator:Initialize Yes
-set /Herwig/Particles/W-:Mass_generator:Initialize Yes
-set /Herwig/Decays/WDecayer:Initialize Yes
+# set /Herwig/Particles/W-:NominalMass 80.399*GeV
+# set /Herwig/Particles/W-:WidthCut 2.09974*GeV
+# set /Herwig/Particles/W-:Width_generator:Initialize Yes
+# set /Herwig/Particles/W-:Mass_generator:Initialize Yes
+# set /Herwig/Decays/WDecayer:Initialize Yes
 
-do /Herwig/Particles/mu-:SelectDecayModes
-do /Herwig/Particles/mu+:SelectDecayModes
+# do /Herwig/Particles/mu-:SelectDecayModes
+# do /Herwig/Particles/mu+:SelectDecayModes
 
 ##################################################
 ## Matrix element library selection
@@ -145,7 +145,7 @@ set Factory:ScaleChoice Scales/HTPrimeScale
 ## use for strict LO/NLO comparisons
 # read Matchbox/MCatLO-DefaultShower.in
 ## use for improved LO showering
-read Matchbox/LO-DefaultShower.in
+# read Matchbox/LO-DefaultShower.in
 
 # read Matchbox/MCatNLO-DipoleShower.in
 # read Matchbox/Powheg-DipoleShower.in
@@ -155,7 +155,7 @@ read Matchbox/LO-DefaultShower.in
 # read Matchbox/LO-DipoleShower.in
 
 # read Matchbox/NLO-NoShower.in
-# read Matchbox/LO-NoShower.in
+read Matchbox/LO-NoShower.in
 
 ##################################################
 ## Scale uncertainties
@@ -217,6 +217,10 @@ read Matchbox/IncreaseVerbosity.in
 set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
+
+create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
+insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
+
 
 cd /Herwig/Generators
 saverun LHC-Matchbox-emubbBar_LO_HThalf EventGenerator
