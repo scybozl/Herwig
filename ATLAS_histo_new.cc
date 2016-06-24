@@ -15,17 +15,17 @@
 namespace Rivet {
 
 
-  struct ATLAS_histo_Plots { };
+  struct ATLAS_histo_new_Plots { };
 
 
 
   /// Top pair production with central jet veto
-  class ATLAS_histo : public Analysis {
+  class ATLAS_histo_new : public Analysis {
   public:
 
     /// Constructor
-    ATLAS_histo()
-      : Analysis("ATLAS_histo"),
+    ATLAS_histo_new()
+      : Analysis("ATLAS_histo_new"),
 
     _jet_ntag(0)
     //_hMap(),
@@ -38,11 +38,15 @@ namespace Rivet {
 
       const FinalState fs(Cuts::abseta < 5);
       addProjection(fs, "ALL_FS");
+
+      addProjection(MissingMomentum(fs), "MissingET");
+
 /*
       /// Get electrons from truth record
       IdentifiedFinalState elec_fs(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
       elec_fs.acceptIdPair(PID::ELECTRON);
       addProjection(elec_fs, "ELEC_FS");
+
 
       /// Get muons which pass the initial kinematic cuts:
       IdentifiedFinalState muon_fs(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
@@ -97,6 +101,7 @@ namespace Rivet {
       /// Get the various sets of final state particles
       Particles elecFS = applyProjection<IdentifiedFinalState>(event, "ELEC_FS").particlesByPt(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
       Particles muonFS = applyProjection<IdentifiedFinalState>(event, "MUON_FS").particlesByPt(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
+
       const Particles& neutrinoFS = applyProjection<IdentifiedFinalState>(event, "NEUTRINO_FS").particlesByPt();
 */
       // Get all jets with pT > 30 GeV
@@ -106,8 +111,9 @@ namespace Rivet {
       vector<const Jet*> central_jets;
       foreach(const Jet& j, jets) {
         if (j.absrap() < 2.5) central_jets.push_back(&j);
+//        else cout << " 0 ";
       }
-
+//      cout << " " << central_jets.size() << " ";
 /*
       // Get b hadrons with pT > 5 GeV
       /// @todo This is a hack -- replace with UnstableFinalState
@@ -127,9 +133,13 @@ namespace Rivet {
         //foreach (const GenParticle* b, B_hadrons) {
           //if (deltaR(j->momentum(), FourMomentum(b->momentum())) < 0.35) isbJet = true;
         //}
-
+	//if(isbJet) b_jets.push_back(j);
+//        b_jets.push_back(j);
         if (j->containsBottom()) b_jets.push_back(j);
+//        else if (b_jets.size() <= 1) cout << " 1 ";
       }
+//	cout << b_jets.size();
+//	foreach (const Jet* j, b_jets) cout << j->pT() << " ";
 /*
       // Get the MET by taking the vector sum of all neutrinos
       /// @todo Use MissingMomentum instead?
@@ -142,7 +152,7 @@ namespace Rivet {
 */
       const MissingMomentum& met = applyProjection<MissingMomentum>(event, "MissingET");
       double MET = met.missingMomentum().pT();
-
+//      cout << MET << " ";
       bool passed_emu = false;
       bool passed_Mlb = false;
 
@@ -162,6 +172,11 @@ namespace Rivet {
 			for (HepMC::GenVertex::particles_out_const_iterator ip2 = (*iv)->particles_out_const_begin(); ip2 != (*iv)->particles_out_const_end(); ++ip2) {
 				if ((*ip2)->pdg_id() == -11 || (*ip2)->pdg_id() == 13) {
 				diLeptons.push_back(Particle(*ip2));
+				//GenVertex* prodVtx = Particle(*ip2).production_vertex();
+				//foreach (const GenParticle* ancestor, particles(*iv, HepMC::ancestors)) {
+     					// cout << " " << ancestor->pdg_id() << " ";
+    				//}
+			//	cout << "\n";
 				if (diLeptons.size() == 2) diLeptonsFound = true;
 				break;
 				}
@@ -169,6 +184,7 @@ namespace Rivet {
 		}
 	}
       }
+//      cout << diLeptons[0].pT() << " " << diLeptons[1].pT() << " ";
 
 /*
       //(event.genEvent())->print();
@@ -212,11 +228,13 @@ namespace Rivet {
 	  }
 	  else cout << "NOT TWO LEPTONS!";
           foreach (const Jet* j, central_jets) HT += fabs(j->pT());
+//          HT += MET;
           // Keep events with HT > 130 GeV
           if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
             if (b_jets.size() > 1) {
 		 if (MET >= 20.0*GeV) {
+			if(diLeptons[0].pT() >= 20.*GeV && diLeptons[1].pT() >= 20.*GeV && fabs(diLeptons[0].eta()) < 2.5 && fabs(diLeptons[1].eta()) < 2.5) {
               		passed_emu = true;
 
 			// Additional requirements for the invariant mass event selection
@@ -231,9 +249,14 @@ namespace Rivet {
 				}
 			}
 			}
+			}
+//			else cout << "RAP";
 		}
+//		else cout << "MET";
             }
+//	    else cout << "b < 2";
 	}
+//	else cout << "HT";
 	//}
 	//}
 
@@ -362,6 +385,6 @@ private:
 
 
   // The hook for the plugin system
-  DECLARE_RIVET_PLUGIN(ATLAS_histo);
+  DECLARE_RIVET_PLUGIN(ATLAS_histo_new);
 
 }
