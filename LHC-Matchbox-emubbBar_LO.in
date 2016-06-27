@@ -217,8 +217,8 @@ set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
 
-create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
-insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
+# create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
+# insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
 
 
 cd /Herwig/Generators

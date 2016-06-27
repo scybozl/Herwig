@@ -66,7 +66,7 @@ Cut Type = 1
 MissingPtCut 'MissingPtCut' matching 'Neutrino' within:
 ptMiss  = 20 .. 1e+06 GeV
 ******************************************************************************
-Event number 1 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 1 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -142,7 +142,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 2 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 2 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -218,7 +218,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 3 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 3 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -294,7 +294,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 4 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 4 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -370,7 +370,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 5 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 5 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -446,7 +446,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 6 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 6 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -522,7 +522,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 7 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 7 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -598,7 +598,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 8 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 8 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -674,7 +674,7 @@ Step 1
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
 ******************************************************************************
-Event number 9 (id: LHC-Matchbox-emubbBar_LO_HThalf_cuts) performed by EventHandler
+Event number 9 (id: LHC-Matchbox-emubbBar_LO_HThalfPrime) performed by EventHandler
 ==============================================================================
 
 --- Colliding particles:
@@ -749,20 +749,20 @@ Step 1
                                 -0.000     0.000 -3328.932  3328.932     0.915
 ------------------------------------------------------------------------------
      Sum of momenta:                 0         0         0     7e+03     7e+03
-final integrated cross section is ( 0.000749356 +/- 1.05882e-05 ) nb
+final integrated cross section is ( 0.000757613 +/- 7.5694e-06 ) nb
 
 
 
-Note: In this run 15 of the 5000 accepted events
+Note: In this run 38 of the 10000 accepted events
 were found with a weight W larger than the expected Wmax.
 This corresponds to a cross section difference between:
-   UnitWeights:       0.000749356nb
-   AlmostUnweighted:  0.000753857nb
+   UnitWeights:       0.000757613nb
+   AlmostUnweighted:  0.000762621nb
  use 'set Sampler:AlmostUnweighted On' to switch to non-unit weights.
 
 The maximum weight determined in the read/integrate step has been enhanced by 
    set /Herwig/Samplers/Sampler:MaxEnhancement 1.1.
-If the rate of excessions (0.3%) or the change of the cross section is large,
+If the rate of excessions (0.38%) or the change of the cross section is large,
 you can try to:
 
 Enhance the number of points used in the read/integrate step
