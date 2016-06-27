@@ -226,13 +226,12 @@ namespace Rivet {
           HT += diLeptons[0].pT();
           HT += diLeptons[1].pT();
 	  }
-	  else cout << "NOT TWO LEPTONS!";
           foreach (const Jet* j, central_jets) HT += fabs(j->pT());
 //          HT += MET;
           // Keep events with HT > 130 GeV
           if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
-            if (b_jets.size() > 1) {
+            if (b_jets.size() > 1 && diLeptons.size() == 2) {
 		 if (MET >= 20.0*GeV) {
 			if(diLeptons[0].pT() >= 20.*GeV && diLeptons[1].pT() >= 20.*GeV && fabs(diLeptons[0].eta()) < 2.5 && fabs(diLeptons[1].eta()) < 2.5) {
               		passed_emu = true;
@@ -259,7 +258,6 @@ namespace Rivet {
 //	else cout << "HT";
 	//}
 	//}
-
       if (passed_emu == true) {
 
 /*

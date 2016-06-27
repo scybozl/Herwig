@@ -140,7 +140,7 @@ namespace Rivet {
 
       bool passed_emu = false;
       bool passed_Mlb = false;
-
+/*
       // Get the electrons and muons if there aren't any in the final state
       //(event.genEvent())->print();
       if (elecFS.empty() || muonFS.empty()) {
@@ -171,7 +171,7 @@ namespace Rivet {
 	}
       }
       }
-
+*/
       // Finally, the same again with the emu channel
       //if (elecFS.size() == 1 && muonFS.size() == 1) {
         // With the desired charge signs
@@ -187,12 +187,13 @@ namespace Rivet {
           // Keep events with HT > 130 GeV
           if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
-            if (b_jets.size() > 1) {
+            if (b_jets.size() > 1 && elecFS.size() >= 1 && muonFS.size() >= 1) {
 		 if (MET >= 20.0*GeV) {
               		passed_emu = true;
 
 			// Additional requirements for the invariant mass event selection
 			if(elecFS.size() >= 1 && muonFS.size() >= 1) {
+			if(elecFS[0].pT() >= 20.*GeV && muonFS[0].pT() >= 20.*GeV && fabs(elecFS[0].eta()) < 2.5 && fabs(muonFS[0].eta()) < 2.5) {
 
 			if(deltaR(b_jets[0]->momentum(), elecFS[0].momentum()) >= 0.4 && deltaR(b_jets[0]->momentum(), muonFS[0].momentum()) >= 0.4
 			&& deltaR(b_jets[1]->momentum(), elecFS[0].momentum()) >= 0.4 && deltaR(b_jets[1]->momentum(), muonFS[0].momentum()) >= 0.4) {
@@ -201,6 +202,7 @@ namespace Rivet {
 						passed_Mlb = true;
 					}
 				}
+			}
 			}
 			}
 		}
