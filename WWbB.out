@@ -1,0 +1,28 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+==============================================================================
+Statistics for event handler 'EventHandler':
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total (from   weighted events): including vetoed events           0.206(5)e+00
+==============================================================================
+Total (from unweighted events):             2000         2000      2.40(5)e-03
+==============================================================================
+Per matrix element breakdown:
+MEGenericProcesses[d,dbar->W-,bbar,b,         91           91      0.11(1)e-03
+MEGenericProcesses[dbar,d->W-,bbar,b,         83           83      0.10(1)e-03
+MEGenericProcesses[ubar,u->W-,bbar,b,        135          135      0.16(1)e-03
+MEGenericProcesses[u,ubar->W-,bbar,b,        126          126      0.15(1)e-03
+MEGenericProcesses[c,cbar->W-,bbar,b,          4            4         5(2)e-06
+MEGenericProcesses[cbar,c->W-,bbar,b,          4            4         5(2)e-06
+MEGenericProcesses[sbar,s->W-,bbar,b,          3            3         4(2)e-06
+MEGenericProcesses[s,sbar->W-,bbar,b,          9            9        11(4)e-06
+MEGenericProcesses[b,bbar->W-,bbar,b,         36           36        43(7)e-06
+MEGenericProcesses[bbar,b->W-,bbar,b,         38           38        46(7)e-06
+MEGenericProcesses[g,g->W-,bbar,b,W+]       1471         1471      1.77(5)e-03
+==============================================================================

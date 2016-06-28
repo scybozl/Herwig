@@ -51,8 +51,8 @@ set /Herwig/Particles/W-:Synchronized Not_synchronized
 
 do /Herwig/Particles/W+:SelectDecayModes W+->nu_e,e+;
 do /Herwig/Particles/W-:SelectDecayModes W-->nu_mubar,mu-;
-do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b;
-do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_mubar,mu-,bbar;
+# do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b;
+# do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_mubar,mu-,bbar;
 
 set /Herwig/Particles/t:NominalMass 172.0*GeV
 set /Herwig/Particles/tbar:NominalMass 172.0*GeV
@@ -142,7 +142,7 @@ set Factory:ScaleChoice Scales/FixedScale
 ## use for strict LO/NLO comparisons
 # read Matchbox/MCatLO-DefaultShower.in
 ## use for improved LO showering
-read Matchbox/LO-DefaultShower.in
+# read Matchbox/LO-DefaultShower.in
 
 # read Matchbox/MCatNLO-DipoleShower.in
 # read Matchbox/Powheg-DipoleShower.in
@@ -153,6 +153,15 @@ read Matchbox/LO-DefaultShower.in
 
 # read Matchbox/NLO-NoShower.in
 # read Matchbox/LO-NoShower.in
+
+read Matchbox/LO.in
+
+cd /Herwig/EventHandlers
+set EventHandler:CascadeHandler NULL
+set EventHandler:HadronizationHandler NULL
+
+cd /Herwig/Analysis
+set Basics:CheckQuark No
 
 ##################################################
 ## Scale uncertainties
