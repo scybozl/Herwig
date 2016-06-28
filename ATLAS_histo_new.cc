@@ -61,13 +61,14 @@ namespace Rivet {
 */
       // Final state used as input for jet-finding.
       // We include everything except the muons and neutrinos
-      VetoedFinalState jet_input(fs);
-      jet_input.vetoNeutrinos();
-      jet_input.addVetoPairId(PID::MUON);
-      addProjection(jet_input, "JET_INPUT");
+//      VetoedFinalState jet_input(fs);
+//      jet_input.vetoNeutrinos();
+//      jet_input.addVetoPairId(PID::MUON);
+//      addProjection(jet_input, "JET_INPUT");
 
       // Get the jets
-      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
+//      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
+      FastJets jets(fs, FastJets::ANTIKT, 0.5);
       addProjection(jets, "JETS");
 
 /*
@@ -229,7 +230,7 @@ namespace Rivet {
           foreach (const Jet* j, central_jets) HT += fabs(j->pT());
 //          HT += MET;
           // Keep events with HT > 130 GeV
-          if (HT > 130.0*GeV) {
+//          if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
             if (b_jets.size() > 1 && diLeptons.size() == 2) {
 		 if (MET >= 20.0*GeV) {
@@ -250,7 +251,7 @@ namespace Rivet {
 			}
 			}
 //			else cout << "RAP";
-		}
+//		}
 //		else cout << "MET";
             }
 //	    else cout << "b < 2";

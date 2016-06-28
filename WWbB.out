@@ -9,20 +9,20 @@ Statistics for event handler 'EventHandler':
                                        generated    number of    Cross-section
                                           events     attempts             (nb)
 ==============================================================================
-Total (from   weighted events): including vetoed events           0.206(5)e+00
+Total (from   weighted events): including vetoed events            0.20(1)e+00
 ==============================================================================
-Total (from unweighted events):             2000         2000      2.40(5)e-03
+Total (from unweighted events):              402          402        15(2)e-03
 ==============================================================================
 Per matrix element breakdown:
-MEGenericProcesses[d,dbar->W-,bbar,b,         91           91      0.11(1)e-03
-MEGenericProcesses[dbar,d->W-,bbar,b,         83           83      0.10(1)e-03
-MEGenericProcesses[ubar,u->W-,bbar,b,        135          135      0.16(1)e-03
-MEGenericProcesses[u,ubar->W-,bbar,b,        126          126      0.15(1)e-03
-MEGenericProcesses[c,cbar->W-,bbar,b,          4            4         5(2)e-06
-MEGenericProcesses[cbar,c->W-,bbar,b,          4            4         5(2)e-06
-MEGenericProcesses[sbar,s->W-,bbar,b,          3            3         4(2)e-06
-MEGenericProcesses[s,sbar->W-,bbar,b,          9            9        11(4)e-06
-MEGenericProcesses[b,bbar->W-,bbar,b,         36           36        43(7)e-06
-MEGenericProcesses[bbar,b->W-,bbar,b,         38           38        46(7)e-06
-MEGenericProcesses[g,g->W-,bbar,b,W+]       1471         1471      1.77(5)e-03
+MEGenericProcesses[d,dbar->W-,bbar,b,         11           11         2(1)e-03
+MEGenericProcesses[dbar,d->W-,bbar,b,         23           23       0.6(5)e-03
+MEGenericProcesses[ubar,u->W-,bbar,b,         28           28         3(1)e-03
+MEGenericProcesses[u,ubar->W-,bbar,b,         29           29         3(1)e-03
+MEGenericProcesses[c,cbar->W-,bbar,b,          0            0                0
+MEGenericProcesses[cbar,c->W-,bbar,b,          2            2      0.98(7)e-03
+MEGenericProcesses[sbar,s->W-,bbar,b,          0            0                0
+MEGenericProcesses[s,sbar->W-,bbar,b,          1            1         6(6)e-06
+MEGenericProcesses[b,bbar->W-,bbar,b,         10           10       0.5(2)e-03
+MEGenericProcesses[bbar,b->W-,bbar,b,          2            2      0.11(7)e-03
+MEGenericProcesses[g,g->W-,bbar,b,W+]        296          296       4.3(6)e-03
 ==============================================================================

@@ -49,28 +49,32 @@ set /Herwig/Particles/tbar:Synchronized Not_synchronized
 set /Herwig/Particles/W+:Synchronized Not_synchronized
 set /Herwig/Particles/W-:Synchronized Not_synchronized
 
-do /Herwig/Particles/W+:SelectDecayModes W+->nu_e,e+;
-do /Herwig/Particles/W-:SelectDecayModes W-->nu_mubar,mu-;
-# do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b;
-# do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_mubar,mu-,bbar;
+# do /Herwig/Particles/W+:SelectDecayModes W+->nu_e,e+;
+# do /Herwig/Particles/W-:SelectDecayModes W-->nu_mubar,mu-;
+do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b;
+do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_mubar,mu-,bbar;
 
 set /Herwig/Particles/t:NominalMass 172.0*GeV
+set /Herwig/Particles/t:WidthCut 1.4426*GeV
+set /Herwig/Particles/t:Width_generator:Initialize Yes
+set /Herwig/Particles/t:Mass_generator:Initialize Yes
+set /Herwig/Decays/Top:Initialize Yes
+
 set /Herwig/Particles/tbar:NominalMass 172.0*GeV
-# set /Herwig/Particles/t:WidthCut 1.4426*GeV
-# set /Herwig/Particles/t:Width_generator:Initialize Yes
-# set /Herwig/Particles/t:Mass_generator:Initialize Yes
-# set /Herwig/Decays/Top:Initialize Yes
+set /Herwig/Particles/tbar:WidthCut 1.4426*GeV
+set /Herwig/Particles/tbar:Width_generator:Initialize Yes
+set /Herwig/Particles/tbar:Mass_generator:Initialize Yes
 
-# set /Herwig/Particles/W+:NominalMass 80.399*GeV
-# set /Herwig/Particles/W+:WidthCut 2.09974*GeV
-# set /Herwig/Particles/W+:Width_generator:Initialize Yes
-# set /Herwig/Particles/W+:Mass_generator:Initialize Yes
+set /Herwig/Particles/W+:NominalMass 80.399*GeV
+set /Herwig/Particles/W+:WidthCut 2.09974*GeV
+set /Herwig/Particles/W+:Width_generator:Initialize Yes
+set /Herwig/Particles/W+:Mass_generator:Initialize Yes
 
-# set /Herwig/Particles/W-:NominalMass 80.399*GeV
-# set /Herwig/Particles/W-:WidthCut 2.09974*GeV
-# set /Herwig/Particles/W-:Width_generator:Initialize Yes
-# set /Herwig/Particles/W-:Mass_generator:Initialize Yes
-# set /Herwig/Decays/WDecayer:Initialize Yes
+set /Herwig/Particles/W-:NominalMass 80.399*GeV
+set /Herwig/Particles/W-:WidthCut 2.09974*GeV
+set /Herwig/Particles/W-:Width_generator:Initialize Yes
+set /Herwig/Particles/W-:Mass_generator:Initialize Yes
+set /Herwig/Decays/WDecayer:Initialize Yes
 
 
 ##################################################
@@ -184,7 +188,18 @@ set Basics:CheckQuark No
 read Matchbox/FiveFlavourScheme.in
 ## required for dipole shower and fixed order in five flavour scheme
 # read Matchbox/FiveFlavourNoBMassScheme.in
-read Matchbox/MSTW2008.in
+# read Matchbox/MSTW2008.in
+
+cd /Herwig/Partons
+create ThePEG::LHAPDF myPDFset ThePEGLHAPDF.so
+set myPDFset:PDFName MSTW2008lo68cl
+set myPDFset:RemnantHandler HadronRemnants
+
+set /Herwig/Particles/p+:PDF myPDFset
+set /Herwig/Particles/pbar-:PDF myPDFset
+
+set /Herwig/Partons/QCDExtractor:FirstPDF myPDFset
+set /Herwig/Partons/QCDExtractor:SecondPDF myPDFset
 
 ##################################################
 ## Analyses
@@ -196,10 +211,10 @@ read Matchbox/MSTW2008.in
 # insert /Herwig/Generators/EventGenerator:AnalysisHandlers 0 HepMC
 
 # crude read step
-# set /Herwig/Samplers/CellGridSampler:InitialPoints 10000
-# set /Herwig/Samplers/CellGridSampler:ExplorationPoints 500
-# set /Herwig/Samplers/CellGridSampler:ExplorationSteps 1
-# set /Herwig/Samplers/CellGridSampler:RemapperPoints 500
+set /Herwig/Samplers/CellGridSampler:InitialPoints 10000
+set /Herwig/Samplers/CellGridSampler:ExplorationPoints 500
+set /Herwig/Samplers/CellGridSampler:ExplorationSteps 1
+set /Herwig/Samplers/CellGridSampler:RemapperPoints 500
 
 ##################################################
 ## Analyses
@@ -225,7 +240,7 @@ set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
 
 create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
-insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
+insert /Herwig/Generators/EventGenerator:EventHandler:PostDecayHandlers 0 /Herwig/Generators/BRReweighter
 
 cd /Herwig/Generators
 saverun WWbB EventGenerator
