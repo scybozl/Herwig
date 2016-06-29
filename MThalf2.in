@@ -28,26 +28,28 @@ set EventHandler:LuminosityFunction:Energy 7000*GeV
 ## Set the order of the couplings
 cd /Herwig/MatrixElements/Matchbox
 set Factory:OrderInAlphaS 2
-set Factory:OrderInAlphaEW 2
+set Factory:OrderInAlphaEW 4
 
 ## Select the process
 ## You may use identifiers such as p, pbar, j, l, mu+, h0 etc.
-do Factory:Process p p -> W+ W- b bbar
+do Factory:Process p p -> e+ nu_e mu- nu_mubar b bbar
 
 ## Special settings required for on-shell production of unstable particles
 ## enable for on-shell top production
 # read Matchbox/OnShellTopProduction.in
 ## enable for on-shell W, Z or h production
-read Matchbox/OnShellWProduction.in
+# read Matchbox/OnShellWProduction.in
 # read Matchbox/OnShellZProduction.in
 # read Matchbox/OnShellHProduction.in
 # Special settings for the VBF approximation
 # read Matchbox/VBFDiagramsOnly.in
 
-set /Herwig/Particles/t:Synchronized Not_synchronized
-set /Herwig/Particles/tbar:Synchronized Not_synchronized
+# set /Herwig/Decays/WDecayer:Initialize Yes
+
 set /Herwig/Particles/W+:Synchronized Not_synchronized
 set /Herwig/Particles/W-:Synchronized Not_synchronized
+set /Herwig/Particles/t:Synchronized Not_synchronized
+set /Herwig/Particles/tbar:Synchronized Not_synchronized
 
 do /Herwig/Particles/W+:SelectDecayModes W+->nu_e,e+;
 do /Herwig/Particles/W-:SelectDecayModes W-->nu_mubar,mu-;
@@ -56,32 +58,25 @@ do /Herwig/Particles/W-:SelectDecayModes W-->nu_mubar,mu-;
 
 set /Herwig/Particles/t:NominalMass 172.0*GeV
 set /Herwig/Particles/t:Width 1.4426*GeV
-# set /Herwig/Particles/t:Width_generator:Initialize Yes
-# set /Herwig/Particles/t:Mass_generator:Initialize Yes
+set /Herwig/Particles/t:Width_generator:Initialize Yes
+set /Herwig/Particles/t:Mass_generator:Initialize Yes
+set /Herwig/Decays/Top:Initialize Yes
 
 set /Herwig/Particles/tbar:NominalMass 172.0*GeV
 set /Herwig/Particles/tbar:Width 1.4426*GeV
-# set /Herwig/Particles/tbar:Width_generator:Initialize Yes
-# set /Herwig/Particles/tbar:Mass_generator:Initialize Yes
+set /Herwig/Particles/tbar:Width_generator:Initialize Yes
+set /Herwig/Particles/tbar:Mass_generator:Initialize Yes
 
 set /Herwig/Particles/W+:NominalMass 80.399*GeV
 set /Herwig/Particles/W+:Width 2.09974*GeV
-# set /Herwig/Particles/W+:Width_generator:Initialize Yes
-# set /Herwig/Particles/W+:Mass_generator:Initialize Yes
+set /Herwig/Particles/W+:Width_generator:Initialize Yes
+set /Herwig/Particles/W+:Mass_generator:Initialize Yes
 
 set /Herwig/Particles/W-:NominalMass 80.399*GeV
 set /Herwig/Particles/W-:Width 2.09974*GeV
-# set /Herwig/Particles/W-:Width_generator:Initialize Yes
-# set /Herwig/Particles/W-:Mass_generator:Initialize Yes
-
-set /Herwig/Particles/Z0:NominalMass 91.1876*GeV
-# set /Herwig/Particles/Z0:Mass_generator:Initialize Yes
-
-# set /Herwig/Decays/Top:Initialize Yes
-# set /Herwig/Decays/WDecayer:Initialize Yes
-
-cd /Herwig/Couplings
-set LOAlphaS:input_alpha_s 0.139387
+set /Herwig/Particles/W-:Width_generator:Initialize Yes
+set /Herwig/Particles/W-:Mass_generator:Initialize Yes
+set /Herwig/Decays/WDecayer:Initialize Yes
 
 
 ##################################################
@@ -124,8 +119,35 @@ read Matchbox/MadGraph-GoSam.in
 # set /Herwig/Cuts/SecondJet:PtMin 30.*GeV
 # do /Herwig/Cuts/SecondJet:YRange -5.0 5.0
 
-# set /Herwig/Cuts/LeptonCut:PtMin 20.*GeV
-# set /Herwig/Cuts/MissingPtCut:PtMissMin 20.*GeV
+set /Herwig/Cuts/ChargedLeptonCut:PtMin 20.*GeV
+set /Herwig/Cuts/ChargedLeptonCut:YRange -2.5 2.5
+set /Herwig/Cuts/MissingPtCut:PtMissMin 20.*GeV
+
+cd /Herwig/MatrixElements/Matchbox
+
+do Factory:StartParticleGroup bjet
+insert Factory:ParticleGroup 0 /Herwig/Particles/b
+insert Factory:ParticleGroup 0 /Herwig/Particles/bbar
+do Factory:EndParticleGroup
+
+create Herwig::MatchboxFactoryMatcher BJetMatcher
+set BJetMatcher:Factory Factory
+set BJetMatcher:Group bjet
+
+create Herwig::IdentifiedParticleCut BJetCut
+set BJetCut:Matcher BJetMatcher
+
+insert /Herwig/Cuts/Cuts:OneCuts 0 BJetCut
+
+# set BJetCut:PtMin 30.*GeV
+# set BJetCut:YRange -2.5 2.5
+
+# cd /Herwig/MatrixElements/Matchbox
+
+# do Factory:StartParticleGroup j
+# insert Factory:ParticleGroup 0 /Herwig/Particles/b
+# insert Factory:ParticleGroup 0 /Herwig/Particles/bbar
+# do Factory:EndParticleGroup
 
 # cd /Herwig/Cuts/
 
@@ -230,6 +252,8 @@ set /Herwig/Samplers/CellGridSampler:InitialPoints 20000
 cd /Herwig/Generators
 set /Herwig/Analysis/Plot:EventNumber 1
 insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
+set /Herwig/Analysis/Plot:EventNumber 20 
+insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/Plot
 
 insert EventGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
 set /Herwig/Analysis/HepMCFile:PrintEvent 100000
@@ -246,8 +270,9 @@ set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
 
-create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
-insert /Herwig/Generators/EventGenerator:EventHandler:PostDecayHandlers 0 /Herwig/Generators/BRReweighter
+# create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
+# insert /Herwig/Generators/EventGenerator:EventHandler:PostHadronizationHandlers 0 /Herwig/Generators/BRReweighter
+
 
 cd /Herwig/Generators
-saverun WWbB EventGenerator
+saverun MThalf2 EventGenerator
