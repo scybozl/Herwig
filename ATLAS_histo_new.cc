@@ -139,7 +139,7 @@ namespace Rivet {
         if (j->containsBottom()) b_jets.push_back(j);
 //        else if (b_jets.size() <= 1) cout << " 1 ";
       }
-//	cout << b_jets.size();
+	cout << b_jets.size();
 //	foreach (const Jet* j, b_jets) cout << j->pT() << " ";
 /*
       // Get the MET by taking the vector sum of all neutrinos
@@ -250,12 +250,12 @@ namespace Rivet {
 			}
 			}
 			}
-//			else cout << "RAP";
-//		}
-//		else cout << "MET";
+			else cout << "RAP";
+		}
+		else cout << "MET";
             }
-//	    else cout << "b < 2";
-	}
+	    else cout << "b < 2";
+//	}
 //	else cout << "HT";
 	//}
 	//}
