@@ -1,0 +1,28 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+==============================================================================
+Statistics for event handler 'EventHandler':
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total (from   weighted events): including vetoed events           0.223(4)e+00
+==============================================================================
+Total (from   weighted events):            13221        13339      2.60(5)e-03
+==============================================================================
+Per matrix element breakdown:
+MEGoSam[d,dbar->W-,bbar,b,W+]                503          512      0.10(3)e-03
+MEGoSam[dbar,d->W-,bbar,b,W+]                467          472        99(9)e-06
+MEGoSam[ubar,u->W-,bbar,b,W+]                884          894      0.17(1)e-03
+MEGoSam[u,ubar->W-,bbar,b,W+]                911          919      0.17(1)e-03
+MEGoSam[c,cbar->W-,bbar,b,W+]                 24           25         5(2)e-06
+MEGoSam[cbar,c->W-,bbar,b,W+]                 19           19         3(1)e-06
+MEGoSam[sbar,s->W-,bbar,b,W+]                 62           62         9(2)e-06
+MEGoSam[s,sbar->W-,bbar,b,W+]                 75           76         8(2)e-06
+MEGoSam[b,bbar->W-,bbar,b,W+]                  7            7       1.0(7)e-06
+MEGoSam[bbar,b->W-,bbar,b,W+]                 14           15         4(2)e-06
+MEGoSam[g,g->W-,bbar,b,W+]                 10255        10338      2.02(4)e-03
+==============================================================================
