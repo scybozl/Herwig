@@ -9,20 +9,18 @@ Statistics for event handler 'EventHandler':
                                        generated    number of    Cross-section
                                           events     attempts             (nb)
 ==============================================================================
-Total (from   weighted events): including vetoed events           0.223(4)e+00
+Total (from   weighted events): including vetoed events           0.980(4)e+00
 ==============================================================================
-Total (from   weighted events):            13221        13339      2.60(5)e-03
+Total (from   weighted events):            1e+06        1e+06     0.980(4)e+00
 ==============================================================================
 Per matrix element breakdown:
-MEGoSam[d,dbar->W-,bbar,b,W+]                503          512      0.10(3)e-03
-MEGoSam[dbar,d->W-,bbar,b,W+]                467          472        99(9)e-06
-MEGoSam[ubar,u->W-,bbar,b,W+]                884          894      0.17(1)e-03
-MEGoSam[u,ubar->W-,bbar,b,W+]                911          919      0.17(1)e-03
-MEGoSam[c,cbar->W-,bbar,b,W+]                 24           25         5(2)e-06
-MEGoSam[cbar,c->W-,bbar,b,W+]                 19           19         3(1)e-06
-MEGoSam[sbar,s->W-,bbar,b,W+]                 62           62         9(2)e-06
-MEGoSam[s,sbar->W-,bbar,b,W+]                 75           76         8(2)e-06
-MEGoSam[b,bbar->W-,bbar,b,W+]                  7            7       1.0(7)e-06
-MEGoSam[bbar,b->W-,bbar,b,W+]                 14           15         4(2)e-06
-MEGoSam[g,g->W-,bbar,b,W+]                 10255        10338      2.02(4)e-03
+MEMadGraph[d,dbar->W-,bbar,b,W+]           21788        21788        23(1)e-03
+MEMadGraph[dbar,d->W-,bbar,b,W+]           21469        21469        23(1)e-03
+MEMadGraph[ubar,u->W-,bbar,b,W+]           37686        37686      34.2(6)e-03
+MEMadGraph[u,ubar->W-,bbar,b,W+]           36589        36589        36(1)e-03
+MEMadGraph[c,cbar->W-,bbar,b,W+]            1658         1658       1.5(2)e-03
+MEMadGraph[cbar,c->W-,bbar,b,W+]            1954         1954       1.8(2)e-03
+MEMadGraph[sbar,s->W-,bbar,b,W+]            3027         3027       3.2(3)e-03
+MEMadGraph[s,sbar->W-,bbar,b,W+]            3986         3986       4.3(3)e-03
+MEMadGraph[g,g->W-,bbar,b,W+]             871843       871843     0.854(3)e+00
 ==============================================================================
