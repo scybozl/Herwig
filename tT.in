@@ -24,7 +24,7 @@ set /Herwig/Cuts/QCDCuts:X2Min 1e-06
 set /Herwig/Cuts/QCDCuts:MHatMin 0.0*GeV
 
 cd /Herwig/EventHandlers
-set EventHandler:LuminosityFunction:Energy 7000*GeV
+set EventHandler:LuminosityFunction:Energy 13000*GeV
 
 ##################################################
 ## Process selection
@@ -83,22 +83,25 @@ set /Herwig/Particles/W-:Mass_generator:Initialize Yes
 set /Herwig/Decays/Top:Initialize Yes
 set /Herwig/Decays/WDecayer:Initialize Yes
 
-do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b;
-do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_mubar,mu-,bbar;
+# do /Herwig/Particles/t:SelectDecayModes t->nu_e,e+,b;
+# do /Herwig/Particles/tbar:SelectDecayModes tbar->nu_mubar,mu-,bbar;
 
 set /Herwig/Particles/Z0:NominalMass 91.1876*GeV
 set /Herwig/Particles/Z0:Width 2.50966*GeV
 set /Herwig/Particles/Z0:Mass_generator:Initialize Yes
 set /Herwig/Particles/Z0:Width_generator:Initialize Yes
 
-set /Herwig/Particles/b:NominalMass 4.8*GeV
+set /Herwig/Particles/b:NominalMass 0.0*GeV
+set /Herwig/Particles/b:HardProcessMass 0.0*GeV
 #set /Herwig/Particles/b:Mass_generator:Initialize Yes
 
-set /Herwig/Particles/bbar:NominalMass 4.8*GeV
+set /Herwig/Particles/bbar:NominalMass 0.0*GeV
+set /Herwig/Particles/bbar:HardProcessMass 0.0*GeV
 #set /Herwig/Particles/bbar:Mass_generator:Initialize Yes
 
-set /Herwig/Particles/h0:NominalMass 1e+12*GeV
+set /Herwig/Particles/h0:NominalMass 125.0*GeV
 set /Herwig/Particles/h0:Mass_generator:Initialize Yes
+set /Herwig/Particles/h0:SelectDecayModes ;
 
 ##################################################
 ## Matrix element library selection
@@ -284,9 +287,10 @@ set /Herwig/Couplings/LOAlphaS:QuarkMasses 0, 0, 0, 1.4, 4.75, 1e+10
 set LOAlphaS:max_active_flavours 5
 set LOAlphaS:min_active_flavours 3 
 
-set /Herwig/Model:QCD/RunningAlphaS /Herwig/Couplings/LOAlphaS
+set /Herwig/Model:QCD/RunningAlphaS /Herwig/Couplings/NLOAlphaS
 set /Herwig/EventHandlers/EventHandler:Weighted On
 
+set /Herwig/MatrixElements/Matchbox/Factory:FixedQEDCouplings On
 
 ##################################################
 ## Save the generator
@@ -297,8 +301,8 @@ set /Herwig/Generators/EventGenerator:IntermediateOutput Yes
 
 do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
 
-create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
-insert /Herwig/Generators/EventGenerator:EventHandler:PostDecayHandlers 0 /Herwig/Generators/BRReweighter
+# create Herwig::BranchingRatioReweighter /Herwig/Generators/BRReweighter
+# insert /Herwig/Generators/EventGenerator:EventHandler:PostDecayHandlers 0 /Herwig/Generators/BRReweighter
 
 cd /Herwig/Generators
 saverun tT EventGenerator
