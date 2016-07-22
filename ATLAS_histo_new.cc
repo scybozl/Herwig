@@ -70,7 +70,6 @@ namespace Rivet {
 //      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
       FastJets jets(fs, FastJets::ANTIKT, 0.5);
       addProjection(jets, "JETS");
-
 /*
       for (unsigned int ihist = 0; ihist < _histLimit ; ihist++) {
         const unsigned int threshLimit = _thresholdLimit(ihist);
@@ -106,14 +105,21 @@ namespace Rivet {
       const Particles& neutrinoFS = applyProjection<IdentifiedFinalState>(event, "NEUTRINO_FS").particlesByPt();
 */
       // Get all jets with pT > 30 GeV
-      const Jets& jets = applyProjection<FastJets>(event, "JETS").jetsByPt(30.0*GeV);
+      const Jets& jets = applyProjection<FastJets>(event, "JETS").jetsByPt();
+
+      vector<const Jet*> hardJets;
+      foreach (const Jet& j, jets) {
+	if (j.pT()>=30.0*GeV) hardJets.push_back(&j);
+      }
+      if (hardJets.size()<2) cout << "H";
 
       // Keep any jets that pass the initial rapidity cut
       vector<const Jet*> central_jets;
-      foreach(const Jet& j, jets) {
-        if (j.absrap() < 2.5) central_jets.push_back(&j);
+      foreach(const Jet* j, hardJets) {
+        if (j->absrap() < 2.5) central_jets.push_back(j);
 //        else cout << " 0 ";
       }
+      if (central_jets.size()<2) cout << "R";
 //      cout << " " << central_jets.size() << " ";
 /*
       // Get b hadrons with pT > 5 GeV
@@ -139,7 +145,7 @@ namespace Rivet {
         if (j->containsBottom()) b_jets.push_back(j);
 //        else if (b_jets.size() <= 1) cout << " 1 ";
       }
-	cout << b_jets.size();
+      if (b_jets.size()<2) cout << "B";
 //	foreach (const Jet* j, b_jets) cout << j->pT() << " ";
 /*
       // Get the MET by taking the vector sum of all neutrinos
@@ -254,7 +260,7 @@ namespace Rivet {
 		}
 		else cout << "MET";
             }
-	    else cout << "b < 2";
+//	    else cout << "L";
 //	}
 //	else cout << "HT";
 	//}
