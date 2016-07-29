@@ -36,7 +36,7 @@ namespace Rivet {
     /// Book histograms and initialise projections before the run
     void init() {
 
-      const FinalState fs(Cuts::abseta < 5);
+      const FinalState fs;
       addProjection(fs, "ALL_FS");
 
       addProjection(MissingMomentum(fs), "MissingET");
@@ -61,15 +61,15 @@ namespace Rivet {
 */
       // Final state used as input for jet-finding.
       // We include everything except the muons and neutrinos
-      VetoedFinalState jet_input(fs);
-      jet_input.vetoNeutrinos();
-      jet_input.addVetoPairId(PID::MUON);
-      jet_input.addVetoPairId(PID::ELECTRON);
-      addProjection(jet_input, "JET_INPUT");
+    //  VetoedFinalState jet_input(fs);
+   //   jet_input.vetoNeutrinos();
+  //    jet_input.addVetoPairId(PID::MUON);
+ //     jet_input.addVetoPairId(PID::ELECTRON);
+//      addProjection(jet_input, "JET_INPUT");
 
       // Get the jets
 //      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
-      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
+      FastJets jets(fs, FastJets::ANTIKT, 0.5);
       addProjection(jets, "JETS");
 /*
       for (unsigned int ihist = 0; ihist < _histLimit ; ihist++) {
@@ -81,14 +81,18 @@ namespace Rivet {
 */
 
 	// Create histograms
-	_histPt1 = bookHisto1D("Pt1", 25, 0, 400);
+	_histPt1 = bookHisto1D("Pt1", 50, 0, 500);
 	_histEta1 = bookHisto1D("Eta1", 20, -2.5, 2.5);
-	_histPhiemu = bookHisto1D("Phiemu", 20, 0, 2*PI);
-	_histdeltaRb = bookHisto1D("deltaRb", 20, 0, 5);
-	_histdeltaRl = bookHisto1D("deltaRl", 20, 0, 5);
-	_histPtMiss = bookHisto1D("PtMiss", 25, 0, 400);
-	_histHT = bookHisto1D("HT", 20, 0, 1200);
-	_histMlb = bookHisto1D("Mlb", 25, 0, 200);
+	_histPhiemu = bookHisto1D("Phiemu", 25, 0, 2*PI);
+	_histdeltaRb = bookHisto1D("deltaRb", 50, 0, 5);
+	_histdeltaRl = bookHisto1D("deltaRl", 50, 0, 5);
+	_histPtMiss = bookHisto1D("PtMiss", 25, 0, 200);
+	_histHT = bookHisto1D("HT", 60, 0, 1200);
+	_histMlb = bookHisto1D("Mlb", 50, 0, 300);
+	_histWWphi = bookHisto1D("WWphi", 25, 0, 2*PI);
+        _histWPt = bookHisto1D("WPt", 50, 0, 1000);
+	_histWEta = bookHisto1D("WEta", 25, -6, 6);
+	_histWPhi = bookHisto1D("WPhi", 25, 0, 2*PI);
     }
 
 
@@ -122,6 +126,8 @@ namespace Rivet {
       }
       if (central_jets.size()<2) cout << "R";
 //      cout << " " << central_jets.size() << " ";
+
+
 /*
       // Get b hadrons with pT > 5 GeV
       /// @todo This is a hack -- replace with UnstableFinalState
@@ -154,6 +160,7 @@ namespace Rivet {
       }
       if (b_jets.size()<2) cout << "B";
 //	foreach (const Jet* j, b_jets) cout << j->pT() << " ";
+
 /*
       // Get the MET by taking the vector sum of all neutrinos
       /// @todo Use MissingMomentum instead?
@@ -172,34 +179,45 @@ namespace Rivet {
 
       // Get the electrons and muons coming from the W bosons
       ParticleVector diLeptons;
+      ParticleVector diBosons;
       bool diLeptonsFound = false;
       bool elecFound = false;
       bool muonFound = false;
+      bool diBosonsFound = false;
+      bool WPFound = false; 
+      bool WMFound = false;
       // Generate the complete event
       const HepMC::GenEvent *ge = event.genEvent();
 
       // Loop over all vertices, and find the W bosons
-      for (HepMC::GenEvent::vertex_const_iterator iv = ge->vertices_begin(); iv != ge->vertices_end() && diLeptonsFound != true; ++iv) {
+      for (HepMC::GenEvent::vertex_const_iterator iv = ge->vertices_begin(); iv != ge->vertices_end() && (diLeptonsFound ==  false || diBosonsFound == false); ++iv) {
          for (HepMC::GenVertex::particles_in_const_iterator ip1 = (*iv)->particles_in_const_begin(); ip1 != (*iv)->particles_in_const_end(); ++ip1) {
 
 		// If one of the particles coming in the vertex is a W boson, match the leptons
 		//if (abs((*ip1)->pdg_id()) == 24) {
 			for (HepMC::GenVertex::particles_out_const_iterator ip2 = (*iv)->particles_out_const_begin(); ip2 != (*iv)->particles_out_const_end(); ++ip2) {
 				if (((*ip2)->pdg_id() == -11 && !elecFound) || ((*ip2)->pdg_id() == 13 && !muonFound)) {
-				diLeptons.push_back(Particle(*ip2));
-				if ((*ip2)->pdg_id() == -11) elecFound = true;
-				if ((*ip2)->pdg_id() == 13) muonFound = true;
+				  diLeptons.push_back(Particle(*ip2));
+				  if ((*ip2)->pdg_id() == -11) elecFound = true;
+				  if ((*ip2)->pdg_id() == 13) muonFound = true;
 				//GenVertex* prodVtx = Particle(*ip2).production_vertex();
 				//foreach (const GenParticle* ancestor, particles(*iv, HepMC::ancestors)) {
      					// cout << " " << ancestor->pdg_id() << " ";
     				//}
 			//	cout << "\n";
-				if (diLeptons.size() == 2) diLeptonsFound = true;
+				  if (diLeptons.size() == 2) diLeptonsFound = true;
+				}
+				if (((*ip2)->pdg_id() == 24 && !WPFound) || ((*ip2)->pdg_id() == -24 && !WMFound)) {
+				  diBosons.push_back(Particle(*ip2));
+				  if ((*ip2)->pdg_id() == 24) WPFound = true;
+				  if ((*ip2)->pdg_id() == -24) WMFound = true;
+				  if (diBosons.size() == 2) diBosonsFound = true;
 				}
 			}
 		//}
 	}
       }
+	cout << diBosonsFound;
 //      cout << diLeptons[0].pT() << " " << diLeptons[1].pT() << " ";
 
 /*
@@ -242,7 +260,7 @@ namespace Rivet {
           HT += diLeptons[0].pT();
           HT += diLeptons[1].pT();
 	  }
-          foreach (const Jet* j, central_jets) HT += fabs(j->pT());
+//          foreach (const Jet* j, central_jets) HT += fabs(j->pT());
 //          HT += MET;
           // Keep events with HT > 130 GeV
 //          if (HT > 130.0*GeV) {
@@ -250,7 +268,7 @@ namespace Rivet {
             if (diLeptons.size() == 2) {
 		 if (MET > 20.0*GeV) {
 			if(diLeptons[0].pT() > 20.*GeV && diLeptons[1].pT() > 20.*GeV && fabs(diLeptons[0].eta()) < 2.5 && fabs(diLeptons[1].eta()) < 2.5) {
-              		  if (b_jets.size() > 1) {
+			  if (b_jets.size() > 1) {
 			  passed_emu = true;
 
 			// Additional requirements for the invariant mass event selection
@@ -312,7 +330,11 @@ namespace Rivet {
 	_histdeltaRb->fill(deltaR(b_jets[0]->momentum(), b_jets[1]->momentum()), weight);
 	if(diLeptons.size() == 2) {
 		//_histPhiemu->fill(deltaPhi(elecFS[0], muonFS[0]), weight);
-		_histPhiemu->fill(mapAngle0To2Pi(diLeptons[0].momentum().phi() - diLeptons[1].momentum().phi()), weight);
+		double emuPhi = diLeptons[0].momentum().phi() - diLeptons[1].momentum().phi();
+		if (emuPhi > 2*PI) emuPhi -= 2*PI;
+		if (emuPhi < 0) emuPhi += 2*PI;
+		_histPhiemu->fill(emuPhi, weight);
+		//_histPhiemu->fill(mapAngle0To2Pi(diLeptons[0].momentum().phi() - diLeptons[1].momentum().phi()), weight);
 		_histdeltaRl->fill(deltaR(diLeptons[0], diLeptons[1]), weight);
 	}
 	_histPtMiss->fill(MET, weight);
@@ -326,7 +348,19 @@ namespace Rivet {
 	}
 
       }
-
+      
+      if(diBosons.size() == 2) {
+		double WWPhi = diBosons[0].momentum().phi() - diBosons[1].momentum().phi();
+		if(WWPhi > 2*PI) WWPhi -= 2*PI;
+		if(WWPhi < 0) WWPhi += 2*PI;
+		_histWWphi->fill(WWPhi, weight);
+		_histWPt->fill(diBosons[0].pT(), weight);
+		_histWPt->fill(diBosons[1].pT(), weight);
+		_histWPhi->fill(diBosons[0].phi(), weight);
+		_histWPhi->fill(diBosons[1].phi(), weight);
+		_histWEta->fill(diBosons[0].eta(), weight);
+		_histWEta->fill(diBosons[1].eta(), weight);
+      }
     }
 
     /// Normalise histograms etc., after the run
@@ -349,6 +383,10 @@ namespace Rivet {
 	scale(_histPtMiss, norm);
 	scale(_histHT, norm);
 	scale(_histMlb, norm);
+	scale(_histWWphi, norm);
+	scale(_histWPt, norm);
+	scale(_histWPhi, norm);
+	scale(_histWEta, norm);
       //const double norm = crossSection()/sumOfWeights();
       //typedef map<unsigned int, Histo1DPtr>::value_type IDtoHisto1DPtr; ///< @todo Remove when C++11 allowed
       //foreach (IDtoHisto1DPtr ihpair, _hMap) scale(ihpair.second, norm); ///< @todo Use normalize(ihpair.second, crossSection())
@@ -369,6 +407,10 @@ namespace Rivet {
 	Histo1DPtr _histPtMiss;
 	Histo1DPtr _histHT;
 	Histo1DPtr _histMlb;
+	Histo1DPtr _histWWphi;
+	Histo1DPtr _histWPt;
+	Histo1DPtr _histWPhi;
+	Histo1DPtr _histWEta;
 
 /*
     unsigned int _thresholdLimit(unsigned int histId) {

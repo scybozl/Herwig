@@ -61,14 +61,15 @@ namespace Rivet {
 */
       // Final state used as input for jet-finding.
       // We include everything except the muons and neutrinos
-//      VetoedFinalState jet_input(fs);
-//      jet_input.vetoNeutrinos();
-//      jet_input.addVetoPairId(PID::MUON);
-//      addProjection(jet_input, "JET_INPUT");
+      VetoedFinalState jet_input(fs);
+      jet_input.vetoNeutrinos();
+      jet_input.addVetoPairId(PID::MUON);
+      jet_input.addVetoPairId(PID::ELECTRON);
+      addProjection(jet_input, "JET_INPUT");
 
       // Get the jets
-//      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
-      FastJets jets(fs, FastJets::ANTIKT, 0.5);
+      FastJets jets(jet_input, FastJets::ANTIKT, 0.5);
+//      FastJets jets(fs, FastJets::ANTIKT, 0.5);
       addProjection(jets, "JETS");
 /*
       for (unsigned int ihist = 0; ihist < _histLimit ; ihist++) {
@@ -142,7 +143,13 @@ namespace Rivet {
         //}
 	//if(isbJet) b_jets.push_back(j);
 //        b_jets.push_back(j);
-        if (j->containsBottom()) b_jets.push_back(j);
+        //if (j->containsBottom()) b_jets.push_back(j);
+	  int nb = 0;
+	  foreach (const Particle& p, j->particles()) {
+		if (p.pdgId() == 5) ++nb;
+		if (p.pdgId() == -5) --nb;
+	  }
+          if (nb != 0) b_jets.push_back(j);
 //        else if (b_jets.size() <= 1) cout << " 1 ";
       }
       if (b_jets.size()<2) cout << "B";
@@ -166,6 +173,8 @@ namespace Rivet {
       // Get the electrons and muons coming from the W bosons
       ParticleVector diLeptons;
       bool diLeptonsFound = false;
+      bool elecFound = false;
+      bool muonFound = false;
 
       // Generate the complete event
       const HepMC::GenEvent *ge = event.genEvent();
@@ -177,8 +186,10 @@ namespace Rivet {
 		// If one of the particles coming in the vertex is a W boson, match the leptons
 		if (abs((*ip1)->pdg_id()) == 24) {
 			for (HepMC::GenVertex::particles_out_const_iterator ip2 = (*iv)->particles_out_const_begin(); ip2 != (*iv)->particles_out_const_end(); ++ip2) {
-				if ((*ip2)->pdg_id() == -11 || (*ip2)->pdg_id() == 13) {
+				if (((*ip2)->pdg_id() == -11 && !elecFound) || ((*ip2)->pdg_id() == 13 && !muonFound)) {
 				diLeptons.push_back(Particle(*ip2));
+				if ((*ip2)->pdg_id() == -11) elecFound = true;
+				if ((*ip2)->pdg_id() == 13) muonFound = true;
 				//GenVertex* prodVtx = Particle(*ip2).production_vertex();
 				//foreach (const GenParticle* ancestor, particles(*iv, HepMC::ancestors)) {
      					// cout << " " << ancestor->pdg_id() << " ";
