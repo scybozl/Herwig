@@ -1,6 +1,11 @@
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/Eta1
 Path=/ATLAS_sherpa/Eta1
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$\eta_{\mathrm{b}_1}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. first jet rapidity
+YLabel=$\mathrm{d}\sigma/{d\eta}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 -2.375000e+00	1.250000e-01	1.250000e-01	7.906313e-03	2.251865e-03	3.733527e-03
@@ -27,7 +32,13 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/HT
 Path=/ATLAS_sherpa/HT
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+CustomLegend=Herwig LO
+XLabel=$H_T$
+Title=$W^+W^-b \bar{b}$ cross-section vs. final state pT sum
+YLabel=$\mathrm{d}\sigma/{dH_T}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 1.000000e+01	1.000000e+01	1.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
@@ -94,7 +105,12 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/Mlb
 Path=/ATLAS_sherpa/Mlb
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$m_{lb}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. invariant lepton + b system mass
+YLabel=$\mathrm{d}\sigma/{dm_{lb}}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 3.000000e+00	3.000000e+00	3.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -151,7 +167,12 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/Phiemu
 Path=/ATLAS_sherpa/Phiemu
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$\phi_{e^+mu^-}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. leptons azimuthal angle
+YLabel=$\mathrm{d}\sigma/{d\phi_{e^+mu^-}}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 1.256637e-01	1.256637e-01	1.256637e-01	2.404641e-02	6.944940e-03	8.443650e-03
@@ -183,7 +204,12 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/Pt1
 Path=/ATLAS_sherpa/Pt1
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$p_{\mathrm{T, b_1}}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. first jet $p_\mathrm{T}$
+YLabel=$\mathrm{d}\sigma/{dp_{\mathrm{T, b_1}}}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 5.000000e+00	5.000000e+00	5.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -240,7 +266,12 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/PtMiss
 Path=/ATLAS_sherpa/PtMiss
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$p_{\mathrm{T, miss}}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. missing transverse momentum
+YLabel=$\mathrm{d}\sigma/{dp_{\mathrm{T, miss}}}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 4.000000e+00	4.000000e+00	4.000000e+00	0.000000e+00	0.000000e+00	0.000000e+00
@@ -425,7 +456,12 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/deltaRb
 Path=/ATLAS_sherpa/deltaRb
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$\Delta R_{b\bar{b}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. b-jets angular distance
+YLabel=$\mathrm{d}\sigma/{d\Delta R_{b,\bar{b}}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 5.000000e-02	5.000000e-02	5.000000e-02	0.000000e+00	0.000000e+00	0.000000e+00
@@ -482,7 +518,12 @@ END YODA_SCATTER2D
 
 BEGIN YODA_SCATTER2D /ATLAS_sherpa/deltaRl
 Path=/ATLAS_sherpa/deltaRl
-Title=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$\Delta R_{l^+l^-$
+Title=$W^+W^-b \bar{b}$ cross-section vs. leptons angular distance
+YLabel=$\mathrm{d}\sigma/{d\Delta R_{l^+l^-}$ [pb]
 Type=Scatter2D
 # xval	 xerr-	 xerr+	 yval	 yerr-	 yerr+
 5.000000e-02	5.000000e-02	5.000000e-02	8.662844e-03	3.935511e-04	3.935511e-04

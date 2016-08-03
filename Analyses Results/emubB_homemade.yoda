@@ -1,10 +1,13 @@
 BEGIN YODA_HISTO1D /ATLAS_sherpa/Eta1
 Path=/ATLAS_sherpa/Eta1
 ScaledBy=0.0012419526589890135
-Title=
 Type=Histo1D
-XLabel=
-YLabel=
+ErrorBands=1
+ErrorBandColor=Gray
+ErrorBandOpacity=0.1
+XLabel=$\eta_{\mathrm{b}_1}$
+Title=$W^+W^-b \bar{b}$ cross-section vs. first jet rapidity
+YLabel=$\mathrm{d}\sigma/{d\eta}$ [pb]
 # Mean: -4.641357e-04
 # Area: 9.303108e-01
 # ID	 ID	 sumw	 sumw2	 sumwx	 sumwx2	 numEntries
