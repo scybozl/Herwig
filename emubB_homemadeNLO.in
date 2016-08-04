@@ -58,10 +58,13 @@ set MatchboxJetMatcher:Factory /Herwig/MatrixElements/Matchbox/Factory
 
 cd /Herwig/MatrixElements/Matchbox
 clear Factory:Amplitudes
-insert Factory:Amplitudes 0 Amplitudes/GoSam
+insert Factory:Amplitudes 0 Amplitudes/GenericProcesses 
+set Amplitudes/GenericProcesses:TreeLevelAmplitude Amplitudes/MadGraph
+set Amplitudes/GenericProcesses:OneLoopAmplitude Amplitudes/GoSam
 set Amplitudes/GoSam:AccuracyTarget 3
 set Amplitudes/GoSam:UseRunningAlphaS On
 set Amplitudes/GoSam:SetMuToMuR On
+set Amplitudes/GoSam:SetupInFilename gosam.rc
 
 cd /Herwig/MatrixElements/Matchbox
 insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/e-
@@ -135,7 +138,8 @@ set h0:Width 4.07e-03*GeV
 set h0:HardProcessWidth 4.07e-03*GeV
 # read Matchbox/LO.in
 cd /Herwig/MatrixElements/Matchbox
-#set Factory:VirtualContributions Off 
+set Factory:BornContributions On
+set Factory:VirtualContributions On 
 set Factory:RealContributions Off
 
 cd /Herwig/EventHandlers
@@ -149,7 +153,13 @@ cd /Herwig/Analysis
 set Basics:CheckQuark No
 
 ##############
-read Matchbox/FourFlavourScheme.in
+#read Matchbox/FourFlavourScheme.in
+
+cd /Herwig/MatrixElements/Matchbox
+do Factory:StartParticleGroup p
+insert Factory:ParticleGroup 0 /Herwig/Particles/u
+insert Factory:ParticleGroup 0 /Herwig/Particles/ubar
+do Factory:EndParticleGroup
 
 cd /Herwig/Generators
 insert LHCGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
@@ -277,4 +287,4 @@ set /Herwig/Model:EW/RecalculateEW On
 set /Herwig/MatrixElements/Matchbox/Factory:FixedQEDCouplings On
 
 cd /Herwig/Generators
-saverun emubB_homemade LHCGenerator
+saverun emubB_homemadeNLO LHCGenerator
