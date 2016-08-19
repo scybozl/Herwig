@@ -35,8 +35,10 @@ model=smdiag
 #    selects automatically the EW scheme based.                      #
 #                                                                    #
 ######################################################################
-# model.options=ewchoose
+model.options= mH=125.0, mW=80.399, wW=2.09974, mZ=91.1876, wZ=2.50966\
+			GF=0.0000116637, mT=172.0, wT=1.4426 
 
+helicities=+-+++---
 ### zero (comma separated list) ######################################
 #    A list of symbols that should be treated as identically         #
 #    zero throughout the whole calculation. All of these             #
@@ -57,10 +59,8 @@ model=smdiag
 #    See also: model, one                                            #
 #                                                                    #
 ######################################################################
-# zero=mU,mD,mS,mC,mB,me,mmu
+zero=mU,mD,mS,mC,mB,wB,me,mmu
 # zero=
-
-helicities=+-++--
 
 ### one (comma separated list) #######################################
 #    A list of symbols that should be treated as identically         #
@@ -73,7 +73,7 @@ helicities=+-++--
 #    See also: model, zero                                           #
 #                                                                    #
 ######################################################################
-# one=
+one=gs, e
 
 ### qgraf.options (comma separated list) #############################
 #    A list of options which is passed to qgraf via the 'options' line.
@@ -84,7 +84,7 @@ helicities=+-++--
 #    Please, refer to the QGraf documentation for details.           #
 #                                                                    #
 ######################################################################
-# qgraf.options=onshell,notadpole,nosnail
+qgraf.options=onshell,notadpole,nosnail
 
 ### qgraf.verbatim (text) ############################################
 #    This option allows to send verbatim lines to                    #
@@ -108,7 +108,8 @@ helicities=+-++--
 #    See also: qgraf.options, order                                  #
 #                                                                    #
 ######################################################################
-qgraf.verbatim=true=iprop[phim,phip,chi,H,0,0];
+qgraf.verbatim=\
+true=iprop[phim,phip,chi,H,ep,em,ne,nebar,mup,mum,nmu,nmubar,0,0];\
 # true=bridge[Wp,2,100];
 
 ### qgraf.verbatim.lo (text) #########################################
@@ -139,7 +140,7 @@ qgraf.verbatim=true=iprop[phim,phip,chi,H,0,0];
 #    should be summed before the algebraic reduction.                #
 #                                                                    #
 ######################################################################
-# diagsum=True
+diagsum=True
 
 ### reduction_programs (comma separated list) ########################
 #         Specifies the reduction libraries which should be supported.
@@ -150,7 +151,7 @@ qgraf.verbatim=true=iprop[phim,phip,chi,H,0,0];
 #                                                                    #
 ######################################################################
 # reduction_programs=ninja,golem95
-reduction_programs=ninja,golem95
+reduction_programs=ninja,golem95,samurai
 
 ### polvec (text) ####################################################
 #           Evaluate the polarisation vector                         #
@@ -745,7 +746,7 @@ form.tempdir=/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/sourc
 #             %-<n> refers to -n only                                #
 #                                                                    #
 ######################################################################
-symmetries=family,generation
+symmetries=flavour,family,generation,%-11=+,%+12=-,%+13=-,%-14=+
 
 # samurai.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig//include/gosam-contrib
 # samurai.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig//lib -lgolem -lsamurai -lavh_olo -lqcdloop -lff
