@@ -1,0 +1,28 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+==============================================================================
+Statistics for event handler 'LHCHandler':
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total (from   weighted events): including vetoed events          0.1736(4)e+00
+==============================================================================
+Total (from   weighted events):           100000       100146    0.1734(4)e+00
+==============================================================================
+Per matrix element breakdown:
+MEGoSam[d,dbar->tbar,t]                     3950         3956       6.9(1)e-03
+MEGoSam[dbar,d->tbar,t]                     3874         3879       6.9(1)e-03
+MEGoSam[ubar,u->tbar,t]                     6596         6603      11.8(2)e-03
+MEGoSam[u,ubar->tbar,t]                     6475         6489      11.4(2)e-03
+MEGoSam[c,cbar->tbar,t]                      174          174      0.31(3)e-03
+MEGoSam[cbar,c->tbar,t]                      171          172      0.30(3)e-03
+MEGoSam[sbar,s->tbar,t]                      356          356      0.63(4)e-03
+MEGoSam[s,sbar->tbar,t]                      392          392      0.70(4)e-03
+MEGoSam[b,bbar->tbar,t]                       48           48       90(20)e-06
+MEGoSam[bbar,b->tbar,t]                       51           51       90(20)e-06
+MEGoSam[g,g->tbar,t]                       77913        78026    0.1343(4)e+00
+==============================================================================
