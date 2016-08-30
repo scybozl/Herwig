@@ -1,0 +1,4 @@
+set /Herwig/EventHandlers/LHCHandler:HadronizationHandler NULL
+set /Herwig/EventHandlers/LHCHandler:CascadeHandler NULL
+set /Herwig/Generators/LHCGenerator:MaxErrors 10000000
+set /Herwig/EventHandlers/LHCHandler:LuminosityFunction:Energy 7000*GeV
