@@ -1,0 +1,63 @@
+# BEGIN PLOT
+DrawOnly=/REF/ATLAS_2014_I1304688_custom/d02-x05-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d02-x05-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d02-x05-y01
+YMax=0.35
+Title=t$\bar{\mathrm t}$ cross-section vs. $5^\mathrm{th}$ jet $\mathrm{p}_\mathrm{T}$
+RatioPlotReference=/REF/ATLAS_2014_I1304688_custom/d02-x05-y01
+RatioPlot=1
+LogX=1
+LogY=1
+RatioPlotYMax=1.9
+RatioPlotYLabel=Expected/Data
+LegendXPos=0.39
+XLabel=$5^\mathrm{th}$ jet $\mathrm{p}_\mathrm{T}$ [GeV]
+YLabel=$\mathrm{d}\sigma/\mathrm{dp}_{\mathrm T}$ [pb/GeV]
+YMin=0.00025
+Legend=1
+RatioPlotYMin=0.1
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2014_I1304688_custom/d02-x05-y01
+ConnectBins=0
+ErrorBars=1
+Path=/REF/ATLAS_2014_I1304688_custom/d02-x05-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.500000e+01	1.508520e-01	1.404900e-02	1.404900e-02
+3.500000e+01	5.000000e+01	5.382600e-02	7.036000e-03	7.036000e-03
+5.000000e+01	7.000000e+01	1.220700e-02	1.853000e-03	1.853000e-03
+7.000000e+01	1.950000e+02	4.000000e-04	7.200000e-05	7.200000e-05
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d02-x05-y01
+ErrorBars=1
+LineColor={[HTML]{EE3311}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d02-x05-y01
+ScaledBy=0.0077477374206944716
+Title=ATLAS_I1304688_LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.500000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+3.500000e+01	5.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e+01	7.000000e+01	0.000000e+00	0.000000e+00	0.000000e+00
+7.000000e+01	1.950000e+02	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d02-x05-y01
+ErrorBars=1
+LineColor={[HTML]{3366FF}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d02-x05-y01
+ScaledBy=0.0077412708538643149
+Title=ATLAS_I1304688_LO_shower
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+2.500000e+01	3.500000e+01	2.037762e-01	4.958414e-03	4.958414e-03
+3.500000e+01	5.000000e+01	7.032120e-02	2.320266e-03	2.320266e-03
+5.000000e+01	7.000000e+01	1.430065e-02	8.335742e-04	8.335742e-04
+7.000000e+01	1.950000e+02	5.671675e-04	5.897071e-05	5.897071e-05
+# END HISTO1D
+

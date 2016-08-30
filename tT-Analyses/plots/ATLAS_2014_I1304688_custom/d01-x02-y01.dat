@@ -1,0 +1,76 @@
+# BEGIN PLOT
+DrawOnly=/REF/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+YMax=11
+Title=t$\bar{\mathrm t}$ cross-section vs. jet multiplicity for jets above $40~\mathrm{GeV}$
+RatioPlotReference=/REF/ATLAS_2014_I1304688_custom/d01-x02-y01
+RatioPlot=1
+LogY=1
+RatioPlotYMax=1.9
+RatioPlotYLabel=Expected/Data
+LegendXPos=0.39
+XLabel=$\mathrm{n}_{\mathrm{jets}} ( \mathrm{jet~p}_\mathrm{T} > 40~\mathrm{GeV} )$
+XMax=7.5
+YLabel=$\mathrm{d}\sigma/\mathrm{dn}_{\mathrm{jets}}$ [pb]
+XMin=2.5
+YMin=0.0055
+Legend=1
+RatioPlotYMin=0.1
+# END PLOT
+
+# BEGIN HISTO1D /REF/ATLAS_2014_I1304688_custom/d01-x02-y01
+ConnectBins=0
+ErrorBars=1
+Path=/REF/ATLAS_2014_I1304688_custom/d01-x02-y01
+PolyMarker=*
+Title=Data
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	4.313680e+00	3.595860e-01	3.595860e-01
+3.500000e+00	4.500000e+00	1.998790e+00	1.955730e-01	1.955730e-01
+4.500000e+00	5.500000e+00	5.288080e-01	6.569600e-02	6.569600e-02
+5.500000e+00	6.500000e+00	1.256830e-01	2.299100e-02	2.299100e-02
+6.500000e+00	7.500000e+00	2.359200e-02	6.016000e-03	6.016000e-03
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+ErrorBars=1
+LineColor={[HTML]{EE3311}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+ScaledBy=0.0077477374206944716
+Title=ATLAS_I1304688_LO
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	5.698579e+00	8.267842e-02	8.267842e-02
+3.500000e+00	4.500000e+00	1.499802e+00	4.072319e-02	4.072319e-02
+4.500000e+00	5.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+6.500000e+00	7.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+ErrorBars=1
+LineColor={[HTML]{3366FF}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+ScaledBy=0.0077412708538643149
+Title=ATLAS_I1304688_LO_shower
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	4.345621e+00	7.265995e-02	7.265995e-02
+3.500000e+00	4.500000e+00	2.271017e+00	5.075346e-02	5.075346e-02
+4.500000e+00	5.500000e+00	7.226575e-01	2.766721e-02	2.766721e-02
+5.500000e+00	6.500000e+00	1.641359e-01	1.275593e-02	1.275593e-02
+6.500000e+00	7.500000e+00	3.090499e-02	5.419131e-03	5.419131e-03
+# END HISTO1D
+
