@@ -1,6 +1,13 @@
 set /Herwig/EventHandlers/LHCHandler:CascadeHandler /Herwig/DipoleShower/DipoleShowerHandler
 set /Herwig/UnderlyingEvent/MEQCD2to2Fast:StrictFlavourScheme On
 
+###############################################################
+## Don't forget to add the following line to your .in file
+## Otherwise the tune is ill-defined.
+##
+## read Matchbox/MCatNLO-Dipole-HardAlphaSTune.in
+##############################################################
+
 set /Herwig/EventHandlers/LHCHandler:HadronizationHandler NULL
 set /Herwig/Generators/LHCGenerator:MaxErrors 10000000
 set /Herwig/EventHandlers/LHCHandler:LuminosityFunction:Energy 7000*GeV
