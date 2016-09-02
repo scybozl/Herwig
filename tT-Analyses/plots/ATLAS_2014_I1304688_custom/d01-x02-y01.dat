@@ -1,5 +1,5 @@
 # BEGIN PLOT
-DrawOnly=/REF/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+DrawOnly=/REF/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_NLO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01 /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_NLO_muTopPairMass.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
 YMax=11
 Title=t$\bar{\mathrm t}$ cross-section vs. jet multiplicity for jets above $40~\mathrm{GeV}$
 RatioPlotReference=/REF/ATLAS_2014_I1304688_custom/d01-x02-y01
@@ -35,7 +35,6 @@ Title=Data
 # END HISTO1D
 
 # BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
-ErrorBars=1
 LineColor={[HTML]{EE3311}}
 LineStyle=solid
 Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
@@ -54,23 +53,41 @@ YLabel=
 6.500000e+00	7.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
-# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
-ErrorBars=1
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_NLO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
 LineColor={[HTML]{3366FF}}
 LineStyle=solid
-Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_LO_shower.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
-ScaledBy=0.0077412708538643149
-Title=ATLAS_I1304688_LO_shower
+Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_NLO.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+ScaledBy=0.25711977688568993
+Title=ATLAS_I1304688_NLO
 XLabel=
 YLabel=
 # xlow	 xhigh	 val	 errminus	 errplus
 -5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
 5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
-2.500000e+00	3.500000e+00	4.345621e+00	7.265995e-02	7.265995e-02
-3.500000e+00	4.500000e+00	2.271017e+00	5.075346e-02	5.075346e-02
-4.500000e+00	5.500000e+00	7.226575e-01	2.766721e-02	2.766721e-02
-5.500000e+00	6.500000e+00	1.641359e-01	1.275593e-02	1.275593e-02
-6.500000e+00	7.500000e+00	3.090499e-02	5.419131e-03	5.419131e-03
+2.500000e+00	3.500000e+00	5.966376e+00	1.113804e-01	1.113804e-01
+3.500000e+00	4.500000e+00	1.244815e+00	6.571254e-02	6.571254e-02
+4.500000e+00	5.500000e+00	-2.321009e-02	1.162944e-02	1.162944e-02
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+6.500000e+00	7.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+# END HISTO1D
+
+# BEGIN HISTO1D /home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_NLO_muTopPairMass.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+LineColor={[HTML]{109618}}
+LineStyle=solid
+Path=/home/iwsatlas1/scyboz/Work/Herwig/tT-Analyses/ATLAS_I1304688_NLO_muTopPairMass.yoda/ATLAS_2014_I1304688_custom/d01-x02-y01
+ScaledBy=0.17867692374235258
+Title=ATLAS_I1304688_NLO_muTopPairMass
+XLabel=
+YLabel=
+# xlow	 xhigh	 val	 errminus	 errplus
+-5.000000e-01	5.000000e-01	0.000000e+00	0.000000e+00	0.000000e+00
+5.000000e-01	1.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+1.500000e+00	2.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+2.500000e+00	3.500000e+00	5.755921e+00	9.299761e-02	9.299761e-02
+3.500000e+00	4.500000e+00	1.321208e+00	6.126734e-02	6.126734e-02
+4.500000e+00	5.500000e+00	-2.441779e-02	1.069088e-02	1.069088e-02
+5.500000e+00	6.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
+6.500000e+00	7.500000e+00	0.000000e+00	0.000000e+00	0.000000e+00
 # END HISTO1D
 
