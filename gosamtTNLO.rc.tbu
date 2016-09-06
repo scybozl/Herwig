@@ -745,7 +745,8 @@ PSP_chk_kfactor=10000
 #             %-<n> refers to -n only                                #
 #                                                                    #
 ######################################################################
-symmetries=flavour,family,generation,%-11=+,%+12=-,%+13=-,%-14=+
+symmetries=flavour,family,generation
+#,%-11=+,%+12=-,%+13=-,%-14=+
 
 # samurai.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig//include/gosam-contrib
 # samurai.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig//lib -lgolem -lsamurai -lavh_olo -lqcdloop -lff

@@ -1,0 +1,186 @@
+# -*- ThePEG-repository -*-
+
+##################################################
+## Herwig/Matchbox example input file
+##################################################
+
+##################################################
+## Beam energy sqrt(s)
+##################################################
+
+cd /Herwig/Cuts
+set QCDCuts:ScaleMin 1 
+set QCDCuts:X1Min 1e-06 
+set QCDCuts:X2Min 1e-06
+set QCDCuts:MHatMin 0
+clear QCDCuts:MultiCuts
+clear QCDCuts:OneCuts
+
+set /Herwig/EventHandlers/LHCHandler:LuminosityFunction:Energy 7000*GeV
+set /Herwig/EventHandlers/LHCHandler:CollisionCuts Off
+
+set /Herwig/EventHandlers/LHCHandler:Sampler /Herwig/Samplers/Sampler
+set /Herwig/Samplers/Sampler:BinSampler /Herwig/Samplers/MonacoSampler
+set /Herwig/Samplers/MonacoSampler:InitialPoints 30000 
+set /Herwig/Samplers/MonacoSampler:NIterations 2
+
+##################################################
+## Process selection
+##################################################
+
+## Set the order of the couplings
+cd /Herwig/MatrixElements/Matchbox
+set Factory:OrderInAlphaS 2
+set Factory:OrderInAlphaEW 0 
+
+## Select the process
+do Factory:Process p p -> t tbar 
+
+cd /Herwig/MatrixElements/Matchbox
+set Factory:ScaleChoice Scales/FixedScale
+set Scales/FixedScale:FixedScale 86*GeV
+
+#set Factory:RenormalizationScaleFactor 0.5
+#set Factory:FactorizationScaleFactor 0.5
+
+#set MEMatching:RenormalizationScaleFactor 0.5
+#set MEMatching:FactorizationScaleFactor 0.5
+
+cd /Herwig/Cuts
+set MatchboxJetMatcher:Factory /Herwig/MatrixElements/Matchbox/Factory
+
+cd /Herwig/MatrixElements/Matchbox
+clear Factory:Amplitudes
+#insert Factory:Amplitudes 0 Amplitudes/MadGraph
+insert Factory:Amplitudes 0 Amplitudes/GoSam
+set Amplitudes/GoSam:SetupInFilename gosamtT.rc
+
+cd /Herwig/MatrixElements/Matchbox
+insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/e-
+insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/nu_ebar
+insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/mu+
+insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/nu_mu
+insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/h0
+
+set Factory:PartonExtractor /Herwig/Partons/QCDExtractor
+
+##################################################
+## EW Scheme
+##################################################
+
+set /Herwig/Model:EW/Scheme GMuScheme
+set /Herwig/Model:EW/FermiConstant 1.16637e-05
+set /Herwig/Model:EW/RecalculateEW On
+set /Herwig/MatrixElements/Matchbox/Factory:FixedQEDCouplings On
+
+##################################################
+## PDF
+##################################################
+
+cd /Herwig/Partons
+create ThePEG::LHAPDF myPDFset ThePEGLHAPDF.so
+set myPDFset:PDFName MSTW2008lo68cl
+set myPDFset:RemnantHandler HadronRemnants
+
+set /Herwig/Particles/p+:PDF myPDFset
+set /Herwig/Particles/pbar-:PDF myPDFset
+
+set /Herwig/Partons/QCDExtractor:FirstPDF myPDFset
+set /Herwig/Partons/QCDExtractor:SecondPDF myPDFset
+
+set /Herwig/Partons/HardLOPDF:PDFName MSTW2008lo68cl
+set /Herwig/Partons/HardNLOPDF:PDFName MSTW2008lo68cl
+
+set /Herwig/Shower/ShowerHandler:PDFA ShowerLOPDF
+set /Herwig/Shower/ShowerHandler:PDFB ShowerLOPDF
+
+##################################################
+## PDF
+##################################################
+
+cd /Herwig/Couplings
+
+set LOAlphaS:input_scale 91.1876*GeV
+set LOAlphaS:input_alpha_s 0.139387
+set LOAlphaS:QuarkMasses 0, 0, 0, 1.4, 4.75, 1e+10 
+set LOAlphaS:max_active_flavours 5
+
+set /Herwig/Model:QCD/RunningAlphaS /Herwig/Couplings/LOAlphaS
+
+##################################################
+## Particle properties
+##################################################
+
+cd /Herwig/Particles
+set u:NominalMass 0.0*GeV
+set u:HardProcessMass 0.0*GeV
+set d:NominalMass 0.0*GeV
+set d:HardProcessMass 0.0*GeV
+set s:NominalMass 0.0*GeV
+set s:HardProcessMass 0.0*GeV
+set c:NominalMass 0.0*GeV
+set c:HardProcessMass 0.0*GeV
+set b:NominalMass 0.0*GeV
+set b:HardProcessMass 0.0*GeV
+
+set e+:NominalMass 0.0*GeV
+set e+:HardProcessMass 0.0*GeV
+set mu-:NominalMass 0.0*GeV
+set mu-:HardProcessMass 0.0*GeV
+
+set t:NominalMass 172.5*GeV
+set t:HardProcessMass 172.5*GeV
+set t:Width 1.4426*GeV
+set t:HardProcessWidth 0*GeV
+set W+:NominalMass 80.399*GeV
+set W+:HardProcessMass 80.399*GeV
+set W+:Width 2.09974*GeV
+set W+:HardProcessWidth 2.09974*GeV
+set Z0:NominalMass 91.1876*GeV
+set Z0:HardProcessMass 91.1876*GeV
+set Z0:Width 2.50966*GeV
+set Z0:HardProcessWidth 2.50966*GeV
+
+set h0:NominalMass 125.0*GeV
+set h0:HardProcessMass 125.0*GeV
+set h0:Width 4.07e-03*GeV
+set h0:HardProcessWidth 4.07e-03*GeV
+
+##################################################
+## LO
+##################################################
+
+cd /Herwig/MatrixElements/Matchbox
+set Factory:VirtualContributions Off 
+set Factory:RealContributions Off
+
+cd /Herwig/EventHandlers
+set LHCHandler:CascadeHandler NULL
+set LHCHandler:HadronizationHandler NULL
+set LHCHandler:DecayHandler NULL
+
+insert LHCHandler:SubProcessHandlers 0 /Herwig/MatrixElements/Matchbox/Factory
+set /Herwig/EventHandlers/LHCHandler:Weighted On
+
+cd /Herwig/Analysis
+set Basics:CheckQuark No
+
+##################################################
+## Analysis and generator mode
+##################################################
+
+cd /Herwig/Generators
+insert LHCGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
+set /Herwig/Analysis/HepMCFile:PrintEvent 1000000
+set /Herwig/Analysis/HepMCFile:Format GenEvent
+set /Herwig/Analysis/HepMCFile:Units GeV_mm
+
+
+do /Herwig/MatrixElements/Matchbox/Factory:ProductionMode
+
+read Matchbox/IncreaseVerbosity.in
+set /Herwig/Generators/LHCGenerator:IntermediateOutput Yes
+
+
+cd /Herwig/Generators
+saverun tT_homemade LHCGenerator

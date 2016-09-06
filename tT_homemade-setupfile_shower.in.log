@@ -1,0 +1,1429 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+Resetting max weight for decay tbar ->   bbar  d  ubar  5  5.9013  172500
+Resetting max weight for decay tbar ->   bbar  s  cbar  5  8.0491  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  dbar  u  5.9013  13.593  172500
+Resetting max weight for decay tbar ->   bbar  d  ubar  13.593  25.7726  172500
+Resetting max weight for decay tbar ->   bbar  e-  nu_ebar  5  6.16658  172500
+Resetting max weight for decay t ->   b  sbar  c  8.0491  8.59399  172500
+Resetting max weight for decay t ->   b  sbar  c  8.59399  11.9592  172500
+Resetting max weight for decay t ->   b  e+  nu_e  6.16658  20.5294  172500
+** An event exception of type ThePEG::Exception occurred while generating event number 180: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+Resetting max weight for decay t ->   b  mu+  nu_mu  5  8.02918  172500
+Resetting max weight for decay t ->   b  bbar  c  5  6.68205  172500
+Resetting max weight for decay tbar ->   bbar  tau-  nu_taubar  5  5.53099  172500
+Resetting max weight for decay t ->   b  tau+  nu_tau  5.53099  6.54503  172500
+Resetting max weight for decay t ->   b  sbar  c  11.9592  14.1086  172500
+Resetting max weight for decay tbar ->   bbar  s  cbar  14.1086  24.7182  172500
+Resetting max weight for decay tbar ->   bbar  mu-  nu_mubar  8.02918  25.9129  172500
+** An event exception of type ThePEG::Exception occurred while generating event number 572: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  tau-  nu_taubar  6.54503  14.9361  172500
+Resetting max weight for decay t ->   b  dbar  c  5  5.3378  172500
+Resetting max weight for decay t ->   b  sbar  c  24.7182  32.6948  172500
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.07218) for g to bbar
+** An event exception of type ThePEG::Exception occurred while generating event number 947: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+Resetting max weight for decay tbar ->   bbar  tau-  nu_taubar  14.9361  15.911  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.41601) for u to g
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  d  cbar  5.3378  9.00275  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+Resetting max weight for decay tbar ->   bbar  e-  nu_ebar  20.5294  35.1301  172500
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 350       pi0     111 [347]    
+                                 2.003     1.167    24.400    24.510     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.13167) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.71226) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  d  cbar  9.00275  14.3011  172500
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.58564) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.71612) for g to b
+Resetting max weight for decay tbar ->   bbar  s  ubar  5  7.74252  172500
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  sbar  c  32.6948  47.0304  172500
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 328       pi0     111 [325]    
+                               -12.914     0.193     5.885    14.193     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 541       pi0     111 [538]    
+                                 2.741     3.857    -4.071     6.243     0.135
+vetoing the decay 
+** An event exception of type ThePEG::Exception occurred while generating event number 3315: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.71481) for g to bbar
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 3463: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  mu+  nu_mu  25.9129  33.4849  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.40002) for u to g
+Resetting max weight for decay t ->   b  e+  nu_e  35.1301  35.311  172500
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  d  ubar  25.7726  31.0018  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.0399) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.97364) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.04666) for u to g
+** An event exception of type ThePEG::Exception occurred while generating event number 4320: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+Resetting max weight for decay t ->   b  dbar  u  31.0018  40.5009  172500
+Resetting max weight for decay tbar ->   bbar  s  ubar  7.74252  10.2254  172500
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 293       pi0     111 [290]    
+                                -4.430     5.759     9.689    12.111     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.934) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.61869) for u to g
+Resetting max weight for decay t ->   b  tau+  nu_tau  15.911  21.3096  172500
+Too many tries to generate phi in forward evolution
+** An event exception of type ThePEG::Exception occurred while generating event number 5055: 
+Remnant extraction failed in ShowerHandler::cascade() from primary interaction
+The event will be discarded.
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.38981) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  tau+  nu_tau  21.3096  27.1935  172500
+Resetting max weight for decay tbar ->   bbar  s  ubar  10.2254  12.032  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.75069) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.07128) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.96196) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.78476) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 6.25424) for ubar to ubar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.17088) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.08986) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.48178) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 163       pi0     111 [160]    
+                               -12.163    -1.464     8.657    15.002     0.135
+vetoing the decay 
+** An event exception of type ThePEG::Exception occurred while generating event number 7457: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+Resetting max weight for decay tbar ->   bbar  mu-  nu_mubar  33.4849  42.864  172500
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.28742) for g to bbar
+Resetting max weight for decay t ->   b  tau+  nu_tau  27.1935  28.8364  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.16004) for u to g
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.222176
+kappa = 0.357103
+xa = 1.57604
+root^2= -0.067103** An event exception of type ThePEG::Exception occurred while generating event number 8149: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  mu+  nu_mu  42.864  45.0031  172500
+** An event exception of type ThePEG::Exception occurred while generating event number 8454: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+No more warnings of this kind will be reported.
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.35889) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.3414) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 171       pi0     111 [168]    
+                               -26.117    14.119  -109.019   112.989     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00481) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.81809) for u to g
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.898021
+kappa = 0.192204
+xa = 1.77517
+root^2= -0.0198582Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.37853
+kappa = 0.168215
+xa = 1.7532
+root^2= -0.0973764PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.8743) for ubar to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 1.54167) for g to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.76876) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.67598) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 2.2443) for g to ubar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  s  ubar  12.032  13.0605  172500
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.07689) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.88361) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.88108) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.17753) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 168       pi0     111 [165]    
+                                11.408    40.897   -23.428    48.493     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2345) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.16342) for u to g
+Resetting max weight for decay tbar ->   bbar  tau-  nu_taubar  28.8364  33.5241  172500
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 358       pi0     111 [355]    
+                                -2.116     7.078    -4.965     8.902     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.72962) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12842) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  e-  nu_ebar  35.311  40.2727  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00705) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01224) for g to bbar
+Too many tries to generate phi
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.32456) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.15481) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 6.04909) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.42503) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.59235) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.2897) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.24005) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 409       pi0     111 [406]    
+                                 5.173    16.865   -11.730    21.185     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.15602) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.22505) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.08716) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.03939) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.34453) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.95305) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.40312) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.72634) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.12507) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.57447) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.3783) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.72297) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.93022) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.38558) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1278) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.07355) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.26704) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.54934) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.10402) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.69673) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03676) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.92035) for u to g
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.528572
+kappa = 0.290853
+xa = 1.5597
+root^2= -0.0960375Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.318061
+kappa = 0.222906
+xa = 1.58383
+root^2= -0.0201909PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.21312) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.1329) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.74341) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.23115) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.14819) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.37204) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.62754) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.09308) for u to u
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.15631) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.37658) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.83831) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.33933) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.82478) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.95208) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 205       pi0     111 [202]    
+                               -10.497    10.125    29.547    32.950     0.135
+vetoing the decay 
+Resetting max weight for decay tbar ->   bbar  tau-  nu_taubar  33.5241  41.9928  172500
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 407       pi0     111 [404]    
+                                -7.325    -5.322    -7.303    11.633     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.16545) for u to g
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  tau+  nu_tau  41.9928  46.6975  172500
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.16487) for u to g
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 15968: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (-0.00641681,-0.0112397,0.00502536;0.00120894) GeV after generating step number 2.
+
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.209) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 6.3628) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.06077) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.88752) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 14.9676) for g to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.23501) for u to u
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 5.72102) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 53.8171) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.88104) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 9.44618) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.66024) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 6.26346) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.7112) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.4773) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 7.88791) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 5.93311) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 22.2394) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 8.15042) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 15.3752) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 7.83221) for u to g
+Resetting max weight for decay tbar ->   bbar  d  ubar  40.5009  40.9305  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.1432) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.75747) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.11177) for ubar to ubar
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.905464
+kappa = 0.221822
+xa = 1.74463
+root^2= -0.0107348Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03592) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.72998
+kappa = 0.441644
+xa = 1.45554
+root^2= -0.0517694PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.0993) for g to b
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.06637) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.7104) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.88875) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.77441) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1645) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.48743) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12695) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.95935) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.14182) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.33119) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.09242) for u to u
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.15689) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.11636) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.32427) for u to u
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.28627) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1502) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.91135) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.14984) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.05738) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.02876) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.09273) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.38769) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.19488) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.02755) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.29683) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 116       pi0     111 [113]    
+                                -5.716    -7.966    -0.420     9.815     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.53184) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.77171) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 508       pi0     111 [505]    
+                                -4.343    -7.441     0.219     8.619     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 1.48285 0.482845 6 6 21  2.35364
+Forward soft weight problem 1.12767 0.127672 6 6 21  4.44879
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 301       pi0     111 [298]    
+                                -1.574    -3.118   -11.761    12.269     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.34119) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 373       pi0     111 [370]    
+                                 1.838    -3.183     4.331     5.682     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.259723
+kappa = 0.324852
+xa = 1.51709
+root^2= -0.016635PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.13385) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.82594) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.36486) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.41721) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03163) for u to g
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  s  ubar  13.0605  27.059  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  d  cbar  14.3011  14.9833  172500
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.854456
+kappa = 0.123645
+xa = 1.76117
+root^2= -0.00446772Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.31269) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.04372) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.51769) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.24848) for ubar to ubar
+Resetting max weight for decay tbar ->   bbar  d  cbar  14.9833  19.6266  172500
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay tbar ->   bbar  d  cbar  19.6266  30.8476  172500
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.89251) for g to bbar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.35832) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.36012) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.68407) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 200       pi0     111 [199]    
+                               -11.671    -8.631    13.929    20.118     0.135
+vetoing the decay 
+Too many tries to generate phi
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.3838) for u to u
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 425       pi0     111 [423]    
+                                 0.634    -2.199    -1.662     2.831     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 426       pi0     111 [423]    
+                                 0.462    -3.316    -2.689     4.296     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.1015) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.19534) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.19104) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.98819) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.17684) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.63343) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.0147) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  93       pi0     111 [90]    
+                                -8.150    -3.132    -6.464    10.864     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.7598) for u to u
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.35921) for g to bbar
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 394       pi0     111 [391]    
+                                 7.567     0.241   -15.991    17.693     0.135
+vetoing the decay 
+Resetting max weight for decay t ->   b  dbar  u  40.9305  42.9609  172500
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.869831
+kappa = 0.136369
+xa = 1.82057
+root^2= -0.0295677Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.699869
+kappa = 0.43503
+xa = 1.44764
+root^2= -0.0604156PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.00204) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00103) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.78145) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.28584) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.81717) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 169       pi0     111 [166]    
+                                -3.638     4.469    -3.196     6.591     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 190       pi0     111 [187]    
+                                -0.967    -0.060    -0.436     1.071     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 1.14147) for g to ubar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.76562) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.61947) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 5.34911) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.36682) for ubar to ubar
+Resetting max weight for decay tbar ->   bbar  b  cbar  6.68205  6.89558  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.14328) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03442) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.40906) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.31352) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.03252) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.56225) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.88055) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.1249) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.52381) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.00632) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.00373) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.87693) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.49221) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 6.37425) for ubar to ubar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.64791) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 356       pi0     111 [354]    
+                                -0.696    -6.191    57.187    57.526     0.135
+vetoing the decay 
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.54566
+kappa = 0.568575
+xa = 1.24987
+root^2= -0.00114212Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 272       pi0     111 [269]    
+                                 0.634    -0.281     6.559     6.597     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 196       pi0     111 [193]    
+                                 6.287     8.325   -50.940    51.998     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.58971) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 132       pi0     111 [129]    
+                                 3.795     3.499    -1.117     5.283     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.62553) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.44297) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.28994) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.36604) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2483) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.56937) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.54107) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.85602) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.53905) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2861) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.47501) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.33565) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.29532) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.19991) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.75893) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.93105) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.48747) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.05174) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.20829) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.85899) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.66879) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.07463) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.23965) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.95105) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.86928) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.26404) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.97658) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.3981) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.33264) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 173       pi0     111 [170]    
+                                 1.844   -49.592   -64.105    81.070     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00788) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 103       pi0     111 [100]    
+                                 2.649    16.116   -14.587    21.899     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.541352
+kappa = 0.406957
+xa = 1.43685
+root^2= -0.0870328PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.00428) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.9563) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.26746) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay t ->   b  dbar  u  42.9609 500 is too inefficient for the particle   7         t       6     {+1}
+                                -8.039   -37.608  -191.892   260.879   172.500
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 379       pi0     111 [376]    
+                                 0.860    -0.589    -1.243     1.628     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00943) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.83386) for u to g
+Too many tries to generate phi in forward evolution
+The decay tbar ->   bbar  s  cbar  47.0304 500 is too inefficient for the particle   6      tbar      -6     {-1}
+                              -216.424   -98.570  -771.226   825.289   172.500
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 201       pi0     111 [198]    
+                               -27.314   -12.283   103.949   108.177     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.06655) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.17137) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.19485) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.10596) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 194       pi0     111 [191]    
+                                -0.098    -2.957    37.690    37.806     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.35948) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.06695) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.10737) for u to g
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 35439: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (-0.00102754,0.00148085,-0.00015041;-0.00025502) GeV after generating step number 2.
+
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 107       pi0     111 [104]    
+                                18.883     8.854   -54.994    58.816     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.29433) for g to b
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 351       pi0     111 [348]    
+                                -8.535     6.894    -1.213    11.040     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 15.4991) for ubar to ubar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.16593) for ubar to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 44.9818) for g to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.79617) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 11.0846) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 15.5098) for ubar to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 43.2192) for g to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 13.4744) for ubar to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 1.27867) for g to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.54394) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.29593) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 15.2652) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 7.07842) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 15.361) for ubar to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 172.356) for g to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.4144) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.38942) for ubar to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 3.28025) for g to ubar
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 1.9494) for g to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.62974) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 6.76106) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.77658) for ubar to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.0474) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.40767) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.29117) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.35598) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.79671) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.10089) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.19454) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 163       pi0     111 [160]    
+                                 0.351    -0.839    -0.656     1.130     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.458917
+kappa = 0.469653
+xa = 1.39147
+root^2= -0.0961769PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.29714) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.32712) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.98514) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.79524) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.04965) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.13629) for u to g
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.76968) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.20909) for u to u
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.540727
+kappa = 0.400279
+xa = 1.48987
+root^2= -0.137389PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.27728) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.9761) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.28539) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.24813) for g to bbar
+Resetting max weight for decay tbar ->   bbar  e-  nu_ebar  40.2727  52.528  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.49813) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.15622) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.0584) for u to g
+Resetting max weight for decay t ->   b  dbar  u  42.9609  49.1689  172500
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 43121: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (0.00747232,0.00416187,-9.32811e-05;0.000313494) GeV after generating step number 2.
+
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.05487) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 162       pi0     111 [159]    
+                               -28.974   -42.637   165.715   173.548     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  74       pi0     111 [71]    
+                                 2.422    -0.688     5.371     5.933     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.59556) for u to g
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 43878: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (0.00360607,0.00205973,-0.00217867;0.000764642) GeV after generating step number 2.
+
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.665165
+kappa = 0.295681
+xa = 1.50642
+root^2= -0.0198003PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.16053) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.12119) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.08015) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 7.92815) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.38328) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.01348) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.74621) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.77811) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.25918) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.69627) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.8329) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.01995) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.56918) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.32212) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.35284) for u to g
+Resetting max weight for decay tbar ->   bbar  s  ubar  27.059  34.9345  172500
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.14288) for u to g
+Resetting max weight for decay tbar ->   bbar  s  ubar  34.9345  43.0643  172500
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.37286) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.58592) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 419       pi0     111 [413]    
+                                 1.220    -0.072     4.685     4.844     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.942062
+kappa = 0.027806
+xa = 1.93704
+root^2= -0.00210702PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.42678) for g to b
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.20926) for u to u
+Resetting max weight for decay tbar ->   bbar  b  cbar  6.89558  7.99627  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.97082) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2075) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.33908) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.5285) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.6769) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.78185) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.81258) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.28922) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.08183) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.013) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.29936) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 126       pi0     111 [123]    
+                                30.975    -3.630     4.654    31.533     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.02976) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.1286) for u to u
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2218) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.19214) for u to u
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.08377) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.49303) for u to g
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.39106
+kappa = 0.459035
+xa = 1.40784
+root^2= -0.0865924Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 371       pi0     111 [368]    
+                                -1.904    -2.784    -6.340     7.183     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.04088) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.97651) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.54917) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.60644) for u to g
+Resetting max weight for decay t ->   b  tau+  nu_tau  46.6975  49.9931  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.15088) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.17119) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.06614) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.18932) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.03967) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.20154) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.4123) for u to u
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  sbar  c  47.0304  47.0329  172500
+Too many tries to generate phi in forward evolution
+Weight greater than 1 for hard emission in SMTopDecayer::applyHard xg = 0.912489 xa = 1.06798
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 533       pi0     111 [530]    
+                                -1.102    -0.644    -5.947     6.084     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.44298) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.05971) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.43588) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.05258) for u to g
+Resetting max weight for decay tbar ->   bbar  b  cbar  7.99627  18.7826  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 136       pi0     111 [133]    
+                                -0.301    -0.158    -0.144     0.393     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.09133) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03193) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.93697) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.0191) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.0982) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.08373) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.16918) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.07139) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 122       pi0     111 [119]    
+                                 5.370    -8.200    25.980    27.768     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 158       pi0     111 [155]    
+                                 4.759    -1.934   -58.396    58.621     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 1.87656) for g to dbar
+Too many tries to generate phi in forward evolution
+The decay tbar ->   bbar  d  ubar  49.1689 500 is too inefficient for the particle   6      tbar      -6     {-1}
+                               140.995   169.326  -694.342   748.611   172.500
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.21418) for d to d
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.19371) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.07338) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.40884) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.08994) for u to u
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.52338) for u to g
+Forward soft weight problem 3.11172 2.11172 6 6 21  0.36943
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.33223) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.01072) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.75746) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.56997) for u to g
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 56441: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (0.00102164,-0.000448952,-7.94581e-05;-0.000181291) GeV after generating step number 2.
+
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.661789
+kappa = 0.339376
+xa = 1.45841
+root^2= -0.0105254PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.55857) for g to bbar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.93313) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.42303) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.15121) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.57153) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00629) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.36115) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1976) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.25109) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.21285) for g to b
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.603984
+kappa = 0.472858
+xa = 1.3445
+root^2= -0.0227253The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 125       pi0     111 [122]    
+                                -7.782    -2.034     0.171     8.047     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.75585) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 458       pi0     111 [455]    
+                               -14.773     2.004   -71.300    72.842     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.70677) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.58031) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 2.22846) for u to u
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.47034) for ubar to ubar
+Resetting max weight for decay t ->   b  dbar  u  49.1689  51.8065  172500
+Resetting max weight for decay tbar ->   bbar  s  cbar  47.0329  47.2617  172500
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.6509) for g to b
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  89       pi0     111 [86]    
+                                -1.490    -0.341    -0.539     1.626     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.80838) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.29962) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.44072) for u to u
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 191       pi0     111 [188]    
+                                 5.550     4.002    -6.451     9.405     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 788       pi0     111 [785]    
+                                -8.263     1.334    13.186    15.619     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.51425) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.01611) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 107       pi0     111 [104]    
+                                -0.408    -1.979     1.475     2.505     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.87099) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.12067) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.14999) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.64153) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.54272) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.97282) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.26902
+kappa = 0.397936
+xa = 1.49713
+root^2= -0.0601377Resetting max weight for decay tbar ->   bbar  mu-  nu_mubar  45.0031  47.2137  172500
+Resetting max weight for decay t ->   b  sbar  c  47.2617  48.2591  172500
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 2.95909) for g to ubar
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 44.7955) for ubar to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03565) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.02004) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.08879) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.63182) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.02854) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.19578) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.10905) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.92731) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.41731) for g to bbar
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.474868
+kappa = 0.453511
+xa = 1.35423
+root^2= -0.0353482Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.59607) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.35757) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 66527: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (0.000614351,-0.0048097,0.0090737;0.00131065) GeV after generating step number 2.
+
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.49606) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.68528) for u to g
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 66917: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (-0.00962178,-0.0224854,0.00617872;-0.00110877) GeV after generating step number 2.
+
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.48594) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.02756) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.35347) for u to g
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 16.5652 15.5652 6 6 21  2.83515
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.61861) for g to bbar
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.567615
+kappa = 0.564312
+xa = 1.26915
+root^2= -0.0198505PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.99034) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.05862) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.1679) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 128       pi0     111 [125]    
+                                -1.758    -0.517    15.804    15.910     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.724688
+kappa = 0.284776
+xa = 1.54042
+root^2= -0.0160577The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 496       pi0     111 [493]    
+                                 0.497   -13.212   -11.968    17.834     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.06179) for u to g
+Too many tries to generate phi in forward evolution
+Forward soft weight problem 3.21038 2.21038 6 6 21  3.30827
+Weight greater than 1 for hard emission in SMTopDecayer::applyHard xg = 0.968676 xa = 0.944807
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 558       pi0     111 [555]    
+                               -18.384     8.733    -9.167    22.322     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.43174) for g to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 146       pi0     111 [143]    
+                                -0.999     1.731    -0.345     2.032     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.65041) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.43524) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.34561) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.55804) for u to g
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.209146
+kappa = 0.330483
+xa = 1.60318
+root^2= -0.0611881PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.16862) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.32384) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.23047) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03379) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1394) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.24517) for u to g
+Too many tries to generate phi in forward evolution
+Resetting max weight for decay t ->   b  bbar  c  18.7826  19.7931  172500
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.19545) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.24921) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.97803) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.37782) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03292) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.25193) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.61438) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00697) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.08244) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.54325) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.03162) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.03871) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.6011) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.62485) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.20956) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.7568) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 402       pi0     111 [399]    
+                                 5.768    -1.924     1.863     6.361     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.52879) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.68449) for g to b
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.77996) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.91427) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.02316) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.29604) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 362       pi0     111 [359]    
+                                 0.009     0.096     0.005     0.166     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.24736) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 136       pi0     111 [133]    
+                                -3.575    -5.979    18.763    20.015     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 6.86839) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.80899) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.11734) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.40506) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.62257) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 2.58989) for g to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2955) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.01175) for ubar to ubar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.09819) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.67904) for g to bbar
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 133       pi0     111 [130]    
+                                -1.600    -0.862     2.127     2.801     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 2.75121) for g to b
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 224       pi0     111 [221]    
+                                 6.730    -3.364    -3.558     8.324     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.85659) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.46838) for u to u
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.91634) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.07731) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00051) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.01168) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.0291) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.63312) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.11362) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.93651) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.57873) for u to g
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.433758
+kappa = 0.609935
+xa = 1.23094
+root^2= -0.00777675Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00815) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.05779) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.21209) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.11538) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 121       pi0     111 [118]    
+                                -2.065    -4.956     6.906     8.749     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.00908) for g to bbar
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 438       pi0     111 [435]    
+                                 9.659    -5.147    -9.653    14.594     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03154) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.673138
+kappa = 0.2007
+xa = 1.58093
+root^2= -0.00101393PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.16912) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.64464) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.23662) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.55536) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.17758) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.36484) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 7.28801) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.27761) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.34312) for u to g
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.554537
+kappa = 0.529356
+xa = 1.32893
+root^2= -0.0727267Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.11732) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.12869) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.32179) for u to g
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.412524
+kappa = 0.116336
+xa = 1.77976
+root^2= -0.0642674PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.42406) for g to b
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.41532) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.64828) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.79032) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.49853) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.24744) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.03016) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.6943) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.65902) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.03981) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 6.22835) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.23542) for g to bbar
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.5879) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.10027) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 180       pi0     111 [177]    
+                                 3.014    -4.642   -26.862    27.426     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.35913) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.15282) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 5.5368) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.36841) for u to g
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.83707) for ubar to ubar
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 3.30538) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.03572) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.04261) for u to g
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.430839
+kappa = 0.23132
+xa = 1.54776
+root^2= -0.0223779PDFVeto warning: Ratio > GtoQQbarSudakov:PDFmax (by a factor of 1.13653) for g to ubar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1684) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.15566) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.08292) for u to g
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 188       pi0     111 [185]    
+                               -10.042     0.577   -23.981    26.005     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 479       pi0     111 [476]    
+                                 4.755    -7.457    55.877    56.572     0.135
+vetoing the decay 
+Too many tries to generate phi
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.73337) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.34722) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.50146) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 23.6047) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.11156) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.56486) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 4.90185) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.94267) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 6.57413) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.17221) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 10.6708) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 4.70316) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.00191) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.75613) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.33592) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.20995) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 3.26134) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.30889) for g to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.3281) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.03686) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 6.57911) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.16207) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1813) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.2825) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 8.52126) for g to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.45938) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.02796) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.28739) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.18688) for u to g
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.43202) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.92351) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 70.9956) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 2.59487) for g to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Imaginary root for final-state veto in SMTopDecayer::softMatrixElementVeto
+z =  0.376587
+kappa = 0.412363
+xa = 1.45567
+root^2= -0.090943Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.29528) for g to bbar
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 663       pi0     111 [660]    
+                                 1.441    -2.940    -0.863     3.389     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.66541) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtoGGSudakov:PDFmax (by a factor of 1.24222) for g to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 14.9964) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.11099) for g to b
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.01871) for g to b
+The decay pi0 ->   e-  e+  e-  e+  0.00026 500 is too inefficient for the particle 317       pi0     111 [314]    
+                                21.441    -3.978   -38.322    44.092     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.00634) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.84286) for g to bbar
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.00651) for u to g
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.4432) for g to b
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 95283: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (0.00143793,-0.000862884,0.0118937;-0.0108394) GeV after generating step number 3.
+
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.14318) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.31396) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 3.5546) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.07086) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 15.9954) for u to u
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.0534) for u to u
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 3.45016) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.4579) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.1385) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.58944) for u to g
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 96037: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (0.00161388,-0.00234521,0.00382329;0.0022942) GeV after generating step number 2.
+
+PDFVeto warning: Ratio > QtoQGSudakov:PDFmax (by a factor of 1.17687) for u to u
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.01377) for u to g
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.14002) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.15631) for g to b
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.54497) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.20502) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 172       pi0     111 [169]    
+                               -25.334    11.997    -7.687    29.066     0.135
+vetoing the decay 
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.05699) for u to g
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 2.31881) for u to g
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 178       pi0     111 [175]    
+                                -3.661     1.448    -2.479     4.654     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 110       pi0     111 [107]    
+                                 3.670    -0.459    -2.029     4.221     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+PDFVeto warning: Ratio > GtobbbarSudakov:PDFmax (by a factor of 1.14867) for g to bbar
+PDFVeto warning: Ratio > utoGuSudakov:PDFmax (by a factor of 1.10757) for u to g
+Too many tries to generate phi in forward evolution
+Too many tries to generate phi in forward evolution
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle 494       pi0     111 [491]    
+                                 1.836     4.507    -4.582     6.686     0.135
+vetoing the decay 
+Too many tries to generate phi in forward evolution
+* A warning exception of type ThePEG::EventHandler::ConsistencyException occurred while generating event number 99808: 
+Event handler 'LHCHandler' found energy-momentum non-conservation by (-0.00506579,-0.00109901,-0.00278653;0.00215402) GeV after generating step number 2.
+
+No more warnings of this kind will be reported.
+final integrated cross section is ( 0.173575 +/- 0.000368329 ) nb
+
+The following exception classes were reported in this run:
+ThePEG::EventHandler::ConsistencyException warning (10 times)
+ThePEG::Exception eventerror (143 times)
+
+Miscellaneous output from modules to the standard output:
+
+Statistics for the UE process: 
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total:                                   1019098      1019098      7.13903e+07
+==============================================================================
+Per matrix element breakdown:
+MEQCD2to2Fast                            1019098      1019098      7.13903e+07
+==============================================================================
+
+==============================================================================
+Eikonalized and soft cross sections:
+
+Model parameters:                    ptmin:   4.39 GeV, mu2: 2.3 GeV2
+                                     DL mode: 2, CMenergy: 7000 GeV
+hard inclusive cross section (mb):   71.4222
+soft inclusive cross section (mb):   152.676
+total cross section (mb):            101.875
+inelastic cross section (mb):        72.3232
+soft inv radius (GeV2):              0.556014
+slope of soft pt spectrum (1/GeV2):  0.0348394
+Average hard multiplicity:           4.79601
+Average soft multiplicity:           4.17699
+==============================================================================
+

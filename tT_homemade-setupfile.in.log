@@ -1,0 +1,258 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                -4.568    -3.109    -0.632     5.563     0.135
+vetoing the decay 
+** An event exception of type ThePEG::Exception occurred while generating event number 4704: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+** An event exception of type ThePEG::Exception occurred while generating event number 4969: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+** An event exception of type ThePEG::Exception occurred while generating event number 5340: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                 8.834   -13.086     8.032    17.714     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -10.699    10.914    28.421    32.270     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                41.722    -1.334   -67.115    79.037     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                -1.716    -2.203    10.273    10.646     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -55.352   -16.346    12.488    59.051     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                 2.401    -1.443    -0.490     2.847     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  25       pi0     111 [22]    
+                                -0.940    -2.448    -3.525     4.395     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -31.773    13.150   197.701   200.670     0.135
+vetoing the decay 
+** An event exception of type ThePEG::Exception occurred while generating event number 15256: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  25       pi0     111 [22]    
+                                -3.030     6.526    -9.873    12.218     0.135
+vetoing the decay 
+** An event exception of type ThePEG::Exception occurred while generating event number 15352: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+** An event exception of type ThePEG::Exception occurred while generating event number 15591: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+** An event exception of type ThePEG::Exception occurred while generating event number 16484: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  22       pi0     111 [20]    
+                               -24.516    -5.705   -67.539    72.077     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -42.816   -19.298   -21.271    51.557     0.135
+vetoing the decay 
+** An event exception of type ThePEG::Exception occurred while generating event number 16999: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+** An event exception of type ThePEG::Exception occurred while generating event number 17519: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+** An event exception of type ThePEG::Exception occurred while generating event number 18023: 
+boostVector computed for a non-timelike LorentzVector
+The event will be discarded.
+No more warnings of this kind will be reported.
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                 6.466    -2.417     5.426     8.781     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                -4.472    -6.588     5.192     9.507     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                               -44.766    14.860    25.868    53.795     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                 3.772    14.935   -61.911    63.799     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  23       pi0     111 [20]    
+                                39.817     0.608    20.422    44.753     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                -0.969    -1.928     3.018     3.712     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                 0.385     0.596     1.574     1.732     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  25       pi0     111 [22]    
+                               -20.269   -27.674    67.358    75.590     0.135
+vetoing the decay 
+The decay pi0 ->   e-  e+  e-  e+  0.00026 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                 0.317    -0.636    -0.518     0.890     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  18       pi0     111 [16]    
+                                 3.437    -1.040    -7.470     8.289     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -17.965    15.278   -97.028    99.853     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                 1.493    -0.260    -0.572     1.625     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                -2.968    -7.495  -221.020   221.167     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -7.277   -12.750    11.183    18.455     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                31.972    72.739   -79.679   112.525     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -4.429    18.993   -20.602    28.369     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                32.012    -5.929    -7.825    33.484     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -11.080    -7.537   -15.463    20.462     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -33.008     1.030    -9.737    34.430     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  23       pi0     111 [20]    
+                               -23.035     4.223    54.025    58.882     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                -3.144     2.475     3.672     5.433     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  23       pi0     111 [20]    
+                                 1.988     0.625     5.523     5.905     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  27       pi0     111 [24]    
+                                -3.259   -19.565   -13.949    24.248     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  24       pi0     111 [22]    
+                                -8.064   -20.476    49.291    53.980     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                -7.142    29.265   -10.195    31.803     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                -4.476    15.138   -21.845    26.952     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                -5.692     5.553     6.325    10.162     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  20       pi0     111 [18]    
+                               -30.126    -7.202   -16.005    34.866     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                67.130     0.242   -15.483    68.892     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                -9.626     4.767   -55.886    56.909     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -2.437    -0.923    -1.172     2.861     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                23.400   -21.909    53.072    62.002     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  18       pi0     111 [16]    
+                                -0.503   -11.722     9.072    14.832     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                48.226   -76.173  -221.669   239.302     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                 0.351    -5.483   -47.900    48.214     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                 1.026    -1.946    -0.364     2.234     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                 1.137    -2.786    -6.373     7.049     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -1.398    -0.558     4.075     4.346     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                11.524     3.252    -3.602    12.504     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  24       pi0     111 [21]    
+                                13.320    -4.362  -175.218   175.778     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -1.715    -0.567    -0.180     1.820     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -6.250    -6.868     2.567     9.636     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  20       pi0     111 [18]    
+                               -14.940    -2.178    13.368    20.166     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  25       pi0     111 [23]    
+                                 4.966    15.544     4.202    16.851     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                                 1.248     0.479    -4.217     4.426     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                -1.371     0.628     1.097     1.869     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                 7.499   -25.894   -20.741    34.014     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  21       pi0     111 [18]    
+                              -203.401    16.603    44.095   208.787     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  19       pi0     111 [16]    
+                                 4.745    15.121    14.731    21.637     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                               -24.746   -13.955  -103.291   107.127     0.135
+vetoing the decay 
+The decay pi0 ->   gamma  e-  e+  0.0267854 500 is too inefficient for the particle  17       pi0     111 [14]    
+                                -5.553     5.640   -18.204    19.851     0.135
+vetoing the decay 
+final integrated cross section is ( 0.173928 +/- 0.000368593 ) nb
+
+The following exception classes were reported in this run:
+ThePEG::Exception eventerror (66 times)
+
+Miscellaneous output from modules to the standard output:
+
+Statistics for the UE process: 
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total:                                    100000       100000      7.14222e+07
+==============================================================================
+Per matrix element breakdown:
+MEQCD2to2Fast                             100000       100000      7.14222e+07
+==============================================================================
+
+==============================================================================
+Eikonalized and soft cross sections:
+
+Model parameters:                    ptmin:   4.39 GeV, mu2: 2.3 GeV2
+                                     DL mode: 2, CMenergy: 7000 GeV
+hard inclusive cross section (mb):   71.4222
+soft inclusive cross section (mb):   152.676
+total cross section (mb):            101.875
+inelastic cross section (mb):        72.3232
+soft inv radius (GeV2):              0.556014
+slope of soft pt spectrum (1/GeV2):  0.0348394
+Average hard multiplicity:           4.79601
+Average soft multiplicity:           4.17699
+==============================================================================
+

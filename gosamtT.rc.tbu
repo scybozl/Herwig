@@ -36,7 +36,7 @@ model=smdiag
 #                                                                    #
 ######################################################################
 model.options= mH=125.0, mW=80.399, wW=2.09974, mZ=91.1876, wZ=2.50966,\
-			GF=0.0000116637, mT=172.0, wT=1.3167 
+			GF=0.0000116637, mT=172.0, wT=1.4426 
 
 ### zero (comma separated list) ######################################
 #    A list of symbols that should be treated as identically         #
@@ -745,7 +745,8 @@ PSP_chk_kfactor=10000
 #             %-<n> refers to -n only                                #
 #                                                                    #
 ######################################################################
-symmetries=flavour,family,generation,%-11=+,%+12=-,%+13=-,%-14=+
+symmetries=flavour,family,generation
+#,%-11=+,%+12=-,%+13=-,%-14=+
 
 # samurai.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig//include/gosam-contrib
 # samurai.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig//lib -lgolem -lsamurai -lavh_olo -lqcdloop -lff

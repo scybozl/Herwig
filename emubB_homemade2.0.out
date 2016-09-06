@@ -1,0 +1,26 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+==============================================================================
+Statistics for event handler 'LHCHandler':
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total (from   weighted events): including vetoed events           1.800(3)e-03
+==============================================================================
+Total (from   weighted events):      1.50926e+07  1.50926e+07     1.800(3)e-03
+==============================================================================
+Per matrix element breakdown:
+MEMadGraph[d,dbar->nu_mubar,e+,bbar,b     633632       633632      78.1(9)e-06
+MEMadGraph[dbar,d->nu_mubar,e+,bbar,b     626053       626053      76.8(8)e-06
+MEMadGraph[ubar,u->nu_mubar,e+,bbar,b1.04204e+06  1.04204e+06     0.130(1)e-03
+MEMadGraph[u,ubar->nu_mubar,e+,bbar,b1.03934e+06  1.03934e+06     0.132(1)e-03
+MEMadGraph[c,cbar->nu_mubar,e+,bbar,b      32816        32816       4.0(2)e-06
+MEMadGraph[cbar,c->nu_mubar,e+,bbar,b      33267        33267       5.1(5)e-06
+MEMadGraph[sbar,s->nu_mubar,e+,bbar,b      69174        69174       8.3(2)e-06
+MEMadGraph[s,sbar->nu_mubar,e+,bbar,b      68573        68573       8.5(2)e-06
+MEMadGraph[g,g->nu_mubar,e+,bbar,b,nu1.15477e+07  1.15477e+07     1.357(2)e-03
+==============================================================================

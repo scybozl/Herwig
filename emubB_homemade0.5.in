@@ -27,8 +27,8 @@ set /Herwig/EventHandlers/LHCHandler:CollisionCuts Off
 
 set /Herwig/EventHandlers/LHCHandler:Sampler /Herwig/Samplers/Sampler
 set /Herwig/Samplers/Sampler:BinSampler /Herwig/Samplers/MonacoSampler
-set /Herwig/Samplers/MonacoSampler:InitialPoints 30500 
-set /Herwig/Samplers/MonacoSampler:NIterations 2
+set /Herwig/Samplers/MonacoSampler:InitialPoints 30000 
+set /Herwig/Samplers/MonacoSampler:NIterations 3 
 ##################################################
 ## Process selection
 ##################################################
@@ -40,54 +40,28 @@ set /Herwig/Samplers/MonacoSampler:NIterations 2
 ## Set the order of the couplings
 cd /Herwig/MatrixElements/Matchbox
 set Factory:OrderInAlphaS 2
-set Factory:OrderInAlphaEW 0 
+set Factory:OrderInAlphaEW 4 
 
 ## Select the process
 ## You may use identifiers such as p, pbar, j, l, mu+, h0 etc.
-do Factory:Process p p -> t tbar 
+do Factory:Process p p -> e+ nu_e mu- nu_mubar b bbar 
 
 ## Particle properties let aside
 #read Matchbox/OnShellWProduction.in
 
 cd /Herwig/MatrixElements/Matchbox
-set Factory:ScaleChoice Scales/TopPairMassScale
-#set Scales/FixedScale:FixedScale 86*GeV
-
-#cd /Herwig/EventHandlers/
-#set LHCHandler:CascadeHandler /Herwig/Shower/ShowerHandler
-
-##################################################
-## Shower!
-##################################################
-
-read Matchbox/MCatNLO-Dipole-HardAlphaSTune.in
-
-cd /Herwig/MatrixElements/Matchbox
-
-#do Factory:StartParticleGroup p
-#insert Factory:ParticleGroup 0 /Herwig/Particles/u
-#insert Factory:ParticleGroup 0 /Herwig/Particles/ubar
-#do Factory:EndParticleGroup
-
-#set Factory:RenormalizationScaleFactor 0.5
-#set Factory:FactorizationScaleFactor 0.5
-
-#set MEMatching:RenormalizationScaleFactor 0.5
-#set MEMatching:FactorizationScaleFactor 0.5
+set Factory:ScaleChoice Scales/FixedScale
+set Scales/FixedScale:FixedScale 43*GeV
 
 cd /Herwig/Cuts
 set MatchboxJetMatcher:Factory /Herwig/MatrixElements/Matchbox/Factory
 
 cd /Herwig/MatrixElements/Matchbox
 clear Factory:Amplitudes
-#insert Factory:Amplitudes 0 Amplitudes/MadGraph
-insert Factory:Amplitudes 0 Amplitudes/GoSam
-set Amplitudes/GoSam:SetupInFilename gosamtTNLO.rc
-
-#cd Amplitudes/
-#set GoSam:AccuracyTarget 3
-#set GoSam:UseRunningAlphaS On
-#set GoSam:SetMuToMuR On
+insert Factory:Amplitudes 0 Amplitudes/MadGraph
+#set Amplitudes/GoSam:AccuracyTarget 3
+#set Amplitudes/GoSam:UseRunningAlphaS On
+#set Amplitudes/GoSam:SetMuToMuR On
 
 cd /Herwig/MatrixElements/Matchbox
 insert Factory:DiagramGenerator:ExcludeInternal 0 /Herwig/Particles/e-
@@ -100,7 +74,7 @@ set Factory:PartonExtractor /Herwig/Partons/QCDExtractor
 
 cd /Herwig/Partons
 create ThePEG::LHAPDF myPDFset ThePEGLHAPDF.so
-set myPDFset:PDFName MSTW2008nlo68cl
+set myPDFset:PDFName MSTW2008lo68cl
 set myPDFset:RemnantHandler HadronRemnants
 
 set /Herwig/Particles/p+:PDF myPDFset
@@ -109,20 +83,17 @@ set /Herwig/Particles/pbar-:PDF myPDFset
 set /Herwig/Partons/QCDExtractor:FirstPDF myPDFset
 set /Herwig/Partons/QCDExtractor:SecondPDF myPDFset
 
-set /Herwig/Partons/HardLOPDF:PDFName MSTW2008nlo68cl
-set /Herwig/Partons/HardNLOPDF:PDFName MSTW2008nlo68cl
-
-set /Herwig/Shower/ShowerHandler:PDFA ShowerNLOPDF
-set /Herwig/Shower/ShowerHandler:PDFB ShowerNLOPDF
+set /Herwig/Partons/HardLOPDF:PDFName MSTW2008lo68cl
+set /Herwig/Partons/HardNLOPDF:PDFName MSTW2008lo68cl
 
 cd /Herwig/Couplings
 
-set NLOAlphaS:input_scale 91.1876*GeV
-set NLOAlphaS:input_alpha_s 0.120179
-set NLOAlphaS:QuarkMasses 0, 0, 0, 1.4, 4.75, 1e+10 
-set NLOAlphaS:max_active_flavours 5
+set LOAlphaS:input_scale 91.1876*GeV
+set LOAlphaS:input_alpha_s 0.139387
+set LOAlphaS:QuarkMasses 0, 0, 0, 1.4, 4.75, 1e+10 
+set LOAlphaS:max_active_flavours 5
 
-set /Herwig/Model:QCD/RunningAlphaS /Herwig/Couplings/NLOAlphaS
+set /Herwig/Model:QCD/RunningAlphaS /Herwig/Couplings/LOAlphaS
 
 # Particles properties
 
@@ -143,32 +114,34 @@ set e+:HardProcessMass 0.0*GeV
 set mu-:NominalMass 0.0*GeV
 set mu-:HardProcessMass 0.0*GeV
 
-set t:NominalMass 172.5*GeV
-set t:HardProcessMass 172.5*GeV
+set t:NominalMass 172.0*GeV
+set t:HardProcessMass 172.0*GeV
 set t:Width 1.4426*GeV
-set t:HardProcessWidth 0*GeV
+set t:HardProcessWidth 1.4426*GeV
+set t:WidthCut 14*GeV 
 set W+:NominalMass 80.399*GeV
 set W+:HardProcessMass 80.399*GeV
 set W+:Width 2.09974*GeV
 set W+:HardProcessWidth 2.09974*GeV
+set W+:WidthCut 14*GeV
 set Z0:NominalMass 91.1876*GeV
 set Z0:HardProcessMass 91.1876*GeV
 set Z0:Width 2.50966*GeV
 set Z0:HardProcessWidth 2.50966*GeV
-
+set Z0:WidthCut 14*GeV
 set h0:NominalMass 125.0*GeV
 set h0:HardProcessMass 125.0*GeV
 set h0:Width 4.07e-03*GeV
 set h0:HardProcessWidth 4.07e-03*GeV
 # read Matchbox/LO.in
 cd /Herwig/MatrixElements/Matchbox
-#set Factory:VirtualContributions Off 
-#set Factory:RealContributions Off
+set Factory:VirtualContributions Off 
+set Factory:RealContributions Off
 
 cd /Herwig/EventHandlers
-#set LHCHandler:CascadeHandler NULL
-#set LHCHandler:HadronizationHandler NULL
-#set LHCHandler:DecayHandler NULL
+set LHCHandler:CascadeHandler NULL
+set LHCHandler:HadronizationHandler NULL
+set LHCHandler:DecayHandler NULL
 
 insert LHCHandler:SubProcessHandlers 0 /Herwig/MatrixElements/Matchbox/Factory
 
@@ -176,11 +149,11 @@ cd /Herwig/Analysis
 set Basics:CheckQuark No
 
 ##############
-#read Matchbox/FourFlavourScheme.in
+read Matchbox/FourFlavourScheme.in
 
 cd /Herwig/Generators
 insert LHCGenerator:AnalysisHandlers 0 /Herwig/Analysis/HepMCFile
-set /Herwig/Analysis/HepMCFile:PrintEvent 1000000
+set /Herwig/Analysis/HepMCFile:PrintEvent 100000000
 set /Herwig/Analysis/HepMCFile:Format GenEvent
 set /Herwig/Analysis/HepMCFile:Units GeV_mm
 
@@ -199,7 +172,7 @@ set /Herwig/Analysis/HepMCFile:Units GeV_mm
 #insert QCDCuts:MultiCuts 0 MissingPtCut
 
 #create ThePEG::FastJetFinder BJetFinder FastJetFinder.so
-#set QCDCuts:JetFinder /Herwig/Cuts/BJetFinder
+#set QCDCuts:JetFinder BJetFinder
 
 #set /Herwig/Particles/b:Synchronized Not_synchronized
 #set /Herwig/Particles/bbar:Synchronized Not_synchronized
@@ -266,11 +239,10 @@ set /Herwig/Analysis/HepMCFile:Units GeV_mm
 
 
 #cd /Herwig/Cuts
-#set JetFinder:UnresolvedMatcher BJetMatcher
-#set JetFinder:Variant AntiKt
-#set JetFinder:ConeRadius 0.5 
-#set JetFinder:RecombinationScheme Pt
-#set JetFinder:Mode Exclusive
+#set BJetFinder:UnresolvedMatcher BJetMatcher
+#set BJetFinder:Variant AntiKt
+#set BJetFinder:ConeRadius 0.5 
+#set BJetFinder:RecombinationScheme Pt
 
 #set FirstJet:PtMin 30.0*GeV
 #set FirstJet:YRange -2.5 2.5
@@ -304,6 +276,5 @@ set /Herwig/Model:EW/FermiConstant 1.16637e-05
 set /Herwig/Model:EW/RecalculateEW On
 set /Herwig/MatrixElements/Matchbox/Factory:FixedQEDCouplings On
 
-
 cd /Herwig/Generators
-saverun tT_homemadeNLO LHCGenerator
+saverun emubB_homemade0.5 LHCGenerator

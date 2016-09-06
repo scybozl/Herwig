@@ -1,0 +1,59 @@
+>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>>
+>>>> Toolkit for HEP Event Generation - ThePEG 2.0.2 <<<<<<<<<<<<<<<<<<<<<<<<<
+<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<<
+
+>> Herwig 7.0.2 / ThePEG 2.0.2
+
+==============================================================================
+Statistics for event handler 'LHCHandler':
+                                       generated    number of    Cross-section
+                                          events     attempts             (nb)
+==============================================================================
+Total (from   weighted events): including vetoed events          0.1713(5)e+00
+==============================================================================
+Total (from   weighted events):           100000       100133    0.1711(5)e+00
+==============================================================================
+Per matrix element breakdown:
+MEGoSam[d,dbar->tbar,t].BornVirtual         3100         3105       5.7(1)e-03
+MEGoSam[dbar,d->tbar,t].BornVirtual         3063         3066       5.7(1)e-03
+MEGoSam[ubar,u->tbar,t].BornVirtual         5319         5326       9.7(2)e-03
+MEGoSam[u,ubar->tbar,t].BornVirtual         5241         5246       9.5(2)e-03
+MEGoSam[c,cbar->tbar,t].BornVirtual          116          116      0.20(2)e-03
+MEGoSam[cbar,c->tbar,t].BornVirtual          130          130      0.24(2)e-03
+MEGoSam[sbar,s->tbar,t].BornVirtual          339          340      0.61(4)e-03
+MEGoSam[s,sbar->tbar,t].BornVirtual          320          320      0.56(4)e-03
+MEGoSam[b,bbar->tbar,t].BornVirtual           46           46        97(2)e-06
+MEGoSam[bbar,b->tbar,t].BornVirtual           49           49       90(20)e-06
+MEGoSam[g,g->tbar,t].BornVirtual           77347        77450    0.1411(4)e+00
+MEGoSam[d,dbar->tbar,t,g].SubtractedR         71           71        98(3)e-06
+MEGoSam[d,g->tbar,d,t].SubtractedReal        278          278     -0.11(7)e-03
+MEGoSam[dbar,d->tbar,t,g].SubtractedR         82           83      0.12(3)e-03
+MEGoSam[dbar,g->tbar,dbar,t].Subtract         58           58      -10(10)e-06
+MEGoSam[ubar,u->tbar,t,g].SubtractedR        140          140      0.13(3)e-03
+MEGoSam[ubar,g->tbar,ubar,t].Subtract         61           61     -0.14(7)e-03
+MEGoSam[u,ubar->tbar,t,g].SubtractedR        146          146      0.22(4)e-03
+MEGoSam[u,g->tbar,u,t].SubtractedReal        677          679      -0.6(1)e-03
+MEGoSam[c,cbar->tbar,t,g].SubtractedR          4            4         6(4)e-06
+MEGoSam[c,g->tbar,c,t].SubtractedReal         16           16         6(6)e-06
+MEGoSam[cbar,c->tbar,t,g].SubtractedR          1            1         2(2)e-06
+MEGoSam[cbar,g->tbar,cbar,t].Subtract         20           20         4(4)e-06
+MEGoSam[sbar,s->tbar,t,g].SubtractedR         14           14       20(10)e-06
+MEGoSam[sbar,g->tbar,sbar,t].Subtract         30           30        -1(1)e-06
+MEGoSam[s,sbar->tbar,t,g].SubtractedR          6            6         1(1)e-06
+MEGoSam[s,g->tbar,s,t].SubtractedReal         31           31         3(3)e-06
+MEGoSam[b,bbar->tbar,t,g].SubtractedR          1            1       0.4(4)e-06
+MEGoSam[b,g->tbar,b,t].SubtractedReal         18           18      -20(10)e-06
+MEGoSam[bbar,b->tbar,t,g].SubtractedR          1            1         3(3)e-06
+MEGoSam[bbar,g->tbar,bbar,t].Subtract         13           13       30(20)e-06
+MEGoSam[g,d->tbar,d,t].SubtractedReal        284          284     -0.26(8)e-03
+MEGoSam[g,dbar->tbar,dbar,t].Subtract         51           51      -30(30)e-06
+MEGoSam[g,ubar->tbar,ubar,t].Subtract         39           39      -80(30)e-06
+MEGoSam[g,u->tbar,u,t].SubtractedReal        701          703      -0.8(1)e-03
+MEGoSam[g,c->tbar,c,t].SubtractedReal         31           31       60(30)e-06
+MEGoSam[g,cbar->tbar,cbar,t].Subtract         15           15      -30(20)e-06
+MEGoSam[g,sbar->tbar,sbar,t].Subtract         25           25      -50(20)e-06
+MEGoSam[g,s->tbar,s,t].SubtractedReal         27           27         1(1)e-06
+MEGoSam[g,b->tbar,b,t].SubtractedReal         17           17      -20(20)e-06
+MEGoSam[g,bbar->tbar,bbar,t].Subtract         10           10      -10(10)e-06
+MEGoSam[g,g->tbar,t,g].SubtractedReal       2062         2066     -0.99(2)e-03
+==============================================================================

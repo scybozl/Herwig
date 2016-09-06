@@ -1,0 +1,261 @@
+---#[ COMMAND LINE ARGUMENTS:
+'--olp' '--output-file=/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam//GoSam.OLPContract.lh' '--config=gosamtTNLO.rc.tbu' '--destination=/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/' '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam//GoSam.OLPOrder.lh'
+---#] COMMAND LINE ARGUMENTS:
+---#[ MESSAGES:
+GoSam 2.0.2 (OLP)
+Reading configuration file gosamtTNLO.rc.tbu
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/model'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p0_ddbar_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p2_ubaru_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p4_ccbar_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p6_sbars_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p8_bbbar_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p10_gg_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p12_ddbar_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p14_ubaru_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p16_ccbar_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p18_sbars_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p20_bbbar_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p22_gg_tbart'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p23_ddbar_tbartg'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p27_ubaru_tbartg'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p31_ccbar_tbartg'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p35_sbars_tbartg'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p39_bbbar_tbartg'
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p53_gg_tbartg'
+Generating file form.sty
+Generating file topolopy.sty
+Generating file pyxo.sty
+All templates processed.
+QGraf is generating diagrams-0.hh
+QGraf is generating pyxotree.py
+QGraf is generating topotree.py
+Analyzing diagrams
+Generating file Makefile.am
+Generating file Makefile.source
+Generating file config.sh.in
+Creating directory '/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p35_sbars_tbartg/codegen' ...
+Generating file abbrev.in
+Generating file abbrev.out
+Generating file abbrevloc.out
+Generating file color.in
+Generating file color.out
+Generating file functions.out
+Generating file model.out
+Generating file haggies-l0.in
+Generating file haggies-l0.out
+Generating file pythonin.py
+Generating file haggies-l1d.out
+Generating file filter.py
+Generating file derive.frm
+Generating file info.frm
+Generating file golem.frm
+Generating file color.frm
+Generating file abbreviate.hh
+Generating file optimizeborn.hh
+Generating file finaloptimization.frm
+Generating file buildfortran.py
+Generating file buildfortran_d.py
+Generating file buildfortranborn.py
+Generating file t2f.py
+Generating file buildmodel.py
+Generating file symbols.hh
+Generating file spinney.hh
+Generating file color.hh
+Generating file vertices.hh
+---#] MESSAGES:
+---#[ LAST WORDS:
+
+---#] LAST WORDS:
+---#[ STACK:
+[  0]   File "/home/iwsatlas1/scyboz/Work/Herwig//bin/gosam.py", line 140, in <module>
+    olp.main(argv)
+[  1]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/app/olp.py", line 231, in main
+    mc_name = cmd_mc
+[  2]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/util/olp.py", line 640, in process_order_file
+    from_scratch)
+[  3]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/util/main_misc.py", line 154, in generate_process_files
+    diagram_sum = eprops)
+[  4]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/templates/xmltemplates.py", line 654, in transform_templates
+    xmlp.Parse(xmlf.read())
+[  5]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/templates/xmltemplates.py", line 616, in evt_end_element
+    xmld.end_file()
+[  6]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/templates/xmltemplates.py", line 232, in end_file
+    self.transform_template_file(in_file, out_file, class_name, filter, executable)
+[  7]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/templates/xmltemplates.py", line 108, in transform_template_file
+    self.props, self.opts, self.opts, filter=filter, executable=executable)
+[  8]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/templates/factory.py", line 37, in process
+    copy_file(in_file, out_file)
+[  9]   File "/home/iwsatlas1/scyboz/Work/Herwig//lib/python2.7/site-packages/golem/util/tools.py", line 165, in copy_file
+    f.close()
+---#] STACK:
+---#[ CONFIG:
+PSP_chk_kfactor=10000
+PSP_chk_th3=5
+PSP_chk_th1=8
+fc.bin=gfortran
+golem95.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig/lib -lgolem
+qgraf.verbatim=true=iprop[phim,phip,chi,H,ep,em,ne,nebar,mup,mum,nmu,nmubar,0,0];# true=bridge[Wp,2,100];
+__OLP_BLHA1__=False
+PSP_chk_th2=3
+__GENERATE_DERIVATIVES__=True
+group=True
+reduction_interoperation=-1
+olp.correctiontype=QCD
+PSP_chk_method=PoleRotation
+process_path=/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/p35_sbars_tbartg
+process_name=p35_sbars_tbartg
+__OLP_TRAILING_UNDERSCORE__=False
+gosam-contrib_libql.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig/include/gosam-contrib
+gosam-contrib_libolo.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig/include/gosam-contrib
+__NUMPOLVEC__=True
+form.bin=tform
+model.options=mH=125.0,mW=80.399,wW=2.09974,mZ=91.1876,wZ=2.50966,GF=0.0000116637,mT=172.0,wT=1.3167
+generate_uv_counterterms=None
+__excludedParticles__=None
+qgraf.options=onshell,notadpole,nosnail
+olp.include_helicity_average=False
+zero=me,mD,wB,mC,mB,mmu,mU,mS
+olp.include_color_average=False
+z0005.extensions=gosam-contrib_fc
+z0095.extensions=gosam-contrib_libql
+renorm_decoupling=True
+polvec=numerical
+formopt.level=2
+__GENERATE_NINJA_DOUBLE__=False
+initialization-auto.extensions=samurai
+out=Tbar,T,g
+golem95.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig/include/gosam-contrib
+__EXTRAOPT__=False
+__CUSTOM_SPIN2_PROP__=False
+__OLP_CALL_BY_VALUE__=True
+__GAUGE_CHECK__=False
+__massiveParticles__=None
+renorm_mqse=True
+samurai.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig/lib -lsamurai
+ninja.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig/include/gosam-contrib
+__INTERNALS__=__GENERATE_DERIVATIVES__,__DERIVATIVES_AT_ZERO__,__REGULARIZATION_DRED__,__REGULARIZATION_HV__,__REQUIRE_FR5__,__GAUGE_CHECK__,__NUMPOLVEC__,__REDUCE_HELICITIES__,__OLP_DAEMON__,__OLP_TRAILING_UNDERSCORE__,__OLP_CALL_BY_VALUE__,__OLP_TO_LOWER__,__OLP_BADPTSFILE_NUMBERING__,__OLP_MODE__,__OLP_BLHA1__,__OLP_BLHA2__,__FORMOPT__,__GENERATE_NINJA_TRIPLE__,__GENERATE_NINJA_DOUBLE__,__CUSTOM_SPIN2_PROP__,__EWCHOOSE__
+renorm_beta=True
+complex_masses=
+r2=explicit
+nlo_prefactors=2
+__OLP_DAEMON__=False
+modeltype=smdiag
+gosam-contrib_libff.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig/lib -lff
+extensions=autotools,,samurai,dred,gosam-contrib_fc,gosam-contrib_libolo,gosam-contrib_libql,gosam-contrib_libff,formopt,derive,numpolvec
+gosam-contrib_libolo.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig/lib -lavh_olo
+qgraf.bin=qgraf
+__OLP_BLHA2__=True
+__info.count.ct__=0
+abbrev.level=diagram
+__DERIVATIVES_AT_ZERO__=True
+python.bin=python
+__OLP_BADPTSFILE_NUMBERING__=False
+one=
+generate_nlo_virt=False
+gosam-contrib_fc.fcflags=-g -O2 -ffree-line-length-none
+gosam-contrib_libql.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig/lib -lqcdloop
+PSP_check=True
+crossings=p50_gs_tbarst: g S > Tbar S T,p37_ssbar_tbartg: S Sbar > Tbar T g,p38_sg_tbarst: S g > Tbar S T,p49_gsbar_tbarsbart: g Sbar > Tbar Sbar T,p36_sbarg_tbarsbart: Sbar g > Tbar Sbar T
+olp.irregularisation=CDR
+__REQUIRE_FR5__=False
+__FORMOPT__=True
+ehc=False
+samurai.version=2.9.0
+z0099.extensions=gosam-contrib_libff
+regularisation_scheme=dred
+PSP_chk_li1=16
+PSP_chk_li3=6
+PSP_chk_li2=7
+PSP_chk_li4=19
+gosam-contrib_libff.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig/include/gosam-contrib
+__info.count.docu__=0
+diagsum=True
+golem.full-name=GoSam 2.0.2
+generate_lo_diagrams=True
+golem.version=2.0.2
+__info.count.tree__=5
+olp.process_name=
+__info.count.virt__=0
+renorm_logs=True
+PSP_rescue=True
+symmetries=flavour,family,generation
+golem.revision=865
+olp.no_loop_level=True
+__OLP_MODE__=True
+reduction_programs=ninja,golem95,samurai
+z0094.extensions=gosam-contrib_libolo
+renorm_gamma5=True
+ninja.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig/lib -lninja
+olp.amplitudetype=Tree
+__REGULARIZATION_HV__=False
+reduction_interoperation_rescue=-1
+pyxodraw=True
+__GENERATE_NINJA_TRIPLE__=False
+__REGULARIZATION_DRED__=True
+setup-file=/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam//GoSam.OLPOrder.lh
+abbrev.limit=0
+olp.mc.name=any
+haggies.bin=java -jar /home/iwsatlas1/scyboz/Work/Herwig/share/golem/haggies/haggies.jar
+olp.include_symmetry_factor=False
+olp.alphaspower=3
+olp.alphapower=0
+form.threads=2
+renorm_mqwf=True
+olp.no_tree_level=False
+olp.extensions=DRED
+form.tempdir=/tmp
+gosam-auto-reduction.extensions=
+golem.name=GoSam
+__heavy_quarks__=
+in=Sbar,S
+order=QCD,3,QED,0
+__REDUCE_HELICITIES__=True
+samurai_scalar=2
+form.workspace=1000
+model=/home/iwsatlas1/scyboz/Work/Herwig/Herwig-scratch/Build/GoSam/source/model/model
+samurai.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig/include/gosam-contrib
+__OLP_TO_LOWER__=False
+---#] CONFIG:
+---#[ ENABLED EXTENSIONS:
+---#] ENABLED EXTENSIONS:
+---#[ Platform:
+Platform
+ *        machine: x86_64
+ *         maxint: 64
+ *        maxsize: 64
+ *     maxunicode: 1114111
+ *  platform_long: Linux-3.13.0-93-generic-x86_64-with-Ubuntu-14.04-trusty
+ * platform_short: linux2
+ *      processor: x86_64
+ *        version: #140-Ubuntu SMP Mon Jul 18 21:21:05 UTC 2016
+---#] Platform:
+---#[ Linux:
+Linux
+ * distribution: Ubuntu 14.04 (trusty)
+ *         libc: glibc 2.4
+---#] Linux:
+---#[ Python:
+Python
+ *         branch: 
+ *     build_date: Jun 22 2015 17:58:13
+ *       compiler: GCC 4.8.2
+ *     hexversion: 0x020706f0
+ * implementation: CPython
+ *       revision: 
+ *        version: 2.7.6
+---#] Python:
+---#[ XML Parser (Expat):
+XML Parser (Expat)
+ *        encoding: UTF-8
+ * returns_unicode: True
+ *         version: 2.1.0
+---#] XML Parser (Expat):
+---#[ GoSam:
+GoSam
+ *     author: The GoSam (Golem and Samurai) Collaboration <gosam@hepforge.org>
+ * maintainer: The GoSam Collaboration <gosam@hepforge.org>
+ *   revision: 865
+ *        url: http://projects.hepforge.org/gosam/
+ *    version: 2.0.2
+---#] GoSam:

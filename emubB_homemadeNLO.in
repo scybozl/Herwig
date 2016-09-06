@@ -27,8 +27,8 @@ set /Herwig/EventHandlers/LHCHandler:CollisionCuts Off
 
 set /Herwig/EventHandlers/LHCHandler:Sampler /Herwig/Samplers/Sampler
 set /Herwig/Samplers/Sampler:BinSampler /Herwig/Samplers/MonacoSampler
-set /Herwig/Samplers/MonacoSampler:InitialPoints 30000 
-set /Herwig/Samplers/MonacoSampler:NIterations 3 
+set /Herwig/Samplers/MonacoSampler:InitialPoints 1000 
+set /Herwig/Samplers/MonacoSampler:NIterations 1 
 ##################################################
 ## Process selection
 ##################################################
@@ -58,9 +58,10 @@ set MatchboxJetMatcher:Factory /Herwig/MatrixElements/Matchbox/Factory
 
 cd /Herwig/MatrixElements/Matchbox
 clear Factory:Amplitudes
-insert Factory:Amplitudes 0 Amplitudes/GenericProcesses 
-set Amplitudes/GenericProcesses:TreeLevelAmplitude Amplitudes/MadGraph
-set Amplitudes/GenericProcesses:OneLoopAmplitude Amplitudes/GoSam
+#insert Factory:Amplitudes 0 Amplitudes/GenericProcesses 
+insert Factory:Amplitudes 0 Amplitudes/GoSam
+#set Amplitudes/GenericProcesses:TreeLevelAmplitude Amplitudes/MadGraph
+#set Amplitudes/GenericProcesses:OneLoopAmplitude Amplitudes/GoSam
 set Amplitudes/GoSam:AccuracyTarget 3
 set Amplitudes/GoSam:UseRunningAlphaS On
 set Amplitudes/GoSam:SetMuToMuR On
@@ -158,7 +159,16 @@ set Basics:CheckQuark No
 cd /Herwig/MatrixElements/Matchbox
 do Factory:StartParticleGroup p
 insert Factory:ParticleGroup 0 /Herwig/Particles/u
+insert Factory:ParticleGroup 0 /Herwig/Particles/d
+insert Factory:ParticleGroup 0 /Herwig/Particles/c
+insert Factory:ParticleGroup 0 /Herwig/Particles/s
+insert Factory:ParticleGroup 0 /Herwig/Particles/b
 insert Factory:ParticleGroup 0 /Herwig/Particles/ubar
+insert Factory:ParticleGroup 0 /Herwig/Particles/dbar
+insert Factory:ParticleGroup 0 /Herwig/Particles/cbar
+insert Factory:ParticleGroup 0 /Herwig/Particles/sbar
+insert Factory:ParticleGroup 0 /Herwig/Particles/bbar
+insert Factory:ParticleGroup 0 /Herwig/Particles/g
 do Factory:EndParticleGroup
 
 cd /Herwig/Generators
@@ -170,7 +180,7 @@ set /Herwig/Analysis/HepMCFile:Units GeV_mm
 #create Herwig::WeightAnalyzer /Herwig/Analysis/WeightAnalyzer
 #insert LHCGenerator:AnalysisHandlers 0 /Herwig/Analysis/WeightAnalyzer
 
-#cd /Herwig/Cuts
+cd /Herwig/Cuts
 
 #set ChargedLeptonCut:PtMin 20.0*GeV
 #set ChargedLeptonKtCut:MinEta -2.5
