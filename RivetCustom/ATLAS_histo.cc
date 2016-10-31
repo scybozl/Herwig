@@ -114,7 +114,7 @@ namespace Rivet {
       vector<GenParticle const *> allParticles = particles(event.genEvent());
       for (size_t i = 0; i < allParticles.size(); i++) {
         const GenParticle* p = allParticles[i];
-        if (!PID::isHadron(p->pdg_id()) || !PID::hasBottom(p->pdg_id())) continue;
+        if (abs(p->pdg_id())!=5) continue;
         //if (p->momentum().perp() < 5*GeV) continue;
         B_hadrons.push_back(p);
       }
@@ -178,14 +178,13 @@ namespace Rivet {
         //if (charge(elecFS[0]) >= 0 && charge(muonFS[0]) <= 0) {
           // Calculate HT: scalar sum of the pTs of the leptons and all good jets
           double HT = 0;
-	  if(elecFS.size() >= 1 && muonFS.size() >= 1) {
-          HT += elecFS[0].pT();
-          HT += muonFS[0].pT();
-	  }
-          foreach (const Jet* j, central_jets)
-            HT += fabs(j->pT());
+//	  if(elecFS.size() >= 1 && muonFS.size() >= 1) {
+//          HT += elecFS[0].pT();
+//          HT += muonFS[0].pT();
+//	  }
+          foreach (const GenParticle* p, allParticles) HT += fabs(Particle(*p).pT());
           // Keep events with HT > 130 GeV
-          if (HT > 130.0*GeV) {
+//          if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
             if (b_jets.size() > 1 && elecFS.size() >= 1 && muonFS.size() >= 1) {
 		 if (MET >= 20.0*GeV) {
@@ -206,7 +205,7 @@ namespace Rivet {
 			}
 			}
 		}
-            }
+//          }
 	}
 	//}
 	//}
