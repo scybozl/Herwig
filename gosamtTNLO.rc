@@ -437,7 +437,7 @@ PSP_rescue=True
 #    !!Works only for QCD and with built-in model files!!            #
 #                                                                    #
 ######################################################################
-# PSP_verbosity=False
+PSP_verbosity=True
 
 ### PSP_chk_th1 (integer number) #####################################
 #    Sets the same variable in config.f90                            #
@@ -745,8 +745,7 @@ PSP_chk_kfactor=10000
 #             %-<n> refers to -n only                                #
 #                                                                    #
 ######################################################################
-symmetries=flavour,family,generation
-#,%-11=+,%+12=-,%+13=-,%-14=+
+symmetries=flavour,family,generation,%-11=+,%+12=-,%+13=-,%-14=+
 
 # samurai.fcflags=-I/home/iwsatlas1/scyboz/Work/Herwig//include/gosam-contrib
 # samurai.ldflags=-L/home/iwsatlas1/scyboz/Work/Herwig//lib -lgolem -lsamurai -lavh_olo -lqcdloop -lff
