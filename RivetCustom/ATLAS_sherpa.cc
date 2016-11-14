@@ -81,14 +81,14 @@ namespace Rivet {
 */
 
 	// Create histograms
-	_histPt1 = bookHisto1D("Pt1", 50, 0, 500);
+	_histPt1 = bookHisto1D("Pt1", 25, 0, 400);
 	_histEta1 = bookHisto1D("Eta1", 20, -2.5, 2.5);
-	_histPhiemu = bookHisto1D("Phiemu", 25, 0, 2*PI);
-	_histdeltaRb = bookHisto1D("deltaRb", 50, 0, 5);
-	_histdeltaRl = bookHisto1D("deltaRl", 50, 0, 5);
-	_histPtMiss = bookHisto1D("PtMiss", 25, 0, 200);
-	_histHT = bookHisto1D("HT", 60, 0, 1200);
-	_histMlb = bookHisto1D("Mlb", 50, 0, 300);
+	_histPhiemu = bookHisto1D("Phiemu", 20, 0, 2*PI);
+	_histdeltaRb = bookHisto1D("deltaRb", 20, 0, 5);
+	_histdeltaRl = bookHisto1D("deltaRl", 20, 0, 5);
+	_histPtMiss = bookHisto1D("PtMiss", 25, 0, 400);
+	_histHT = bookHisto1D("HT", 20, 0, 1200);
+	_histMlb = bookHisto1D("Mlb", 25, 0, 200);
 	_histWWphi = bookHisto1D("WWphi", 25, 0, 2*PI);
         _histWPt = bookHisto1D("WPt", 50, 0, 1000);
 	_histWEta = bookHisto1D("WEta", 25, -6, 6);
@@ -260,10 +260,10 @@ namespace Rivet {
           HT += diLeptons[0].pT();
           HT += diLeptons[1].pT();
 	  }
-//          foreach (const Jet* j, central_jets) HT += fabs(j->pT());
-//          HT += MET;
+          foreach (const Jet* j, central_jets) HT += fabs(j->pT());
+          HT += MET;
           // Keep events with HT > 130 GeV
-//          if (HT > 130.0*GeV) {
+          if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
             if (diLeptons.size() == 2) {
 		 if (MET > 20.0*GeV) {
@@ -290,7 +290,7 @@ namespace Rivet {
 		else cout << "MET";
             }
 //	    else cout << "L";
-//	}
+	}
 //	else cout << "HT";
 	//}
 	//}

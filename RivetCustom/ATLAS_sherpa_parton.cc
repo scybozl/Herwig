@@ -21,6 +21,10 @@ namespace Rivet {
 
   /// Top pair production with central jet veto
   class ATLAS_sherpa_parton : public Analysis {
+
+  #include "NLOHisto1D.cc"
+
+
   public:
 
     /// Constructor
@@ -81,22 +85,24 @@ namespace Rivet {
 */
 
 	// Create histograms
-	_histPt1 = bookHisto1D("Pt1", 25, 0, 400);
-	_histEta1 = bookHisto1D("Eta1", 20, -2.5, 2.5);
-	_histPhiemu = bookHisto1D("Phiemu", 20, 0, 2*PI);
-	_histdeltaRb = bookHisto1D("deltaRb", 20, 0, 5);
-	_histdeltaRl = bookHisto1D("deltaRl", 20, 0, 5);
-	_histPtMiss = bookHisto1D("PtMiss", 25, 0, 400);
-	_histHT = bookHisto1D("HT", 20, 0, 1200);
-	_histMlb = bookHisto1D("Mlb", 25, 0, 200);
-	_histWWphi = bookHisto1D("WWphi", 25, 0, 2*PI);
-        _histWPt = bookHisto1D("WPt", 50, 0, 1000);
-	_histWEta = bookHisto1D("WEta", 25, -6, 6);
-	_histWPhi = bookHisto1D("WPhi", 25, 0, 2*PI);
-	_histMlb2 = bookHisto1D("Mlb2", 25, 0, 200);
-	_histMlbBare = bookHisto1D("MlbBare", 25, 0, 200);
-	_histHT2 = bookHisto1D("HT2", 20, 0, 1200);
-	_histHT3 = bookHisto1D("HT3", 20, 0, 1200);
+	_histPt1 = bookNLOHisto1D("Pt1", 25, 0, 400);
+	_histEta1 = bookNLOHisto1D("Eta1", 20, -2.5, 2.5);
+	_histPhiemu = bookNLOHisto1D("Phiemu", 20, 0, 2*PI);
+	_histdeltaRb = bookNLOHisto1D("deltaRb", 20, 0, 5);
+	_histdeltaRl = bookNLOHisto1D("deltaRl", 20, 0, 5);
+	_histPtMiss = bookNLOHisto1D("PtMiss", 25, 0, 400);
+	_histHT = bookNLOHisto1D("HT", 20, 0, 1200);
+	_histMlb = bookNLOHisto1D("Mlb", 25, 0, 200);
+	_histWWphi = bookNLOHisto1D("WWphi", 25, 0, 2*PI);
+        _histWPt = bookNLOHisto1D("WPt", 50, 0, 1000);
+	_histWEta = bookNLOHisto1D("WEta", 25, -6, 6);
+	_histWPhi = bookNLOHisto1D("WPhi", 25, 0, 2*PI);
+	_histMlb2 = bookNLOHisto1D("Mlb2", 25, 0, 200);
+	_histMlbBare = bookNLOHisto1D("MlbBare", 25, 0, 200);
+	_histHT2 = bookNLOHisto1D("HT2", 20, 0, 1200);
+	_histHT3 = bookNLOHisto1D("HT3", 20, 0, 1200);
+
+	_histScales = bookHisto2D("mu1mu2", 20, 170, 1500, 20, 170, 1500);
     }
 
 
@@ -195,8 +201,18 @@ namespace Rivet {
         //foundB=true;
       }
 
-      if (diLeptons.size() != 2) cout << "Less than 2 leptons found!\n";
+      if (diLeptons.size() < 2) cout << "Less than 2 leptons found!\n";
 
+      ParticleVector Top;
+      ParticleVector antiTop;
+      bool foundTop=false;
+      bool foundAntiTop=false;
+      for (size_t i = 0; i < allParticles.size() && !(foundTop && foundAntiTop); i++) {
+	const GenParticle* p = allParticles[i];
+        if (p->pdg_id()==6 && foundTop==false) {Top.push_back(Particle(*p)); foundTop=true;}
+	if (p->pdg_id()==-6 && foundAntiTop==false) {antiTop.push_back(Particle(*p)); foundAntiTop=true;}
+      }
+      if (Top.size() + antiTop.size() != 2) cout << "Less than 2 tops found!\n";
 
       // Get the electrons and muons coming from the W bosons
 /*      ParticleVector diLeptons;
@@ -279,27 +295,43 @@ namespace Rivet {
           double HT = 0;
 	  double HT2 = 0;
 	  double HT3 = 0;
-/*	  if(diLeptons.size() == 2) {
+	  if(diLeptons.size() == 2) {
           HT += diLeptons[0].pT();
           HT += diLeptons[1].pT();
-	  }
-          foreach (const Jet* j, central_jets) HT += fabs(j->pT());
-          HT += MET;
-*/
-	  for (size_t i = 0; i < allParticles.size(); i++) {
-            const GenParticle* p = allParticles[i];
-	    HT += fabs(Particle(*p).pT());
-	  }
-	  for (size_t i = 0; i < allParticles.size(); i++) {
-            const GenParticle* p = allParticles[i];
-            HT2 += Particle(*p).pT();
-          }
-	  if(diLeptons.size() ==2) {
-          HT3 += diLeptons[0].pT();
+	  HT2 += diLeptons[0].pT();
+          HT2 += diLeptons[1].pT();
+	  HT3 += diLeptons[0].pT();
           HT3 += diLeptons[1].pT();
 	  }
-          foreach (const Jet* j, central_jets)
-		HT3 += fabs(j->pT());
+          foreach (const Jet* j, central_jets) HT += j->pT();
+	  foreach (const Jet* j, hardJets) HT2+= j->pT();
+	  foreach (const Jet* j, b_jets) HT3 += j->pT();
+//          HT += MET;
+
+//	  for (size_t i = 0; i < allParticles.size(); i++) {
+ //           const GenParticle* p = allParticles[i];
+//	    HT += fabs(Particle(*p).pT());
+//	  }
+//	  for (size_t i = 0; i < allParticles.size(); i++) {
+//            const GenParticle* p = allParticles[i];
+//            HT2 += Particle(*p).pT();
+//          }
+//	  if(diLeptons.size() ==2) {
+//          HT3 += diLeptons[0].pT();
+//          HT3 += diLeptons[1].pT();
+//	  }
+//          foreach (const Jet* j, central_jets) HT3 += fabs(j->pT());
+//	  HT3 += MET;
+
+	  double mu1=0;
+	  double mu2=0;
+	  
+	  if (Top.size() + antiTop.size() == 2){
+	    mu1=(Top[0].momentum()+antiTop[0].momentum()).mass();
+            double mT2 = Top[0].mass2()+Top[0].pT2() + antiTop[0].mass2()+antiTop[0].pT2();
+	    if (mT2 >=0) mu2=sqrt(mT2);
+	    else cout << "mT2 < 0!\n";
+	  }
 
           // Keep events with HT > 130 GeV
 //          if (HT > 130.0*GeV) {
@@ -315,10 +347,8 @@ namespace Rivet {
 
 			if(deltaR(b_jets[0]->momentum(), diLeptons[0].momentum()) >= 0.4 && deltaR(b_jets[0]->momentum(), diLeptons[1].momentum()) >= 0.4
 			&& deltaR(b_jets[1]->momentum(), diLeptons[0].momentum()) >= 0.4 && deltaR(b_jets[1]->momentum(), diLeptons[1].momentum()) >= 0.4) {
-				if(MET >= 60*GeV && (diLeptons[0].momentum() + diLeptons[1].momentum()).mass() >= 15*GeV) {
-					if(abs((diLeptons[0].momentum() + diLeptons[1].momentum()).mass() - 91*GeV) >= 10*GeV) {
-						passed_Mlb = true;
-					}
+				if(HT3>=130*GeV) {
+					passed_Mlb = true;
 				}
 			}
 			}
@@ -333,6 +363,9 @@ namespace Rivet {
 //	else cout << "HT";
 	//}
 	//}
+
+      if (Top.size() + antiTop.size() == 2 ) _histScales->fill(mu1, mu2, weight);
+
       if (passed_emu == true) {
 
 /*
@@ -354,58 +387,58 @@ namespace Rivet {
         for (ithres = 0; ithres < threshLimit; ithres++) {
           if (jet_n[ithres] < 2) continue; // 2 or more jets for ljets
           // Fill
-          if (ihist == 0) _histogram(ihist, ithres)->fill(jet_n[ithres], weight); // njets
-          else if (ihist == 1) _histogram(ihist, ithres)->fill(central_jets[0]->pT(), weight); // leading jet pT
-          else if (ihist == 2) _histogram(ihist, ithres)->fill(central_jets[1]->pT(), weight); // 2nd jet pT
-          else if (ihist == 3 && jet_n[ithres] >= 3) _histogram(ihist, ithres)->fill(central_jets[2]->pT(), weight); // 3rd jet pT
-          else if (ihist == 4 && jet_n[ithres] >= 4) _histogram(ihist, ithres)->fill(central_jets[3]->pT(), weight); // 4th jet pT
-          else if (ihist == 5 && jet_n[ithres] >= 5) _histogram(ihist, ithres)->fill(central_jets[4]->pT(), weight); // 5th jet pT
+          if (ihist == 0) _histogram(ihist, ithres)->fill(jet_n[ithres], event); // njets
+          else if (ihist == 1) _histogram(ihist, ithres)->fill(central_jets[0]->pT(), event); // leading jet pT
+          else if (ihist == 2) _histogram(ihist, ithres)->fill(central_jets[1]->pT(), event); // 2nd jet pT
+          else if (ihist == 3 && jet_n[ithres] >= 3) _histogram(ihist, ithres)->fill(central_jets[2]->pT(), event); // 3rd jet pT
+          else if (ihist == 4 && jet_n[ithres] >= 4) _histogram(ihist, ithres)->fill(central_jets[3]->pT(), event); // 4th jet pT
+          else if (ihist == 5 && jet_n[ithres] >= 5) _histogram(ihist, ithres)->fill(central_jets[4]->pT(), event); // 5th jet pT
         }
       }
 */
 
-	_histPt1->fill(b_jets[0]->pT(), weight);
-	_histEta1->fill(b_jets[0]->eta(), weight);
-	_histdeltaRb->fill(deltaR(b_jets[0]->momentum(), b_jets[1]->momentum()), weight);
+	_histPt1->fill(b_jets[0]->pT(), event);
+	_histEta1->fill(b_jets[0]->eta(), event);
+	_histdeltaRb->fill(deltaR(b_jets[0]->momentum(), b_jets[1]->momentum()), event);
 	if(diLeptons.size() == 2) {
-		//_histPhiemu->fill(deltaPhi(elecFS[0], muonFS[0]), weight);
+		//_histPhiemu->fill(deltaPhi(elecFS[0], muonFS[0]), event);
 		double emuPhi = diLeptons[0].momentum().phi() - diLeptons[1].momentum().phi();
 		if (emuPhi > 2*PI) emuPhi -= 2*PI;
 		if (emuPhi < 0) emuPhi += 2*PI;
-		_histPhiemu->fill(emuPhi, weight);
-		//_histPhiemu->fill(mapAngle0To2Pi(diLeptons[0].momentum().phi() - diLeptons[1].momentum().phi()), weight);
-		_histdeltaRl->fill(deltaR(diLeptons[0], diLeptons[1]), weight);
+		_histPhiemu->fill(emuPhi, event);
+		//_histPhiemu->fill(mapAngle0To2Pi(diLeptons[0].momentum().phi() - diLeptons[1].momentum().phi()), event);
+		_histdeltaRl->fill(deltaR(diLeptons[0], diLeptons[1]), event);
 	}
-	_histPtMiss->fill(MET, weight);
-	_histHT->fill(HT, weight);
-	_histHT2->fill(HT2, weight);
-	_histHT3->fill(HT3, weight);
+	_histPtMiss->fill(MET, event);
+	_histHT->fill(HT, event);
+	_histHT2->fill(HT2, event);
+	_histHT3->fill(HT3, event);
 
 	// Without the additional requirement from DDKP
 
         if((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass()
                 > (diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass()) {
-                        _histMlb2->fill(((diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass())/2, weight);
+                        _histMlb2->fill(((diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass())/2, event);
                 }
-                else _histMlb2->fill(((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass())/2, weight);
+                else _histMlb2->fill(((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass())/2, event);
 
 	// Old definition
 
 	if(passed_Mlb == true) {
 		if((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass()
 		> (diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass()) {
-			_histMlb->fill(((diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass())/2, weight);
+			_histMlb->fill(((diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass())/2, event);
 		}
-		else _histMlb->fill(((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass())/2, weight);
+		else _histMlb->fill(((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass())/2, event);
 	}
 
 	// Definition without jets, simply with the bare bs code
 
 	if((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass()
                 > (diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass()) {
-                        _histMlbBare->fill(((diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass())/2, weight);
+                        _histMlbBare->fill(((diLeptons[0].momentum() + b_jets[1]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[0]->momentum()).mass())/2, event);
                 }
-                else _histMlbBare->fill(((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass())/2, weight);
+                else _histMlbBare->fill(((diLeptons[0].momentum() + b_jets[0]->momentum()).mass() + (diLeptons[1].momentum() + b_jets[1]->momentum()).mass())/2, event);
 
       }
       
@@ -413,13 +446,13 @@ namespace Rivet {
 		double WWPhi = diBosons[0].momentum().phi() - diBosons[1].momentum().phi();
 		if(WWPhi > 2*PI) WWPhi -= 2*PI;
 		if(WWPhi < 0) WWPhi += 2*PI;
-		_histWWphi->fill(WWPhi, weight);
-		_histWPt->fill(diBosons[0].pT(), weight);
-		_histWPt->fill(diBosons[1].pT(), weight);
-		_histWPhi->fill(diBosons[0].phi(), weight);
-		_histWPhi->fill(diBosons[1].phi(), weight);
-		_histWEta->fill(diBosons[0].eta(), weight);
-		_histWEta->fill(diBosons[1].eta(), weight);
+		_histWWphi->fill(WWPhi, event);
+		_histWPt->fill(diBosons[0].pT(), event);
+		_histWPt->fill(diBosons[1].pT(), event);
+		_histWPhi->fill(diBosons[0].phi(), event);
+		_histWPhi->fill(diBosons[1].phi(), event);
+		_histWEta->fill(diBosons[0].eta(), event);
+		_histWEta->fill(diBosons[1].eta(), event);
       }
 */    }
 
@@ -433,6 +466,23 @@ namespace Rivet {
 //	normalize(_histPtMiss);
 //	normalize(_histHT);
 //	normalize(_histMlb);
+
+	_histPt1->finalize();
+	_histEta1->finalize();
+	_histPhiemu->finalize();
+	_histdeltaRb->finalize();
+	_histdeltaRl->finalize();
+	_histPtMiss->finalize();
+	_histHT->finalize();
+	_histHT2->finalize();
+	_histHT3->finalize();
+	_histMlb->finalize();
+	_histWWphi->finalize();
+	_histWPt->finalize();
+	_histWPhi->finalize();
+	_histWEta->finalize();
+	_histMlb2->finalize();
+	_histMlbBare->finalize();
 
 	const double norm = crossSection()/sumOfWeights();
 	scale(_histPt1, norm);
@@ -451,9 +501,11 @@ namespace Rivet {
 	scale(_histWEta, norm);
 	scale(_histMlb2, norm);
 	scale(_histMlbBare, norm);
+
+
       //const double norm = crossSection()/sumOfWeights();
-      //typedef map<unsigned int, Histo1DPtr>::value_type IDtoHisto1DPtr; ///< @todo Remove when C++11 allowed
-      //foreach (IDtoHisto1DPtr ihpair, _hMap) scale(ihpair.second, norm); ///< @todo Use normalize(ihpair.second, crossSection())
+      //typedef map<unsigned int, NLOHisto1DPtr>::value_type IDtoNLOHisto1DPtr; ///< @todo Remove when C++11 allowed
+      //foreach (IDtoNLOHisto1DPtr ihpair, _hMap) scale(ihpair.second, norm); ///< @todo Use normalize(ihpair.second, crossSection())
     }
 
 
@@ -463,22 +515,23 @@ namespace Rivet {
     /// @name Histogram helper functions
     //@{
 
-	Histo1DPtr _histPt1;
-	Histo1DPtr _histEta1;
-	Histo1DPtr _histPhiemu;
-	Histo1DPtr _histdeltaRb;
-	Histo1DPtr _histdeltaRl;
-	Histo1DPtr _histPtMiss;
-	Histo1DPtr _histHT;
-	Histo1DPtr _histHT2;
-	Histo1DPtr _histHT3;
-	Histo1DPtr _histMlb;
-	Histo1DPtr _histWWphi;
-	Histo1DPtr _histWPt;
-	Histo1DPtr _histWPhi;
-	Histo1DPtr _histWEta;
-	Histo1DPtr _histMlb2;
-	Histo1DPtr _histMlbBare;
+	NLOHisto1DPtr _histPt1;
+	NLOHisto1DPtr _histEta1;
+	NLOHisto1DPtr _histPhiemu;
+	NLOHisto1DPtr _histdeltaRb;
+	NLOHisto1DPtr _histdeltaRl;
+	NLOHisto1DPtr _histPtMiss;
+	NLOHisto1DPtr _histHT;
+	NLOHisto1DPtr _histHT2;
+	NLOHisto1DPtr _histHT3;
+	NLOHisto1DPtr _histMlb;
+	NLOHisto1DPtr _histWWphi;
+	NLOHisto1DPtr _histWPt;
+	NLOHisto1DPtr _histWPhi;
+	NLOHisto1DPtr _histWEta;
+	NLOHisto1DPtr _histMlb2;
+	NLOHisto1DPtr _histMlbBare;
+	Histo2DPtr _histScales;
 
 /*
     unsigned int _thresholdLimit(unsigned int histId) {
@@ -486,15 +539,15 @@ namespace Rivet {
       return 1;
     }
 
-    Histo1DPtr _histogram(unsigned int histId, unsigned int thresholdId) {
+    NLOHisto1DPtr _histogram(unsigned int histId, unsigned int thresholdId) {
       assert(histId < _histLimit);
       assert(thresholdId < _thresholdLimit(histId));
 
       const unsigned int hInd = (histId == 0) ? thresholdId : (_thresholdLimit(0) + (histId-1) + thresholdId);
       if (_hMap.find(hInd) != _hMap.end()) return _hMap[hInd];
 
-      if (histId == 0) _hMap.insert(make_pair(hInd,bookHisto1D(1,thresholdId+1,1)));
-      else _hMap.insert(make_pair(hInd,bookHisto1D(2,histId,1)));
+      if (histId == 0) _hMap.insert(make_pair(hInd,bookNLOSHisto1D(1,thresholdId+1,1)));
+      else _hMap.insert(make_pair(hInd,bookNLOSHisto1D(2,histId,1)));
       return _hMap[hInd];
     }
 */
@@ -503,7 +556,7 @@ private:
 
     unsigned int _jet_ntag;
 
-    //map<unsigned int, Histo1DPtr> _hMap;
+    //map<unsigned int, NLOHisto1DPtr> _hMap;
     //unsigned int _histLimit;
 
 

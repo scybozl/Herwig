@@ -98,6 +98,8 @@ namespace Rivet {
       Particles muonFS = applyProjection<IdentifiedFinalState>(event, "MUON_FS").particlesByPt(Cuts::abseta < 2.5 && Cuts::pT > 20*GeV);
       const Particles& neutrinoFS = applyProjection<IdentifiedFinalState>(event, "NEUTRINO_FS").particlesByPt();
 
+      const Particles& FS = applyProjection<IdentifiedFinalState>(event, "ALL_FS").particlesByPt();
+
       // Get all jets with pT > 30 GeV
       const Jets& jets = applyProjection<FastJets>(event, "JETS").jetsByPt(30.0*GeV);
 
@@ -178,11 +180,11 @@ namespace Rivet {
         //if (charge(elecFS[0]) >= 0 && charge(muonFS[0]) <= 0) {
           // Calculate HT: scalar sum of the pTs of the leptons and all good jets
           double HT = 0;
-//	  if(elecFS.size() >= 1 && muonFS.size() >= 1) {
-//          HT += elecFS[0].pT();
-//          HT += muonFS[0].pT();
-//	  }
-          foreach (const GenParticle* p, allParticles) HT += fabs(Particle(*p).pT());
+	  if(elecFS.size() >= 1 && muonFS.size() >= 1) {
+          HT += elecFS[0].pT();
+          HT += muonFS[0].pT();
+	  }
+          foreach (const Jet* j, b_jets) HT += j->pT();
           // Keep events with HT > 130 GeV
 //          if (HT > 130.0*GeV) {
             // And again we want 2 or more b-jets
@@ -192,14 +194,12 @@ namespace Rivet {
 
 			// Additional requirements for the invariant mass event selection
 			if(elecFS.size() >= 1 && muonFS.size() >= 1) {
-			if(elecFS[0].pT() >= 20.*GeV && muonFS[0].pT() >= 20.*GeV && fabs(elecFS[0].eta()) < 2.5 && fabs(muonFS[0].eta()) < 2.5) {
+			if(elecFS[0].pT() >= 25.*GeV && muonFS[0].pT() >= 20.*GeV && fabs(elecFS[0].eta()) < 2.5 && fabs(muonFS[0].eta()) < 2.5) {
 
 			if(deltaR(b_jets[0]->momentum(), elecFS[0].momentum()) >= 0.4 && deltaR(b_jets[0]->momentum(), muonFS[0].momentum()) >= 0.4
 			&& deltaR(b_jets[1]->momentum(), elecFS[0].momentum()) >= 0.4 && deltaR(b_jets[1]->momentum(), muonFS[0].momentum()) >= 0.4) {
-				if(MET >= 60*GeV && (elecFS[0].momentum() + muonFS[0].momentum()).mass() >= 15*GeV) {
-					if(abs((elecFS[0].momentum() + muonFS[0].momentum()).mass() - 91*GeV) >= 10*GeV) {
-						passed_Mlb = true;
-					}
+				if(HT>=130*GeV) {
+					passed_Mlb = true;
 				}
 			}
 			}

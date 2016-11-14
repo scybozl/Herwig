@@ -1,5 +1,5 @@
 # BEGIN PLOT /ATLAS_2014_I1304688_custom/d01.
-LegendXPos=0.39
+LegendXPos=0.6
 XMin=2.5
 YLabel=$\mathrm{d}\sigma/\mathrm{dn}_{\mathrm{jets}}$ [pb]
 RatioPlotYMin=0.1
@@ -9,7 +9,7 @@ RatioPlotYLabel=Expected/Data
 
 # BEGIN PLOT /ATLAS_2014_I1304688_custom/d02.
 LogX=1
-LegendXPos=0.39
+LegendXPos=0.6
 YLabel=$\mathrm{d}\sigma/\mathrm{dp}_{\mathrm T}$ [pb/GeV]
 RatioPlotYMin=0.1
 RatioPlotYMax=1.9
