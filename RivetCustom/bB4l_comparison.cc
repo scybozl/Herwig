@@ -91,16 +91,40 @@ namespace Rivet {
 	_histxB   = bookHisto1D("xB", 20, 0, 1);
 	_histpTbDec = bookHisto1D("pTbDec", 15, 0, 30);
 
+
+	_histPt1_T = bookHisto1D("Pt1_T", 25, 0, 400);
+        _histEta1_T = bookHisto1D("Eta1_T", 20, -2.5, 2.5);
+        _histPhiemu_T = bookHisto1D("Phiemu_T", 20, 0, 2*PI);
+        _histdeltaRb_T = bookHisto1D("deltaRb_T", 20, 0, 5);
+        _histdeltaRl_T = bookHisto1D("deltaRl_T", 20, 0, 5);
+        _histPtMiss_T = bookHisto1D("PtMiss_T", 25, 0, 400);
+        _histHT_T = bookHisto1D("HT_T", 20, 0, 1200);
+//      _histMlb = bookHisto1D("Mlb", 50, 0, 350);
+
+        _histmWjB_T = bookHisto1D("mWjB_T", 40, 150, 200);
+        _histmljB_T = bookHisto1D("mljB_T", 50, 0, 350);
+        _histmjB_T  = bookHisto1D("mjB_T", 20, 5, 50);
+        _histdeltaR_T = bookHisto1D("deltaR_T", 100, 0, 2);
+        _histxB_T   = bookHisto1D("xB_T", 20, 0, 1);
+        _histpTbDec_T = bookHisto1D("pTbDec_T", 15, 0, 30);
 //	_histmlb = bookHisto1D("mlb", 50, 0, 350);
 //	_histmLeptonsjB = bookHisto1D("mLeptonsjB", 50, 0, 350);
- 
+
+	_hist_selected = bookHisto1D("selected", 5, 0, 5);
+	_hist_ptlepton = bookHisto1D("ptlepton", 10, 0, 400);
+	_nevents = 0;
+	_nbjets = 0;
+	_nleptons = 0;
+	
    }
 
 
     /// Perform the per-event analysis
     void analyze(const Event& event) {
 
-      bool hadronization = false;
+      bool hadronization = true;
+
+      _nevents += 1;
 
       double weight = event.weight();
 //      const double normWW = 1.0/3.9465;
@@ -166,7 +190,20 @@ namespace Rivet {
 	if (j->containsParticle(B_bbar_hadrons)) b_bar_jets.push_back(j);
 	else if (!hadronization && j->containsBottom()) b_bar_jets.push_back(j);
       }
+
+      vector<const Jet*> b_jets_T;
+      foreach (const Jet* j, central_jets) {
+//        foreach (const GenParticle* b, B_hadrons) {
+        if (j->containsParticleId(5)) b_jets_T.push_back(j);
+//        }
+      }
+
+      vector<const Jet*> b_bar_jets_T;
+      foreach (const Jet* j, central_jets) {
+        if (j->containsParticleId(-5)) b_bar_jets_T.push_back(j);
+      }
  
+      if (!b_jets_T.empty() && !b_bar_jets_T.empty()) _nbjets += 1;
 
       vector<const GenParticle*> WPlus;
       vector<const GenParticle*> WMinus;
@@ -177,23 +214,40 @@ namespace Rivet {
            //const GenVertex* pv = p->production_vertex();
       }
 
-      vector<const GenParticle*> leptonsP;
+ 
+      vector<const GenParticle*> leptonsP, leptonsM, bs, bbars;
+      if (!WPlus.empty() && !WMinus.empty()){
       for (HepMC::GenVertex::particle_iterator iter = WPlus[0]->end_vertex()->particles_begin(HepMC::descendants); iter != WPlus[0]->end_vertex()->particles_end(HepMC::descendants); ++iter) {
 	if ((*iter)->pdg_id()==-11 || (*iter)->pdg_id()==-13) {leptonsP.push_back(*iter);}
      }
-      vector<const GenParticle*> leptonsM;
       for (HepMC::GenVertex::particle_iterator iter = WMinus[0]->end_vertex()->particles_begin(HepMC::descendants); iter != WMinus[0]->end_vertex()->particles_end(HepMC::descendants); ++iter) {
         if ((*iter)->pdg_id()==11 || (*iter)->pdg_id()==13) {leptonsM.push_back(*iter);}
      }
 
-      vector<const GenParticle*> bs;
       for (HepMC::GenVertex::particle_iterator iter = WPlus[0]->production_vertex()->particles_begin(HepMC::descendants); iter != WPlus[0]->production_vertex()->particles_end(HepMC::descendants); ++iter) {
         if ((*iter)->pdg_id()==5) {bs.push_back(*iter);}
      }
-      vector<const GenParticle*> bbars;
       for (HepMC::GenVertex::particle_iterator iter = WMinus[0]->production_vertex()->particles_begin(HepMC::descendants); iter != WMinus[0]->production_vertex()->particles_end(HepMC::descendants); ++iter) {
         if ((*iter)->pdg_id()==-5) {bbars.push_back(*iter);}
+     }}
+
+
+// TRUTH
+
+     vector<const GenParticle*> leptonsP_T;
+     vector<const GenParticle*> leptonsM_T;
+     vector<const GenParticle*> bs_T;
+     vector<const GenParticle*> bbars_T;
+     bool foundM = false, foundP = false, foundb = false, foundbbar = false;
+      foreach (const GenParticle* p, Rivet::particles(event.genEvent())) {
+	p->print();
+        if (foundM == false && p->pdg_id()==13) {leptonsM_T.push_back(p); foundM=true;}
+	if (foundP == false && p->pdg_id()==-11) {leptonsP_T.push_back(p); foundP=true;}
+	if (foundb == false && p->pdg_id()==5) {bs_T.push_back(p); foundb=true;}
+	if (foundbbar == false && p->pdg_id()==-5) {bbars_T.push_back(p); foundbbar=true;}
      }
+
+     if (!leptonsM_T.empty() && !leptonsP_T.empty()) _nleptons += 1;
 
       // Get b hadrons with pT > 5 GeV
       //       /// @todo This is a hack -- replace with UnstableFinalState
@@ -261,7 +315,7 @@ namespace Rivet {
       if(!leptonsP.empty()) leptonsP[0]->print();
       if(!leptonsM.empty()) leptonsM[0]->print();
 
-	cout <<"\n\n";
+      cout << leptonsP_T.size() + leptonsM_T.size() << "\n";
 
       // Finally, the same again with the emu channel
       //if (elecFS.size() == 1 && muonFS.size() == 1) {
@@ -339,7 +393,7 @@ namespace Rivet {
 		//_histPhiemu->fill(deltaPhi(elecFS[0], muonFS[0]), weight);
 		//_histPhiemu->fill(mapAngle0To2Pi(elecFS[0].momentum().phi() - muonFS[0].momentum().phi()), weight);
 		//_histdeltaRl->fill(deltaR(elecFS[0], muonFS[0]), weight);
-	_histmWjB->fill(((Particle(WPlus[0]).momentum()+b_jets[0]->momentum()).mass() + (Particle(WMinus[0]).momentum()+b_bar_jets[0]->momentum()).mass())/2, weight);
+	if(!WPlus.empty() && !WMinus.empty()) _histmWjB->fill(((Particle(WPlus[0]).momentum()+b_jets[0]->momentum()).mass() + (Particle(WMinus[0]).momentum()+b_bar_jets[0]->momentum()).mass())/2, weight);
 	_histmjB->fill((b_jets[0]->momentum().mass() + b_bar_jets[0]->momentum().mass())/2, weight);
 	if(!leptonsP.empty() && !leptonsM.empty()) {
 		 _histmljB->fill(((Particle(leptonsP[0]).momentum()+b_jets[0]->momentum()).mass() + (Particle(leptonsM[0]).momentum()+b_bar_jets[0]->momentum()).mass())/2, weight);
@@ -348,6 +402,29 @@ namespace Rivet {
 	
      }
 	_histPtMiss->fill(MET, weight);
+
+    if(b_jets_T.size()>=1 && b_bar_jets_T.size()>=1) {
+        _histPt1_T->fill(0.5*(b_jets_T[0]->pT()+b_bar_jets_T[0]->pT()), weight);
+        _histEta1_T->fill(0.5*(b_jets_T[0]->eta()+b_bar_jets_T[0]->eta()), weight);
+        _histdeltaRb_T->fill(deltaR(b_jets_T[0]->momentum(), b_bar_jets_T[0]->momentum()), weight);
+        if (!WPlus.empty() && !WMinus.empty()) _histmWjB_T->fill(((Particle(WPlus[0]).momentum()+b_jets[0]->momentum()).mass() + (Particle(WMinus[0]).momentum()+b_bar_jets[0]->momentum()).mass())/2, weight);
+        _histmjB_T->fill((b_jets_T[0]->momentum().mass() + b_bar_jets_T[0]->momentum().mass())/2, weight);
+        if(!leptonsP_T.empty() && !leptonsM_T.empty()) {
+                 _histmljB_T->fill(((Particle(leptonsP_T[0]).momentum()+b_jets_T[0]->momentum()).mass() + (Particle(leptonsM_T[0]).momentum()+b_bar_jets_T[0]->momentum()).mass())/2, weight);
+
+}
+
+
+     }
+        _histPtMiss_T->fill(MET, weight);
+
+	if(!leptonsP_T.empty() && !leptonsM_T.empty()){
+        //_histPhiemu_T->fill(deltaPhi(leptonsP_T[0], leptonsM_T[0]), weight);
+        _histPhiemu_T->fill(mapAngle0To2Pi(Particle(leptonsP_T[0]).momentum().phi() - Particle(leptonsM_T[0]).momentum().phi()), weight);
+        _histdeltaRl->fill(deltaR(Particle(leptonsP_T[0]), Particle(leptonsM_T[0])), weight);
+	
+	_hist_ptlepton->fill(1/2.0*(Particle(leptonsP_T[0]).pT()+Particle(leptonsM_T[0]).pT()), weight);
+}
 
 	//_histHT->fill(HT, weight);
 	//if(passed_Mlb == true) {
@@ -391,11 +468,29 @@ namespace Rivet {
 	scale(_histmWjB, norm);
 	scale(_histmljB, norm);
 	scale(_histmjB, norm);
+
+	scale(_histPt1_T, norm);
+        scale(_histEta1_T, norm);
+        scale(_histPhiemu_T, norm);
+        scale(_histdeltaRb_T, norm);
+        scale(_histdeltaRl_T, norm);
+        scale(_histPtMiss_T, norm);
+        scale(_histHT_T, norm);
+//      scale(_histMlb, norm);
+        scale(_histmWjB_T, norm);
+        scale(_histmljB_T, norm);
+        scale(_histmjB_T, norm);
+
+	scale(_hist_ptlepton, norm);
 //	scale(_histmLeptonsjB, norm);
 //        scale(_histmlb, norm);
       //const double norm = crossSection()/sumOfWeights();
       //typedef map<unsigned int, Histo1DPtr>::value_type IDtoHisto1DPtr; ///< @todo Remove when C++11 allowed
       //foreach (IDtoHisto1DPtr ihpair, _hMap) scale(ihpair.second, norm); ///< @todo Use normalize(ihpair.second, crossSection())
+
+	_hist_selected->fill(0.5, _nevents);
+	_hist_selected->fill(1.5, _nbjets);
+	_hist_selected->fill(2.5, _nleptons);
     }
 
 
@@ -414,6 +509,15 @@ namespace Rivet {
 	Histo1DPtr _histHT;
 //	Histo1DPtr _histMlb;
 
+	Histo1DPtr _histPt1_T;
+        Histo1DPtr _histEta1_T;
+        Histo1DPtr _histPhiemu_T;
+        Histo1DPtr _histdeltaRb_T;
+        Histo1DPtr _histdeltaRl_T;
+        Histo1DPtr _histPtMiss_T;
+        Histo1DPtr _histHT_T;
+//      Histo1DPtr _histMlb;
+
 //	Histo1DPtr _histmlb;
 //        Histo1DPtr _histmLeptonsjB;
 
@@ -423,6 +527,19 @@ namespace Rivet {
         Histo1DPtr _histdeltaR;
         Histo1DPtr _histxB;
         Histo1DPtr _histpTbDec;
+
+	Histo1DPtr _histmWjB_T;
+        Histo1DPtr _histmljB_T;
+        Histo1DPtr _histmjB_T;
+        Histo1DPtr _histdeltaR_T;
+        Histo1DPtr _histxB_T;
+        Histo1DPtr _histpTbDec_T;
+
+	Histo1DPtr _hist_selected;
+	Histo1DPtr _hist_ptlepton;
+	int _nevents;
+	int _nbjets;
+	int _nleptons;
 
 /*
     unsigned int _thresholdLimit(unsigned int histId) {
